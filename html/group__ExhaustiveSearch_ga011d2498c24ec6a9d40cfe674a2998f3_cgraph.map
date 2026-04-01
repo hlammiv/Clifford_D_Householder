@@ -1,0 +1,25 @@
+<map id="fillUpper" name="fillUpper">
+<area shape="rect" id="Node000001" title="Fills entries above diagonal (if possible) once all other entries are determined." alt="" coords="5,44,83,69"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9NumberTheoretic.html#ga8d18b374f06057c7e6ed4ff875f52085" title="Computes complex conjugate by calling GaloisAut(&#45;1)" alt="" coords="131,5,288,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,45,140,31,142,37,84,50"/>
+<area shape="rect" id="Node000004" href="$group__ExhaustiveSearch.html#ga97d3ed2fb102a68150282a4dccd33529" title="If possible, this solves equations of the form &#160;for &#160;in the ring ." alt="" coords="156,68,263,93"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="83,60,142,68,142,74,83,65"/>
+<area shape="rect" id="Node000003" href="$group__ringZ9Constructors.html#gac69be3083c20eaac02d85d5da90b6abd" title="Sets ring element equal to the zero element." alt="" coords="748,17,863,43"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="288,17,734,26,734,31,288,22"/>
+<area shape="rect" id="Node000005" href="$group__ringZ9NumberTheoretic.html#ga32549fb5fa209c7d8f676ce3ed7174dc" title="Computes the product of all Galois conjugates (which is guaranteed to be an integer)." alt="" coords="359,92,495,117"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="263,84,345,93,344,98,263,89"/>
+<area shape="rect" id="Node000010" href="$group__ringZ9Tests.html#ga37d00427f5ca61fbf4981fbc5030452b" title="Tests whether dividing the ring element by &#39;k&#39; still lies in the ring." alt="" coords="339,141,514,167"/>
+<area shape="poly" id="edge10_Node000004_Node000010" title=" " alt="" coords="243,91,337,126,365,135,364,140,335,131,241,96"/>
+<area shape="rect" id="Node000011" href="$group__ringZ9NumberTheoretic.html#gacbd50dbdac57863b87397c4f3255fc55" title="Computes the product of all Galois conjugates except for the trivial Galois conjugate,..." alt="" coords="336,43,517,68"/>
+<area shape="poly" id="edge11_Node000004_Node000011" title=" " alt="" coords="263,72,322,65,323,70,263,77"/>
+<area shape="rect" id="Node000006" href="$group__ringZ9NumberTheoretic.html#ga7473bb216dd367a71470702034989b64" title="Computes Galois conjugate of given instance." alt="" coords="565,43,700,68"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="480,89,565,69,566,74,481,95"/>
+<area shape="rect" id="Node000007" href="$group__ringZ9Info.html#ga5f3939ba80960bab2900beeac76ac1ca" title="Gets integer coefficient on the &#160;term." alt="" coords="570,141,695,167"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="481,115,566,135,565,141,480,120"/>
+<area shape="rect" id="Node000008" href="$group__ringZ9Mutators.html#gae934b2a35b47e2b47df7deb00f937d85" title="Rewrites terms of element into a canonical basis." alt="" coords="575,92,691,117"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="495,102,561,102,561,107,495,107"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="700,43,734,38,735,43,701,48"/>
+<area shape="rect" id="Node000009" href="$group__ringZ9Tests.html#ga149e3e75af677ac2cf2aa6be2ed67bb0" title="Determines whether a ring element is zero." alt="" coords="749,92,862,117"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="691,102,735,102,735,107,691,107"/>
+<area shape="poly" id="edge12_Node000011_Node000006" title=" " alt="" coords="518,53,552,53,552,58,518,58"/>
+</map>

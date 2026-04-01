@@ -1,0 +1,7 @@
+<map id="ringZ9chi::toComplexDouble" name="ringZ9chi::toComplexDouble">
+<area shape="rect" id="Node000001" title="Converts ring element to std::complex&lt;double&gt;" alt="" coords="5,31,213,56"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9chiTypeConversions.html#ga9a4b83bd96e97de7984c2b996ce64f62" title="Imaginary part." alt="" coords="261,5,419,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="214,29,248,25,248,31,214,35"/>
+<area shape="rect" id="Node000003" href="$group__ringZ9chiTypeConversions.html#gaa780d3ef4dd1f0c3cf292a305026ed68" title="Real part." alt="" coords="265,55,415,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="214,52,252,56,252,61,214,57"/>
+</map>

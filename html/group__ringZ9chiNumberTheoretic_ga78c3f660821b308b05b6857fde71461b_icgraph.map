@@ -1,0 +1,7 @@
+<map id="ringZ9chi::complexConj" name="ringZ9chi::complexConj">
+<area shape="rect" id="Node000001" title="Computes complex conjugate by returning GaloisAut(&#45;1)." alt="" coords="188,31,364,56"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9chiTests.html#gad38edb4f19be4cfadcf89e6a25e6796e" title="Tests whether ring element is imaginary by seeing if ring element equals the negative of its complex ..." alt="" coords="5,5,140,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,33,140,29,141,24,175,28"/>
+<area shape="rect" id="Node000003" href="$group__ringZ9chiTests.html#gaff2c4f87bfb585610e4529ee72379dec" title="Tests whether ring element is real by seeing if ring element equals its complex conjugate." alt="" coords="7,55,138,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="175,58,139,62,138,57,174,53"/>
+</map>

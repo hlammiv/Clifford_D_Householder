@@ -1,0 +1,9 @@
+<map id="ringZ9chi::isReal" name="ringZ9chi::isReal">
+<area shape="rect" id="Node000001" title="Tests whether ring element is real by seeing if ring element equals its complex conjugate." alt="" coords="5,31,136,56"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9chiNumberTheoretic.html#ga78c3f660821b308b05b6857fde71461b" title="Computes complex conjugate by returning GaloisAut(&#45;1)." alt="" coords="184,5,360,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,32,170,28,171,33,137,38"/>
+<area shape="rect" id="Node000004" href="$group__ringZ9chiTests.html#ga8e7306213cd3f59f753eb2c078d00dd5" title="Tests whether ring element is zero by seeing if numerator is zero. See ringZ9::isZero for specific de..." alt="" coords="206,55,338,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="137,48,193,55,192,61,136,54"/>
+<area shape="rect" id="Node000003" href="$group__ringZ9chiConstructors.html#gaaee2f93093cbd0fb34c4aa1fa055edc7" title="Constructor with no arguments returns zero element." alt="" coords="408,5,560,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="360,15,394,15,394,21,360,21"/>
+</map>

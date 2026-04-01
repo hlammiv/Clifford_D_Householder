@@ -1,0 +1,7 @@
+<map id="sortBySdeChi" name="sortBySdeChi">
+<area shape="rect" id="Node000001" title="Takes a vector of candidates and sorts them into an array by ." alt="" coords="260,31,369,56"/>
+<area shape="rect" id="Node000002" href="$group__ExhaustiveSearch.html#ga4a0209c1c887c8dd569e9b64c265efff" title="Performs ESA, but sorts diagonal and x_3 candidates by &#160;for faster runtime." alt="" coords="47,5,170,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="246,38,170,28,171,23,247,32"/>
+<area shape="rect" id="Node000003" href="$group__DebugTools.html#ga75b36a7e9ee90c7bd184029ab8dcf281" title="Like testDiagonalESA, but performs ESA with new &#160;sorting technique." alt="" coords="5,55,212,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="247,54,213,58,212,53,246,49"/>
+</map>

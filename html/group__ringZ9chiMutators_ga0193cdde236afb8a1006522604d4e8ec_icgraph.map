@@ -1,0 +1,17 @@
+<map id="ringZ9chi::cancel" name="ringZ9chi::cancel">
+<area shape="rect" id="Node000001" title="Simplifies ring element by cancelling largest power of three shared between numerator and denominator..." alt="" coords="421,128,555,153"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9chiMutators.html#ga6d373de7feffc44effae69820fe414df" title="Called by certain constructors and after certain operations to simplify ring element into a canonical..." alt="" coords="212,29,368,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="458,122,418,94,372,68,342,57,344,52,374,64,421,90,461,117"/>
+<area shape="rect" id="Node000005" href="$group__ringZ9chiBasicOperations.html#ga90a0fb3a398997b5bd6f9b1641ea25cc" title="Ring addition." alt="" coords="211,79,369,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="423,127,341,107,342,101,424,122"/>
+<area shape="rect" id="Node000006" href="$group__ringZ9chiBasicOperations.html#ga7f6b6d077e82271ebdb45fecb0e48f6c" title="Ring subtraction." alt="" coords="215,128,365,153"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="407,143,366,143,366,138,407,138"/>
+<area shape="rect" id="Node000007" href="$group__ringZ9chiConstructors.html#ga2e90f7e431461ad09a5a9b033420375d" title="Defines element explicitly by using a ringZ9 for the numerator and copies &#39;denom_exp&#39; to exp." alt="" coords="214,177,366,203"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="424,159,342,180,341,175,423,154"/>
+<area shape="rect" id="Node000008" href="$group__ringZ9chiMutators.html#ga7487ee84bd6abf5f80531c24212de213" title="Multiplies each term of the numerator by &#39;scalar&#39; and calls ringZ9chi::reduce." alt="" coords="207,227,373,252"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="461,164,421,191,374,216,341,229,339,224,372,212,418,186,458,159"/>
+<area shape="rect" id="Node000003" href="$group__ringZ9chiBasicOperations.html#gad3ec9a90e18a352b6319ffbd3d6adf6d" title="Multiplies ring elements and then passes product through ringZ9chi::reduce." alt="" coords="5,5,159,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="198,34,158,29,159,24,198,29"/>
+<area shape="rect" id="Node000004" href="$group__ringZ9chiConstructors.html#gadc8b9228814c7f950c29167ea57a4c42" title="Defines element explicitly by copying &#39;arr&#39; to ringZ9chi::element and &#39;denom_exp&#39; to exp." alt="" coords="6,55,158,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="199,56,158,61,158,55,198,51"/>
+</map>

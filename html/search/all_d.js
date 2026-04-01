@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['real_5fpart_0',['real_part',['../group__ringZ9TypeConversions.html#gabd03193c0d18220365c5fe8e93e82167',1,'ringZ9::real_part()'],['../group__ringZ9chiTypeConversions.html#gaa780d3ef4dd1f0c3cf292a305026ed68',1,'ringZ9chi::real_part()']]],
+  ['reduce_1',['reduce',['../group__ringZ9Mutators.html#gae934b2a35b47e2b47df7deb00f937d85',1,'ringZ9::reduce()'],['../group__ringZ9chiMutators.html#ga62bbc57b8c74bc0f2b047ec383bc6e97',1,'ringZ9chi::reduce()']]],
+  ['reflector_20search_20methods_2',['Householder Reflector Search Methods',['../group__HouseholderSearch.html',1,'']]],
+  ['ringz9_3',['ringz9',['../classringZ9.html',1,'ringZ9'],['../group__ringZ9Constructors.html#gac69be3083c20eaac02d85d5da90b6abd',1,'ringZ9::ringZ9()'],['../group__ringZ9Constructors.html#gad944b5ca4f9ae47d1500c1169d2dcc32',1,'ringZ9::ringZ9(int coeff, int term)'],['../group__ringZ9Constructors.html#ga380473ea858a3c7aac681917b152e88a',1,'ringZ9::ringZ9(int n)'],['../group__ringZ9Constructors.html#gad32ee9ceb4cd4c704042f9961b322bd2',1,'ringZ9::ringZ9(int arr[9])']]],
+  ['ringz9_20basic_20operations_4',['ringZ9 Basic Operations',['../group__ringZ9BasicOperations.html',1,'']]],
+  ['ringz9_20constructors_5',['ringZ9 Constructors',['../group__ringZ9Constructors.html',1,'']]],
+  ['ringz9_20equality_6',['ringZ9 Equality',['../group__ringZ9Equality.html',1,'']]],
+  ['ringz9_20info_7',['ringZ9 Info',['../group__ringZ9Info.html',1,'']]],
+  ['ringz9_20mutators_8',['ringZ9 Mutators',['../group__ringZ9Mutators.html',1,'']]],
+  ['ringz9_20number_20theoretic_9',['ringZ9 Number-theoretic',['../group__ringZ9NumberTheoretic.html',1,'']]],
+  ['ringz9_20scalar_20operations_10',['ringZ9 Scalar Operations',['../group__ringZ9ScalarOps.html',1,'']]],
+  ['ringz9_20tests_11',['ringZ9 Tests',['../group__ringZ9Tests.html',1,'']]],
+  ['ringz9_20type_20conversions_12',['ringZ9 Type Conversions',['../group__ringZ9TypeConversions.html',1,'']]],
+  ['ringz9chi_13',['ringz9chi',['../classringZ9chi.html',1,'ringZ9chi'],['../group__ringZ9chiConstructors.html#gaaee2f93093cbd0fb34c4aa1fa055edc7',1,'ringZ9chi::ringZ9chi()'],['../group__ringZ9chiConstructors.html#ga2e90f7e431461ad09a5a9b033420375d',1,'ringZ9chi::ringZ9chi(ringZ9 numer, int denom_exp)'],['../group__ringZ9chiConstructors.html#gadc8b9228814c7f950c29167ea57a4c42',1,'ringZ9chi::ringZ9chi(int arr[9], int denom_exp)']]],
+  ['ringz9chi_20basic_20operations_14',['ringZ9chi Basic Operations',['../group__ringZ9chiBasicOperations.html',1,'']]],
+  ['ringz9chi_20constructors_15',['ringZ9chi Constructors',['../group__ringZ9chiConstructors.html',1,'']]],
+  ['ringz9chi_20equality_16',['ringZ9chi Equality',['../group__ringZ9chiEquality.html',1,'']]],
+  ['ringz9chi_20info_17',['ringZ9chi Info',['../group__ringZ9chiInfo.html',1,'']]],
+  ['ringz9chi_20mutators_18',['ringZ9chi Mutators',['../group__ringZ9chiMutators.html',1,'']]],
+  ['ringz9chi_20number_20theoretic_19',['ringZ9chi Number-theoretic',['../group__ringZ9chiNumberTheoretic.html',1,'']]],
+  ['ringz9chi_20tests_20',['ringZ9chi Tests',['../group__ringZ9chiTests.html',1,'']]],
+  ['ringz9chi_20type_20conversions_21',['ringZ9chi Type Conversions',['../group__ringZ9chiTypeConversions.html',1,'']]]
+];

@@ -1,0 +1,130 @@
+\doxysection{ring\+Z9chi Tests}
+\hypertarget{group__ringZ9chiTests}{}\label{group__ringZ9chiTests}\index{ringZ9chi Tests@{ringZ9chi Tests}}
+
+
+Member functions determining whether ring element satisfies nice properties.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{group__ringZ9chiTests_ga8e7306213cd3f59f753eb2c078d00dd5}{ring\+Z9chi\+::is\+Zero}} () const
+\begin{DoxyCompactList}\small\item\em Tests whether ring element is zero by seeing if numerator is zero. See \doxylink{group__ringZ9Tests_ga149e3e75af677ac2cf2aa6be2ed67bb0}{ring\+Z9\+::is\+Zero} for specific details. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__ringZ9chiTests_gaff2c4f87bfb585610e4529ee72379dec}{ring\+Z9chi\+::is\+Real}} () const
+\begin{DoxyCompactList}\small\item\em Tests whether ring element is real by seeing if ring element equals its complex conjugate. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__ringZ9chiTests_gad38edb4f19be4cfadcf89e6a25e6796e}{ring\+Z9chi\+::is\+Imag}} () const
+\begin{DoxyCompactList}\small\item\em Tests whether ring element is imaginary by seeing if ring element equals the negative of its complex conjugate. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__ringZ9chiTests_gaf286999d7cae80745be0ad430497fb62}{ring\+Z9chi\+::is\+Rational}} () const
+\begin{DoxyCompactList}\small\item\em A ring element will be rational iff the first entry of \doxylink{classringZ9chi_a5710f33e51529092de99c168c8482d6b}{ring\+Z9chi\+::element} is the only nonzero entry. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__ringZ9chiTests_ga1c93d3881388263d072257a0b0148db9}{ring\+Z9chi\+::is\+Int}} () const
+\begin{DoxyCompactList}\small\item\em Tests if ring element is integer by seeing whether \doxylink{group__ringZ9chiTests_gaf286999d7cae80745be0ad430497fb62}{is\+Rational} is true and \doxylink{classringZ9chi_a8f87171738b56f720cebb1af800fca49}{exp} = 0. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__ringZ9chiTests_ga3fa72abcc7aeba4f2fc070845945ba10}{ring\+Z9chi\+::is\+Cyc\+Int}} () const
+\begin{DoxyCompactList}\small\item\em Tests if ring element lies in $ \mathbb{Z}[\zeta_9] $ by seeing if \doxylink{classringZ9chi_a8f87171738b56f720cebb1af800fca49}{exp} = 0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Member functions determining whether ring element satisfies nice properties. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{group__ringZ9chiTests_ga3fa72abcc7aeba4f2fc070845945ba10}\label{group__ringZ9chiTests_ga3fa72abcc7aeba4f2fc070845945ba10} 
+\index{ringZ9chi Tests@{ringZ9chi Tests}!isCycInt@{isCycInt}}
+\index{isCycInt@{isCycInt}!ringZ9chi Tests@{ringZ9chi Tests}}
+\doxysubsubsection{\texorpdfstring{isCycInt()}{isCycInt()}}
+{\footnotesize\ttfamily bool ring\+Z9chi\+::is\+Cyc\+Int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Tests if ring element lies in $ \mathbb{Z}[\zeta_9] $ by seeing if \doxylink{classringZ9chi_a8f87171738b56f720cebb1af800fca49}{exp} = 0. 
+
+\Hypertarget{group__ringZ9chiTests_gad38edb4f19be4cfadcf89e6a25e6796e}\label{group__ringZ9chiTests_gad38edb4f19be4cfadcf89e6a25e6796e} 
+\index{ringZ9chi Tests@{ringZ9chi Tests}!isImag@{isImag}}
+\index{isImag@{isImag}!ringZ9chi Tests@{ringZ9chi Tests}}
+\doxysubsubsection{\texorpdfstring{isImag()}{isImag()}}
+{\footnotesize\ttfamily bool ring\+Z9chi\+::is\+Imag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Tests whether ring element is imaginary by seeing if ring element equals the negative of its complex conjugate. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__ringZ9chiTests_gad38edb4f19be4cfadcf89e6a25e6796e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group__ringZ9chiTests_ga1c93d3881388263d072257a0b0148db9}\label{group__ringZ9chiTests_ga1c93d3881388263d072257a0b0148db9} 
+\index{ringZ9chi Tests@{ringZ9chi Tests}!isInt@{isInt}}
+\index{isInt@{isInt}!ringZ9chi Tests@{ringZ9chi Tests}}
+\doxysubsubsection{\texorpdfstring{isInt()}{isInt()}}
+{\footnotesize\ttfamily bool ring\+Z9chi\+::is\+Int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Tests if ring element is integer by seeing whether \doxylink{group__ringZ9chiTests_gaf286999d7cae80745be0ad430497fb62}{is\+Rational} is true and \doxylink{classringZ9chi_a8f87171738b56f720cebb1af800fca49}{exp} = 0. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{group__ringZ9chiTests_ga1c93d3881388263d072257a0b0148db9_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group__ringZ9chiTests_gaf286999d7cae80745be0ad430497fb62}\label{group__ringZ9chiTests_gaf286999d7cae80745be0ad430497fb62} 
+\index{ringZ9chi Tests@{ringZ9chi Tests}!isRational@{isRational}}
+\index{isRational@{isRational}!ringZ9chi Tests@{ringZ9chi Tests}}
+\doxysubsubsection{\texorpdfstring{isRational()}{isRational()}}
+{\footnotesize\ttfamily bool ring\+Z9chi\+::is\+Rational (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+A ring element will be rational iff the first entry of \doxylink{classringZ9chi_a5710f33e51529092de99c168c8482d6b}{ring\+Z9chi\+::element} is the only nonzero entry. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{group__ringZ9chiTests_gaf286999d7cae80745be0ad430497fb62_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group__ringZ9chiTests_gaff2c4f87bfb585610e4529ee72379dec}\label{group__ringZ9chiTests_gaff2c4f87bfb585610e4529ee72379dec} 
+\index{ringZ9chi Tests@{ringZ9chi Tests}!isReal@{isReal}}
+\index{isReal@{isReal}!ringZ9chi Tests@{ringZ9chi Tests}}
+\doxysubsubsection{\texorpdfstring{isReal()}{isReal()}}
+{\footnotesize\ttfamily bool ring\+Z9chi\+::is\+Real (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Tests whether ring element is real by seeing if ring element equals its complex conjugate. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__ringZ9chiTests_gaff2c4f87bfb585610e4529ee72379dec_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group__ringZ9chiTests_ga8e7306213cd3f59f753eb2c078d00dd5}\label{group__ringZ9chiTests_ga8e7306213cd3f59f753eb2c078d00dd5} 
+\index{ringZ9chi Tests@{ringZ9chi Tests}!isZero@{isZero}}
+\index{isZero@{isZero}!ringZ9chi Tests@{ringZ9chi Tests}}
+\doxysubsubsection{\texorpdfstring{isZero()}{isZero()}}
+{\footnotesize\ttfamily bool ring\+Z9chi\+::is\+Zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Tests whether ring element is zero by seeing if numerator is zero. See \doxylink{group__ringZ9Tests_ga149e3e75af677ac2cf2aa6be2ed67bb0}{ring\+Z9\+::is\+Zero} for specific details. 
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__ringZ9chiTests_ga8e7306213cd3f59f753eb2c078d00dd5_icgraph}
+\end{center}
+\end{figure}

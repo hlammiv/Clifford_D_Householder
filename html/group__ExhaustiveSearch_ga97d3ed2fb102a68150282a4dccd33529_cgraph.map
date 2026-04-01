@@ -1,0 +1,20 @@
+<map id="solveSystem" name="solveSystem">
+<area shape="rect" id="Node000001" title="If possible, this solves equations of the form &#160;for &#160;in the ring ." alt="" coords="5,79,112,104"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9NumberTheoretic.html#ga32549fb5fa209c7d8f676ce3ed7174dc" title="Computes the product of all Galois conjugates (which is guaranteed to be an integer)." alt="" coords="183,29,319,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,76,186,56,188,61,109,81"/>
+<area shape="rect" id="Node000008" href="$group__ringZ9Tests.html#ga37d00427f5ca61fbf4981fbc5030452b" title="Tests whether dividing the ring element by &#39;k&#39; still lies in the ring." alt="" coords="163,79,338,104"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="112,89,150,89,150,94,112,94"/>
+<area shape="rect" id="Node000009" href="$group__ringZ9NumberTheoretic.html#gacbd50dbdac57863b87397c4f3255fc55" title="Computes the product of all Galois conjugates except for the trivial Galois conjugate,..." alt="" coords="160,128,341,153"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="109,101,188,122,186,127,108,107"/>
+<area shape="rect" id="Node000003" href="$group__ringZ9NumberTheoretic.html#ga7473bb216dd367a71470702034989b64" title="Computes Galois conjugate of given instance." alt="" coords="389,128,524,153"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="311,52,342,64,381,86,428,118,425,122,378,91,340,68,309,57"/>
+<area shape="rect" id="Node000005" href="$group__ringZ9Info.html#ga5f3939ba80960bab2900beeac76ac1ca" title="Gets integer coefficient on the &#160;term." alt="" coords="394,55,519,80"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="319,48,381,55,380,61,319,53"/>
+<area shape="rect" id="Node000006" href="$group__ringZ9Mutators.html#gae934b2a35b47e2b47df7deb00f937d85" title="Rewrites terms of element into a canonical basis." alt="" coords="399,5,515,31"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="319,31,384,24,385,29,319,37"/>
+<area shape="rect" id="Node000004" href="$group__ringZ9Constructors.html#gac69be3083c20eaac02d85d5da90b6abd" title="Sets ring element equal to the zero element." alt="" coords="572,128,687,153"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="524,138,558,138,558,143,524,143"/>
+<area shape="rect" id="Node000007" href="$group__ringZ9Tests.html#ga149e3e75af677ac2cf2aa6be2ed67bb0" title="Determines whether a ring element is zero." alt="" coords="573,5,686,31"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="515,15,559,15,559,21,515,21"/>
+<area shape="poly" id="edge9_Node000009_Node000003" title=" " alt="" coords="342,138,376,138,376,143,342,143"/>
+</map>

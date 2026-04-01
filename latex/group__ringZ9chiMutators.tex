@@ -1,0 +1,116 @@
+\doxysection{ring\+Z9chi Mutators}
+\hypertarget{group__ringZ9chiMutators}{}\label{group__ringZ9chiMutators}\index{ringZ9chi Mutators@{ringZ9chi Mutators}}
+
+
+Member functions which have authority to modify the ring element itself.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__ringZ9chiMutators_ga6d373de7feffc44effae69820fe414df}{ring\+Z9chi\+::normalize}} ()
+\begin{DoxyCompactList}\small\item\em Called by certain constructors and after certain operations to simplify ring element into a canonical form. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__ringZ9chiMutators_ga62bbc57b8c74bc0f2b047ec383bc6e97}{ring\+Z9chi\+::reduce}} ()
+\begin{DoxyCompactList}\small\item\em Writes numerator in terms of the canonical $ \mathbb{Z} $-\/basis for $ \mathbb{Z}[\zeta_9] $. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__ringZ9chiMutators_ga0193cdde236afb8a1006522604d4e8ec}{ring\+Z9chi\+::cancel}} ()
+\begin{DoxyCompactList}\small\item\em Simplifies ring element by cancelling largest power of three shared between numerator and denominator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__ringZ9chiMutators_ga7487ee84bd6abf5f80531c24212de213}{ring\+Z9chi\+::scalar\+\_\+mult}} (int scalar)
+\begin{DoxyCompactList}\small\item\em Multiplies each term of the numerator by \textquotesingle{}scalar\textquotesingle{} and calls \doxylink{group__ringZ9chiMutators_ga62bbc57b8c74bc0f2b047ec383bc6e97}{ring\+Z9chi\+::reduce}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Member functions which have authority to modify the ring element itself. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{group__ringZ9chiMutators_ga0193cdde236afb8a1006522604d4e8ec}\label{group__ringZ9chiMutators_ga0193cdde236afb8a1006522604d4e8ec} 
+\index{ringZ9chi Mutators@{ringZ9chi Mutators}!cancel@{cancel}}
+\index{cancel@{cancel}!ringZ9chi Mutators@{ringZ9chi Mutators}}
+\doxysubsubsection{\texorpdfstring{cancel()}{cancel()}}
+{\footnotesize\ttfamily void ring\+Z9chi\+::cancel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Simplifies ring element by cancelling largest power of three shared between numerator and denominator. 
+
+An element of $ \mathbb{Z} [\zeta_9] $ in reduced form is divisible by 3 in said ring iff each coefficient is divisible by 3. So, the algorithm divides each coefficient by three and decrements the exponent in the denominator untile either the exponent is zero or there is at least one term in the numerator whose coefficient is indivisibly by 3.
+
+\begin{DoxyWarning}{Warning}
+When a new instance of this class is defined, this function must be called AFTER \doxylink{group__ringZ9chiMutators_ga62bbc57b8c74bc0f2b047ec383bc6e97}{ring\+Z9chi\+::reduce} is called. Otherwise, an unreduced numerator may still be divisible by 3 even if there are terms which are indivisible by 3. 
+\end{DoxyWarning}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__ringZ9chiMutators_ga0193cdde236afb8a1006522604d4e8ec_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group__ringZ9chiMutators_ga6d373de7feffc44effae69820fe414df}\label{group__ringZ9chiMutators_ga6d373de7feffc44effae69820fe414df} 
+\index{ringZ9chi Mutators@{ringZ9chi Mutators}!normalize@{normalize}}
+\index{normalize@{normalize}!ringZ9chi Mutators@{ringZ9chi Mutators}}
+\doxysubsubsection{\texorpdfstring{normalize()}{normalize()}}
+{\footnotesize\ttfamily void ring\+Z9chi\+::normalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called by certain constructors and after certain operations to simplify ring element into a canonical form. 
+
+First tests whether ring element is zero element. If not, then \doxylink{group__ringZ9chiMutators_ga62bbc57b8c74bc0f2b047ec383bc6e97}{ring\+Z9chi\+::reduce} and \doxylink{group__ringZ9chiMutators_ga0193cdde236afb8a1006522604d4e8ec}{cancel} are called. This function puts the ring element in a canonical form so that testing equality between two normalized elements amounts to checking whether \doxylink{classringZ9chi_a5710f33e51529092de99c168c8482d6b}{ring\+Z9chi\+::element} and \doxylink{classringZ9chi_a8f87171738b56f720cebb1af800fca49}{exp} are identical for both.
+
+\begin{DoxyWarning}{Warning}
+Most member functions for this class are designed assuming that any given ring element is normalized. Any constructor or member function which has a chance of producing a non-\/normalized ring element must call this function (or \doxylink{group__ringZ9chiMutators_ga62bbc57b8c74bc0f2b047ec383bc6e97}{ring\+Z9chi\+::reduce} or \doxylink{group__ringZ9chiMutators_ga0193cdde236afb8a1006522604d4e8ec}{cancel} depnding on context) before terminating. 
+\end{DoxyWarning}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{group__ringZ9chiMutators_ga6d373de7feffc44effae69820fe414df_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{group__ringZ9chiMutators_ga6d373de7feffc44effae69820fe414df_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group__ringZ9chiMutators_ga62bbc57b8c74bc0f2b047ec383bc6e97}\label{group__ringZ9chiMutators_ga62bbc57b8c74bc0f2b047ec383bc6e97} 
+\index{ringZ9chi Mutators@{ringZ9chi Mutators}!reduce@{reduce}}
+\index{reduce@{reduce}!ringZ9chi Mutators@{ringZ9chi Mutators}}
+\doxysubsubsection{\texorpdfstring{reduce()}{reduce()}}
+{\footnotesize\ttfamily void ring\+Z9chi\+::reduce (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Writes numerator in terms of the canonical $ \mathbb{Z} $-\/basis for $ \mathbb{Z}[\zeta_9] $. 
+
+See \doxylink{group__ringZ9Mutators_gae934b2a35b47e2b47df7deb00f937d85}{ring\+Z9\+::reduce} for specific details. Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__ringZ9chiMutators_ga62bbc57b8c74bc0f2b047ec383bc6e97_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group__ringZ9chiMutators_ga7487ee84bd6abf5f80531c24212de213}\label{group__ringZ9chiMutators_ga7487ee84bd6abf5f80531c24212de213} 
+\index{ringZ9chi Mutators@{ringZ9chi Mutators}!scalar\_mult@{scalar\_mult}}
+\index{scalar\_mult@{scalar\_mult}!ringZ9chi Mutators@{ringZ9chi Mutators}}
+\doxysubsubsection{\texorpdfstring{scalar\_mult()}{scalar\_mult()}}
+{\footnotesize\ttfamily void ring\+Z9chi\+::scalar\+\_\+mult (\begin{DoxyParamCaption}\item[{int}]{scalar }\end{DoxyParamCaption})}
+
+
+
+Multiplies each term of the numerator by \textquotesingle{}scalar\textquotesingle{} and calls \doxylink{group__ringZ9chiMutators_ga62bbc57b8c74bc0f2b047ec383bc6e97}{ring\+Z9chi\+::reduce}. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{group__ringZ9chiMutators_ga7487ee84bd6abf5f80531c24212de213_cgraph}
+\end{center}
+\end{figure}

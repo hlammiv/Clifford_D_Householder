@@ -1,0 +1,9 @@
+<map id="ringZ9::fieldTrace" name="ringZ9::fieldTrace">
+<area shape="rect" id="Node000001" title="Computes the sum of all Galois conjugates (which is guaranteed to be an integer)" alt="" coords="5,31,140,56"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9NumberTheoretic.html#ga7473bb216dd367a71470702034989b64" title="Computes Galois conjugate of given instance." alt="" coords="188,5,323,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,31,174,27,175,32,140,37"/>
+<area shape="rect" id="Node000004" href="$group__ringZ9Info.html#ga5f3939ba80960bab2900beeac76ac1ca" title="Gets integer coefficient on the &#160;term." alt="" coords="193,55,318,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="140,49,179,55,179,60,140,55"/>
+<area shape="rect" id="Node000003" href="$group__ringZ9Constructors.html#gac69be3083c20eaac02d85d5da90b6abd" title="Sets ring element equal to the zero element." alt="" coords="371,5,485,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="323,15,357,15,357,21,323,21"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="ringZ9chi::isImag" name="ringZ9chi::isImag">
+<area shape="rect" id="Node000001" title="Tests whether ring element is imaginary by seeing if ring element equals the negative of its complex ..." alt="" coords="5,31,140,56"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9chiNumberTheoretic.html#ga78c3f660821b308b05b6857fde71461b" title="Computes complex conjugate by returning GaloisAut(&#45;1)." alt="" coords="188,5,364,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,32,174,28,175,33,141,38"/>
+<area shape="rect" id="Node000004" href="$group__ringZ9chiTests.html#ga8e7306213cd3f59f753eb2c078d00dd5" title="Tests whether ring element is zero by seeing if numerator is zero. See ringZ9::isZero for specific de..." alt="" coords="210,55,342,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="141,49,197,55,196,61,140,54"/>
+<area shape="rect" id="Node000003" href="$group__ringZ9chiConstructors.html#gaaee2f93093cbd0fb34c4aa1fa055edc7" title="Constructor with no arguments returns zero element." alt="" coords="412,5,564,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="364,15,398,15,398,21,364,21"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="ringZ9::sdeChi" name="ringZ9::sdeChi">
+<area shape="rect" id="Node000001" title="If &#160;of instance is less than 6, this computes it using Theorem 3.6 of the Kalra paper." alt="" coords="5,31,121,56"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9NumberTheoretic.html#ga90e0f7652b46a17e218094f1c639f91a" title="Viewing the ring element as a polynomial in the variable , this function takes the derivative." alt="" coords="169,5,352,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,33,155,29,156,34,122,39"/>
+<area shape="rect" id="Node000004" href="$group__ringZ9NumberTheoretic.html#gadf42b1a70cc5a8d0452631461023c56d" title="Sums all coefficients." alt="" coords="181,55,341,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="122,48,167,53,167,59,121,53"/>
+<area shape="rect" id="Node000003" href="$group__ringZ9Constructors.html#gac69be3083c20eaac02d85d5da90b6abd" title="Sets ring element equal to the zero element." alt="" coords="400,5,515,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="352,15,386,15,386,21,352,21"/>
+</map>

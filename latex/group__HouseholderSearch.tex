@@ -1,0 +1,134 @@
+\doxysection{Householder Reflector Search Methods}
+\hypertarget{group__HouseholderSearch}{}\label{group__HouseholderSearch}\index{Householder Reflector Search Methods@{Householder Reflector Search Methods}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+array$<$ \mbox{\hyperlink{classringZ9chi}{ring\+Z9chi}}, 3 $>$ \mbox{\hyperlink{group__HouseholderSearch_ga09bff51151944a978defef8fea7b7fe0}{HRSA}} (double theta, double epsilon, int max\+\_\+f, double c)
+\begin{DoxyCompactList}\small\item\em Performs Householder reflector search to approximate $ R_{(0,1)}^Z(\theta) $ up to $ \epsilon $ by finding a vector $ u \in \mathbb{Z}[\zeta_9, \frac{1}{3}]^3 $ close to $ [e^{i\theta/2}, -1, 0] $. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__HouseholderSearch_gab12859d0a8456f037d608be05451de61}{entry\+Enumeration}} (std\+::vector$<$ \mbox{\hyperlink{classringZ9}{ring\+Z9}} $>$ \&x1\+\_\+cands, std\+::vector$<$ \mbox{\hyperlink{classringZ9}{ring\+Z9}} $>$ \&x2\+\_\+cands, std\+::vector$<$ \mbox{\hyperlink{classringZ9}{ring\+Z9}} $>$ \&lookup, double theta, double epsilon, int f, double c)
+\begin{DoxyCompactList}\small\item\em For a given f value, this function fills the std\+::vectors x1\+\_\+cands, x2\+\_\+cands, and lookup with all potential candidates for the entries $ x_1, x_2, $ and $ x_3 $ respectively, subject to the $ epsilon $-\/condition. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__HouseholderSearch_ga89a86757a0b33ae3f8da701a34a9c094}{eps\+Test}} (\mbox{\hyperlink{classringZ9chi}{ring\+Z9chi}} u\+\_\+1, \mbox{\hyperlink{classringZ9chi}{ring\+Z9chi}} u\+\_\+2, \mbox{\hyperlink{classringZ9chi}{ring\+Z9chi}} u\+\_\+3, int f, std\+::complex$<$ double $>$ angle\+\_\+dir, double epsilon, double c)
+\begin{DoxyCompactList}\small\item\em Function called once 3-\/vector of norm $ \sqrt{2} $ is found. Tests if vector is within $ \epsilon/(2c\sqrt{2}) $ of target vector $ [e^{i\theta/2}, -1, 0] $ in the Frobenius norm. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__HouseholderSearch_gab224ce08145317d1cbdbd70f83e93e6e}{three\+\_\+power}} (int n)
+\begin{DoxyCompactList}\small\item\em Computes 3\texorpdfstring{$^\wedge$}{\string^}n using int arithmetic. Alternative to using std\+::pow which returns doubles. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{group__HouseholderSearch_gab12859d0a8456f037d608be05451de61}\label{group__HouseholderSearch_gab12859d0a8456f037d608be05451de61} 
+\index{Householder Reflector Search Methods@{Householder Reflector Search Methods}!entryEnumeration@{entryEnumeration}}
+\index{entryEnumeration@{entryEnumeration}!Householder Reflector Search Methods@{Householder Reflector Search Methods}}
+\doxysubsubsection{\texorpdfstring{entryEnumeration()}{entryEnumeration()}}
+{\footnotesize\ttfamily void entry\+Enumeration (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classringZ9}{ring\+Z9}} $>$ \&}]{x1\+\_\+cands,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classringZ9}{ring\+Z9}} $>$ \&}]{x2\+\_\+cands,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classringZ9}{ring\+Z9}} $>$ \&}]{lookup,  }\item[{double}]{theta,  }\item[{double}]{epsilon,  }\item[{int}]{f,  }\item[{double}]{c }\end{DoxyParamCaption})}
+
+
+
+For a given f value, this function fills the std\+::vectors x1\+\_\+cands, x2\+\_\+cands, and lookup with all potential candidates for the entries $ x_1, x_2, $ and $ x_3 $ respectively, subject to the $ epsilon $-\/condition. 
+
+Analogously to the results of the Kalra et. al. paper, any choice of $ x_1, x_2, $ and $ x_3 $ must satisfy  \[ 
+q(x_1) + q(x_2) + q(x_3) = 2\cdot 3^{2f}.
+\] Since $ q(x) $ is positive-\/definite on the coefficients (the entries of the array \textquotesingle{}element\textquotesingle{}), we may loop over all possibilities $ x $, which necessarily satisfy $ q(x) \leq 2 \cdot 3^{2f} $.
+
+For each $ x $ looped over, we check whether $ x $ is within $ \epsilon/(2c\sqrt{2}) $ of the three values\+: $ e^{i \theta/2}, -1, 0 $. Accordingly, $ x $ is placed into x1\+\_\+cands, x2\+\_\+cands, and/or x3\+\_\+cands respectively.
+
+After looping through all possibilities, the entries of each of the 3 vectors are sorted by how close they are to their respective target values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1\+\_\+cands} & Vector holding all possible choices of $ x_1 $ for given f. \\
+\hline
+{\em x2\+\_\+cands} & Vector holding all possible choices of $ x_2 $ for given f. \\
+\hline
+{\em lookup} & Vector holding all possible choices of $ x_3 $ for given f. Will be used in \doxylink{group__HouseholderSearch_ga09bff51151944a978defef8fea7b7fe0}{HRSA} to find solutions to the equation $ |x_3|^2 = 2\cdot 3^{2f} - |x_1|^2 - |x_2|^2. $ \\
+\hline
+{\em theta} & The angle of the desired two-\/level Givens rotator $ R_{(0,1)}^Z(\theta) $. \\
+\hline
+{\em epsilon} & Desired level of precision of unitary to $ R_{(0,1)}^Z(\theta) $. \\
+\hline
+{\em f} & Power of three in denominator. \\
+\hline
+{\em c} & Correction factor from original paper. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__HouseholderSearch_ga89a86757a0b33ae3f8da701a34a9c094}\label{group__HouseholderSearch_ga89a86757a0b33ae3f8da701a34a9c094} 
+\index{Householder Reflector Search Methods@{Householder Reflector Search Methods}!epsTest@{epsTest}}
+\index{epsTest@{epsTest}!Householder Reflector Search Methods@{Householder Reflector Search Methods}}
+\doxysubsubsection{\texorpdfstring{epsTest()}{epsTest()}}
+{\footnotesize\ttfamily bool eps\+Test (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classringZ9chi}{ring\+Z9chi}}}]{u\+\_\+1,  }\item[{\mbox{\hyperlink{classringZ9chi}{ring\+Z9chi}}}]{u\+\_\+2,  }\item[{\mbox{\hyperlink{classringZ9chi}{ring\+Z9chi}}}]{u\+\_\+3,  }\item[{int}]{f,  }\item[{std\+::complex$<$ double $>$}]{angle\+\_\+dir,  }\item[{double}]{epsilon,  }\item[{double}]{c }\end{DoxyParamCaption})}
+
+
+
+Function called once 3-\/vector of norm $ \sqrt{2} $ is found. Tests if vector is within $ \epsilon/(2c\sqrt{2}) $ of target vector $ [e^{i\theta/2}, -1, 0] $ in the Frobenius norm. 
+
+This only tests the $ epsilon $-\/condition between the 3-\/vectors and NOT the unitaries. Might want to code that in soon.
+
+
+\begin{DoxyParams}{Parameters}
+{\em u\+\_\+1} & First entry of approximation vector u. \\
+\hline
+{\em u\+\_\+2} & Second entry of approximation vector u. \\
+\hline
+{\em u\+\_\+3} & Third entry of approximation vector u. \\
+\hline
+{\em f} & Power of three in denominator. \\
+\hline
+{\em angle\+\_\+dir} & This is $ e^{i \theta/2} $ stored as a complex$<$double$>$. \\
+\hline
+{\em epsilon} & Desired level of precision of unitary to $ R_{(0,1)}^Z(\theta) $. \\
+\hline
+{\em c} & Correction factor from original paper. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__HouseholderSearch_ga09bff51151944a978defef8fea7b7fe0}\label{group__HouseholderSearch_ga09bff51151944a978defef8fea7b7fe0} 
+\index{Householder Reflector Search Methods@{Householder Reflector Search Methods}!HRSA@{HRSA}}
+\index{HRSA@{HRSA}!Householder Reflector Search Methods@{Householder Reflector Search Methods}}
+\doxysubsubsection{\texorpdfstring{HRSA()}{HRSA()}}
+{\footnotesize\ttfamily array$<$ \mbox{\hyperlink{classringZ9chi}{ring\+Z9chi}}, 3 $>$ HRSA (\begin{DoxyParamCaption}\item[{double}]{theta,  }\item[{double}]{epsilon,  }\item[{int}]{max\+\_\+f,  }\item[{double}]{c }\end{DoxyParamCaption})}
+
+
+
+Performs Householder reflector search to approximate $ R_{(0,1)}^Z(\theta) $ up to $ \epsilon $ by finding a vector $ u \in \mathbb{Z}[\zeta_9, \frac{1}{3}]^3 $ close to $ [e^{i\theta/2}, -1, 0] $. 
+
+We are trying to find a vector $ u := 3^{-f}[ x_1, x_2, x_3 ]^T $ with entries in $ \mathbb{Z}[\zeta_9, \frac{1}{3}] $ differing from the vector $ [e^{i\theta/2}, -1, 0] $ in the Frobenius norm by at most $ \epsilon/(2c\sqrt{2}) $. We wish to choose the entries of $ u $ so that $ \| u \|^2 = 2 $. The Householder reflector is then obtained by taking $ H : = I_3 - u^T u $. Once this $ H $ is found, we have that $ X_{(0,1)} H $ differs from the target unitary matrix $ R_{(0,1)}^Z(\theta) $ by $ \epsilon $ in the Frobenius norm.
+
+Following along with the paper by Kalra et. al., we have a positive definite function $ q: \mathbb{Z}[\zeta_9] \to \mathbb{Z} $, where $ x/3^f $ lies in a 3-\/vector of norm $ \sqrt{2} $ only if $ q(x) \leq 2\cdot 3^{2f} $. Since $ q $ is a positive-\/definite function on the coefficients of the coefficients (stored in the array \textquotesingle{}element\textquotesingle{}), we are able to loop over all such $ x $ for a given $ f $. This is done in the function entry\+Enumeration, where all candidates of $ x_i (i=1,2,3) $ are found in one function call. ~\newline
+
+
+Once all candidates are found for each of the three entries, we loop over all possible combinations of $ x_1 $ and $ x_2 $. With a given choice of the first two entries, the third entry must satisfy  \[
+|x_3|^2 = 2\cdot 3^{2f} - |x_1|^2 - |x_2|^2. 
+\] Solving equations of the form $ |x|^2 = a $ for $ x $ appears to be difficult or this ring and seems to require us to solve a system of 6 quadratic forms in 18 variables. I do not believe that there is an efficient way to do this. This is why we collect a list of $ x_3 $ candidates in the std\+::vector \textquotesingle{}lookup.\textquotesingle{} For each element of this std\+::vector we test whether the given $ x_3 $ satisfies the above equation.
+
+If a valid $ x_3 $ is found that completes the vector, the $ epsilon $-\/condition is tested. If passed, the three entries are passed as a std\+::array. Otherwise, the next $ x_3 $ is tested. If all possible combinations of $ x_1, x_2, $ and $ x_3 $ are exhausted, the value of f is incremented, and we start again.
+
+
+\begin{DoxyParams}{Parameters}
+{\em theta} & The angle of the desired two-\/level Givens rotator $ R_{(0,1)}^Z(\theta) $. \\
+\hline
+{\em epsilon} & Desired level of precision of unitary to $ R_{(0,1)}^Z(\theta) $. \\
+\hline
+{\em max\+\_\+f} & Largest value of f to be tested. Prevents program from running for an arbitrarily long time. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A std\+::array \textquotesingle{}u\textquotesingle{} of 3 elements in $ \mathbb{Z}[\zeta_9, \frac{1}{3}] $, where $ X_{(0,1)}(I_3 - u^T u) $ approximates $ R_{(0,1)}^Z(\theta) $ within $ \epsilon $. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__HouseholderSearch_ga09bff51151944a978defef8fea7b7fe0_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group__HouseholderSearch_gab224ce08145317d1cbdbd70f83e93e6e}\label{group__HouseholderSearch_gab224ce08145317d1cbdbd70f83e93e6e} 
+\index{Householder Reflector Search Methods@{Householder Reflector Search Methods}!three\_power@{three\_power}}
+\index{three\_power@{three\_power}!Householder Reflector Search Methods@{Householder Reflector Search Methods}}
+\doxysubsubsection{\texorpdfstring{three\_power()}{three\_power()}}
+{\footnotesize\ttfamily int three\+\_\+power (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Computes 3\texorpdfstring{$^\wedge$}{\string^}n using int arithmetic. Alternative to using std\+::pow which returns doubles. 
+

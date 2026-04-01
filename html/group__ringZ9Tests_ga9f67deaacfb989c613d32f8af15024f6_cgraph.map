@@ -1,0 +1,9 @@
+<map id="ringZ9::isReal" name="ringZ9::isReal">
+<area shape="rect" id="Node000001" title="Checks whether ring element is real by seeing if ring is equal to ringZ9::complexConj." alt="" coords="5,31,117,56"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9NumberTheoretic.html#ga8d18b374f06057c7e6ed4ff875f52085" title="Computes complex conjugate by calling GaloisAut(&#45;1)" alt="" coords="165,5,323,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="117,33,151,28,152,33,118,38"/>
+<area shape="rect" id="Node000004" href="$group__ringZ9Tests.html#ga149e3e75af677ac2cf2aa6be2ed67bb0" title="Determines whether a ring element is zero." alt="" coords="187,55,301,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="118,48,173,55,173,61,117,53"/>
+<area shape="rect" id="Node000003" href="$group__ringZ9Constructors.html#gac69be3083c20eaac02d85d5da90b6abd" title="Sets ring element equal to the zero element." alt="" coords="371,5,485,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="323,15,357,15,357,21,323,21"/>
+</map>

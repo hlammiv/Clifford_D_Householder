@@ -1,0 +1,19 @@
+<map id="ringZ9chi::isZero" name="ringZ9chi::isZero">
+<area shape="rect" id="Node000001" title="Tests whether ring element is zero by seeing if numerator is zero. See ringZ9::isZero for specific de..." alt="" coords="423,129,555,155"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9chiTests.html#gad38edb4f19be4cfadcf89e6a25e6796e" title="Tests whether ring element is imaginary by seeing if ring element equals the negative of its complex ..." alt="" coords="223,5,358,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="466,121,425,82,373,44,347,33,350,28,376,40,429,78,469,117"/>
+<area shape="rect" id="Node000003" href="$group__ringZ9chiTests.html#gaff2c4f87bfb585610e4529ee72379dec" title="Tests whether ring element is real by seeing if ring element equals its complex conjugate." alt="" coords="225,55,356,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="448,126,374,94,339,83,341,78,376,89,450,121"/>
+<area shape="rect" id="Node000004" href="$group__ringZ9chiMutators.html#ga6d373de7feffc44effae69820fe414df" title="Called by certain constructors and after certain operations to simplify ring element into a canonical..." alt="" coords="213,104,369,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="408,134,369,129,369,124,409,129"/>
+<area shape="rect" id="Node000007" href="$group__ringZ9chiEquality.html#gaa67dbcf2b6329ac499f000d835bb8f71" title="Ring ineqality." alt="" coords="209,153,372,179"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="409,154,372,159,372,154,409,149"/>
+<area shape="rect" id="Node000008" href="$group__ringZ9chiEquality.html#ga962e88dd1b2e0a07e6f859be86db6ced" title="Ring equality." alt="" coords="207,203,375,228"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="448,163,376,193,337,205,336,200,374,187,446,158"/>
+<area shape="rect" id="Node000009" href="$classringZ9chi.html#a854cfefa1c4a87a2c31f65e2976f620d" title="Prints out element as &#45;linear combination of ninth roots of unity along with the appropriate power of..." alt="" coords="230,252,351,277"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="468,167,428,205,376,242,346,254,344,249,373,237,424,201,464,163"/>
+<area shape="rect" id="Node000005" href="$group__ringZ9chiBasicOperations.html#gad3ec9a90e18a352b6319ffbd3d6adf6d" title="Multiplies ring elements and then passes product through ringZ9chi::reduce." alt="" coords="5,80,159,105"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="199,109,158,104,159,99,200,104"/>
+<area shape="rect" id="Node000006" href="$group__ringZ9chiConstructors.html#gadc8b9228814c7f950c29167ea57a4c42" title="Defines element explicitly by copying &#39;arr&#39; to ringZ9chi::element and &#39;denom_exp&#39; to exp." alt="" coords="6,129,158,155"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="199,130,158,135,158,130,199,125"/>
+</map>

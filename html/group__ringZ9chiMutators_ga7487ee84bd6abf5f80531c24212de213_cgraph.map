@@ -1,0 +1,5 @@
+<map id="ringZ9chi::scalar_mult" name="ringZ9chi::scalar_mult">
+<area shape="rect" id="Node000001" title="Multiplies each term of the numerator by &#39;scalar&#39; and calls ringZ9chi::reduce." alt="" coords="5,5,172,31"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9chiMutators.html#ga0193cdde236afb8a1006522604d4e8ec" title="Simplifies ring element by cancelling largest power of three shared between numerator and denominator..." alt="" coords="220,5,353,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,15,206,15,206,21,172,21"/>
+</map>

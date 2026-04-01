@@ -1,0 +1,5 @@
+<map id="ringZ9::complexConj" name="ringZ9::complexConj">
+<area shape="rect" id="Node000001" title="Computes complex conjugate by calling GaloisAut(&#45;1)" alt="" coords="5,5,163,31"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9Constructors.html#gac69be3083c20eaac02d85d5da90b6abd" title="Sets ring element equal to the zero element." alt="" coords="211,5,325,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,15,197,15,197,21,163,21"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="ringZ9::fieldNorm" name="ringZ9::fieldNorm">
+<area shape="rect" id="Node000001" title="Computes the product of all Galois conjugates (which is guaranteed to be an integer)." alt="" coords="5,55,141,80"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9NumberTheoretic.html#ga7473bb216dd367a71470702034989b64" title="Computes Galois conjugate of given instance." alt="" coords="189,5,324,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,52,195,32,196,37,122,57"/>
+<area shape="rect" id="Node000004" href="$group__ringZ9Info.html#ga5f3939ba80960bab2900beeac76ac1ca" title="Gets integer coefficient on the &#160;term." alt="" coords="194,55,319,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="141,65,180,65,180,70,141,70"/>
+<area shape="rect" id="Node000005" href="$group__ringZ9Mutators.html#gae934b2a35b47e2b47df7deb00f937d85" title="Rewrites terms of element into a canonical basis." alt="" coords="199,104,315,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="122,77,196,98,195,103,120,83"/>
+<area shape="rect" id="Node000003" href="$group__ringZ9Constructors.html#gac69be3083c20eaac02d85d5da90b6abd" title="Sets ring element equal to the zero element." alt="" coords="372,5,487,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="324,15,358,15,358,21,324,21"/>
+<area shape="rect" id="Node000006" href="$group__ringZ9Tests.html#ga149e3e75af677ac2cf2aa6be2ed67bb0" title="Determines whether a ring element is zero." alt="" coords="373,104,486,129"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="315,114,359,114,359,119,315,119"/>
+</map>

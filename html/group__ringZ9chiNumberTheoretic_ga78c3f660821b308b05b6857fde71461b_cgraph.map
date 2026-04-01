@@ -1,0 +1,5 @@
+<map id="ringZ9chi::complexConj" name="ringZ9chi::complexConj">
+<area shape="rect" id="Node000001" title="Computes complex conjugate by returning GaloisAut(&#45;1)." alt="" coords="5,5,181,31"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9chiConstructors.html#gaaee2f93093cbd0fb34c4aa1fa055edc7" title="Constructor with no arguments returns zero element." alt="" coords="229,5,381,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,15,215,15,215,21,182,21"/>
+</map>

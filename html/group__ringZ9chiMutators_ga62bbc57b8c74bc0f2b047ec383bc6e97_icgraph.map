@@ -1,0 +1,11 @@
+<map id="ringZ9chi::reduce" name="ringZ9chi::reduce">
+<area shape="rect" id="Node000001" title="Writes numerator in terms of the canonical &#45;basis for ." alt="" coords="411,31,545,56"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9chiNumberTheoretic.html#ga793ac677c4ef331df2c18f056702bf00" title="Computes field norm." alt="" coords="207,5,362,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="397,35,362,31,363,26,398,30"/>
+<area shape="rect" id="Node000003" href="$group__ringZ9chiMutators.html#ga6d373de7feffc44effae69820fe414df" title="Called by certain constructors and after certain operations to simplify ring element into a canonical..." alt="" coords="207,55,363,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="397,56,364,60,363,55,397,51"/>
+<area shape="rect" id="Node000004" href="$group__ringZ9chiBasicOperations.html#gad3ec9a90e18a352b6319ffbd3d6adf6d" title="Multiplies ring elements and then passes product through ringZ9chi::reduce." alt="" coords="5,29,159,55"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="193,59,159,54,159,49,194,53"/>
+<area shape="rect" id="Node000005" href="$group__ringZ9chiConstructors.html#gadc8b9228814c7f950c29167ea57a4c42" title="Defines element explicitly by copying &#39;arr&#39; to ringZ9chi::element and &#39;denom_exp&#39; to exp." alt="" coords="6,79,158,104"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="193,81,159,85,158,80,193,76"/>
+</map>

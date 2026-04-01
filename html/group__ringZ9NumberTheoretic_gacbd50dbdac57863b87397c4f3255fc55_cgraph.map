@@ -1,0 +1,7 @@
+<map id="ringZ9::partialFieldNorm" name="ringZ9::partialFieldNorm">
+<area shape="rect" id="Node000001" title="Computes the product of all Galois conjugates except for the trivial Galois conjugate,..." alt="" coords="5,5,187,31"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9NumberTheoretic.html#ga7473bb216dd367a71470702034989b64" title="Computes Galois conjugate of given instance." alt="" coords="235,5,369,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,15,221,15,221,21,187,21"/>
+<area shape="rect" id="Node000003" href="$group__ringZ9Constructors.html#gac69be3083c20eaac02d85d5da90b6abd" title="Sets ring element equal to the zero element." alt="" coords="417,5,532,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="370,15,403,15,403,21,370,21"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="ringZ9chi::operator==" name="ringZ9chi::operator==">
+<area shape="rect" id="Node000001" title="Ring equality." alt="" coords="5,5,173,31"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9chiTests.html#ga8e7306213cd3f59f753eb2c078d00dd5" title="Tests whether ring element is zero by seeing if numerator is zero. See ringZ9::isZero for specific de..." alt="" coords="221,5,353,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,15,207,15,207,21,174,21"/>
+</map>

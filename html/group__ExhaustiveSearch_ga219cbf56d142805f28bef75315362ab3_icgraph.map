@@ -1,0 +1,11 @@
+<map id="findMinQ" name="findMinQ">
+<area shape="rect" id="Node000001" title="Loops over forward_list to find the minimum value taken by form ." alt="" coords="260,80,340,105"/>
+<area shape="rect" id="Node000002" href="$group__ExhaustiveSearch.html#ga2039d05dabaf5ba593543ae3f4a824c7" title="Performs a exhaustive search to approximate &#160;with an element of ." alt="" coords="85,5,133,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="268,75,211,44,170,32,132,24,133,19,171,27,213,40,270,70"/>
+<area shape="rect" id="Node000003" href="$group__ExhaustiveSearch.html#ga4a0209c1c887c8dd569e9b64c265efff" title="Performs ESA, but sorts diagonal and x_3 candidates by &#160;for faster runtime." alt="" coords="47,55,170,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="246,88,170,78,171,73,247,83"/>
+<area shape="rect" id="Node000004" href="$group__DebugTools.html#ga933c67c35021e9f45dbcd1393dccf1cc" title="Performs an iteration of the ESA for a specific diagonal. For debugging purposes." alt="" coords="43,104,174,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="247,102,175,111,174,106,246,97"/>
+<area shape="rect" id="Node000005" href="$group__DebugTools.html#ga75b36a7e9ee90c7bd184029ab8dcf281" title="Like testDiagonalESA, but performs ESA with new &#160;sorting technique." alt="" coords="5,153,212,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="269,115,213,143,173,156,171,151,211,138,266,110"/>
+</map>

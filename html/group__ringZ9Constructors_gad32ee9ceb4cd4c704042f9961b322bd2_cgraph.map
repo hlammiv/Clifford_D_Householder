@@ -1,0 +1,7 @@
+<map id="ringZ9::ringZ9" name="ringZ9::ringZ9">
+<area shape="rect" id="Node000001" title="Defines ring element explicitly by copying argument &#39;arr&#39; to ringZ9::element." alt="" coords="5,5,120,31"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9Mutators.html#gae934b2a35b47e2b47df7deb00f937d85" title="Rewrites terms of element into a canonical basis." alt="" coords="168,5,284,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,15,154,15,154,21,120,21"/>
+<area shape="rect" id="Node000003" href="$group__ringZ9Tests.html#ga149e3e75af677ac2cf2aa6be2ed67bb0" title="Determines whether a ring element is zero." alt="" coords="332,5,445,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="284,15,318,15,318,21,284,21"/>
+</map>

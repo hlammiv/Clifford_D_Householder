@@ -1,0 +1,84 @@
+\doxysection{ring\+Z9 Mutators}
+\hypertarget{group__ringZ9Mutators}{}\label{group__ringZ9Mutators}\index{ringZ9 Mutators@{ringZ9 Mutators}}
+
+
+Member functions which have authority to modify the ring element itself.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__ringZ9Mutators_gae934b2a35b47e2b47df7deb00f937d85}{ring\+Z9\+::reduce}} ()
+\begin{DoxyCompactList}\small\item\em Rewrites terms of \doxylink{classringZ9_aa5b506e62cbb99f21074500288726117}{element} into a canonical basis. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__ringZ9Mutators_gaa8029040bd35e77f2a0f60d891fada48}{ring\+Z9\+::scalar\+\_\+mult}} (int scalar)
+\begin{DoxyCompactList}\small\item\em Multiplies each term by \textquotesingle{}scalar.\textquotesingle{}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__ringZ9Mutators_gab187470f9ad9567a6b73bf0f83ba8985}{ring\+Z9\+::scalar\+\_\+div}} (int scalar)
+\begin{DoxyCompactList}\small\item\em Performs integer division by \textquotesingle{}scalar\textquotesingle{} on each term. Should only be used if each coefficient is divisble by \textquotesingle{}scalar.\textquotesingle{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Member functions which have authority to modify the ring element itself. 
+
+\begin{DoxyNote}{Note}
+Scalar multiplication and division are overloaded below. For cleaner code, those should be used instead. 
+\end{DoxyNote}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{group__ringZ9Mutators_gae934b2a35b47e2b47df7deb00f937d85}\label{group__ringZ9Mutators_gae934b2a35b47e2b47df7deb00f937d85} 
+\index{ringZ9 Mutators@{ringZ9 Mutators}!reduce@{reduce}}
+\index{reduce@{reduce}!ringZ9 Mutators@{ringZ9 Mutators}}
+\doxysubsubsection{\texorpdfstring{reduce()}{reduce()}}
+{\footnotesize\ttfamily void ring\+Z9\+::reduce (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Rewrites terms of \doxylink{classringZ9_aa5b506e62cbb99f21074500288726117}{element} into a canonical basis. 
+
+This ring has a $\mathbb{Z}$-\/basis given by $\zeta_9^i$ for $i=0,1,\ldots,5$. Thus, any has a unique representation using only the first six entries of \doxylink{classringZ9_aa5b506e62cbb99f21074500288726117}{ring\+Z9\+::element} with the last three entries being zero. The function does this by taking advantage of the relations  \[
+    1 + \zeta_9^3 + \zeta_9^6 = 0
+\] \[
+    \zeta_9 + \zeta_9^4 + \zeta_9^7 = 0
+\] \[
+    \zeta_9^2 + \zeta_9^5 + \zeta_9^8 = 0
+\]
+
+\begin{DoxyWarning}{Warning}
+Most of the member functions in this class assume that a given ring element is in its reduced form. The constructors which have a possibility to initialize the last three entries will call \doxylink{group__ringZ9Mutators_gae934b2a35b47e2b47df7deb00f937d85}{reduce()} automatically. Any member function (such as \doxylink{group__ringZ9NumberTheoretic_ga7473bb216dd367a71470702034989b64}{Galois\+Aut}) or operation (such as \texorpdfstring{$\ast$}{*}) are likely to produce non-\/reduced instances and must call \doxylink{group__ringZ9Mutators_gae934b2a35b47e2b47df7deb00f937d85}{reduce()} before terminating. 
+\end{DoxyWarning}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{group__ringZ9Mutators_gae934b2a35b47e2b47df7deb00f937d85_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{group__ringZ9Mutators_gae934b2a35b47e2b47df7deb00f937d85_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group__ringZ9Mutators_gab187470f9ad9567a6b73bf0f83ba8985}\label{group__ringZ9Mutators_gab187470f9ad9567a6b73bf0f83ba8985} 
+\index{ringZ9 Mutators@{ringZ9 Mutators}!scalar\_div@{scalar\_div}}
+\index{scalar\_div@{scalar\_div}!ringZ9 Mutators@{ringZ9 Mutators}}
+\doxysubsubsection{\texorpdfstring{scalar\_div()}{scalar\_div()}}
+{\footnotesize\ttfamily void ring\+Z9\+::scalar\+\_\+div (\begin{DoxyParamCaption}\item[{int}]{scalar }\end{DoxyParamCaption})}
+
+
+
+Performs integer division by \textquotesingle{}scalar\textquotesingle{} on each term. Should only be used if each coefficient is divisble by \textquotesingle{}scalar.\textquotesingle{}. 
+
+\Hypertarget{group__ringZ9Mutators_gaa8029040bd35e77f2a0f60d891fada48}\label{group__ringZ9Mutators_gaa8029040bd35e77f2a0f60d891fada48} 
+\index{ringZ9 Mutators@{ringZ9 Mutators}!scalar\_mult@{scalar\_mult}}
+\index{scalar\_mult@{scalar\_mult}!ringZ9 Mutators@{ringZ9 Mutators}}
+\doxysubsubsection{\texorpdfstring{scalar\_mult()}{scalar\_mult()}}
+{\footnotesize\ttfamily void ring\+Z9\+::scalar\+\_\+mult (\begin{DoxyParamCaption}\item[{int}]{scalar }\end{DoxyParamCaption})}
+
+
+
+Multiplies each term by \textquotesingle{}scalar.\textquotesingle{}. 
+

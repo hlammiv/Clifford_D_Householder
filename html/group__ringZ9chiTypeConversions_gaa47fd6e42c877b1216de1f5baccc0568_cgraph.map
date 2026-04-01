@@ -1,0 +1,7 @@
+<map id="ringZ9chi::abs_val_sq" name="ringZ9chi::abs_val_sq">
+<area shape="rect" id="Node000001" title="Absolute value squared." alt="" coords="5,31,168,56"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9chiTypeConversions.html#ga9a4b83bd96e97de7984c2b996ce64f62" title="Imaginary part." alt="" coords="216,5,373,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,31,202,27,202,32,169,36"/>
+<area shape="rect" id="Node000003" href="$group__ringZ9chiTypeConversions.html#gaa780d3ef4dd1f0c3cf292a305026ed68" title="Real part." alt="" coords="220,55,369,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="169,50,207,55,206,60,168,55"/>
+</map>

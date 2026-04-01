@@ -1,0 +1,7 @@
+<map id="ringZ9chi::normalize" name="ringZ9chi::normalize">
+<area shape="rect" id="Node000001" title="Called by certain constructors and after certain operations to simplify ring element into a canonical..." alt="" coords="207,31,363,56"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9chiBasicOperations.html#gad3ec9a90e18a352b6319ffbd3d6adf6d" title="Multiplies ring elements and then passes product through ringZ9chi::reduce." alt="" coords="5,5,159,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,35,159,30,159,25,194,29"/>
+<area shape="rect" id="Node000003" href="$group__ringZ9chiConstructors.html#gadc8b9228814c7f950c29167ea57a4c42" title="Defines element explicitly by copying &#39;arr&#39; to ringZ9chi::element and &#39;denom_exp&#39; to exp." alt="" coords="6,55,158,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,57,159,61,158,56,193,52"/>
+</map>

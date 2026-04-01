@@ -1,0 +1,7 @@
+<map id="ringZ9chi::GaloisAut" name="ringZ9chi::GaloisAut">
+<area shape="rect" id="Node000001" title="Performs one of six distinct Galois automorphisms on ring element." alt="" coords="208,31,363,56"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9chiNumberTheoretic.html#ga793ac677c4ef331df2c18f056702bf00" title="Computes field norm." alt="" coords="5,5,160,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,35,160,30,161,25,195,29"/>
+<area shape="rect" id="Node000003" href="$group__ringZ9chiNumberTheoretic.html#gaf8c29acdc4df2f8adca26d10ce1193e2" title="Computes field trace." alt="" coords="6,55,159,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="195,57,160,61,160,56,194,51"/>
+</map>

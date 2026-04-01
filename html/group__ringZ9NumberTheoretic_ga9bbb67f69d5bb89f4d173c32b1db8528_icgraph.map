@@ -1,0 +1,21 @@
+<map id="ringZ9::quad" name="ringZ9::quad">
+<area shape="rect" id="Node000001" title="Computes the positive&#45;definite quadratic form in Eq. (13) of this paper." alt="" coords="647,93,751,119"/>
+<area shape="rect" id="Node000002" href="$group__ExhaustiveSearch.html#gab40009a72da536ed0d29e6cddfe8efa3" title="Unlike my previous enumeration methods, this enumerates ALL diagonal candidates for a given f,..." alt="" coords="443,117,599,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="634,117,599,122,598,117,633,112"/>
+<area shape="rect" id="Node000008" href="$group__ExhaustiveSearch.html#ga9ae97627a25ba2b38ca3410a336eff7c" title="Computes a table of all possible values for &#160;that will also be used as a lookup table for finding all..." alt="" coords="449,68,592,93"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="633,99,592,93,593,88,633,94"/>
+<area shape="rect" id="Node000003" href="$group__ExhaustiveSearch.html#ga2039d05dabaf5ba593543ae3f4a824c7" title="Performs a exhaustive search to approximate &#160;with an element of ." alt="" coords="303,68,351,93"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="457,117,351,89,352,84,458,111"/>
+<area shape="rect" id="Node000004" href="$group__ExhaustiveSearch.html#ga4a0209c1c887c8dd569e9b64c265efff" title="Performs ESA, but sorts diagonal and x_3 candidates by &#160;for faster runtime." alt="" coords="266,117,389,143"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="429,133,389,133,389,127,429,127"/>
+<area shape="rect" id="Node000005" href="$group__DebugTools.html#ga4ab55bc72000aa8f46c7634688cddb7b" title="For a given choice of theta, epsilon, and f, this tests whether fullDiagEnumeration was able to find ..." alt="" coords="260,167,395,192"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="458,149,379,169,378,164,457,143"/>
+<area shape="rect" id="Node000006" href="$group__DebugTools.html#ga933c67c35021e9f45dbcd1393dccf1cc" title="Performs an iteration of the ESA for a specific diagonal. For debugging purposes." alt="" coords="43,92,174,117"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="275,165,146,120,148,115,277,160"/>
+<area shape="rect" id="Node000007" href="$group__DebugTools.html#ga75b36a7e9ee90c7bd184029ab8dcf281" title="Like testDiagonalESA, but performs ESA with new &#160;sorting technique." alt="" coords="5,5,212,31"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="265,162,258,157,241,139,233,120,225,102,210,83,173,54,137,33,139,28,176,50,214,79,229,99,237,118,246,136,262,153,268,158"/>
+<area shape="poly" id="edge8_Node000008_Node000003" title=" " alt="" coords="435,83,351,83,351,78,435,78"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="458,99,379,120,378,115,457,94"/>
+<area shape="poly" id="edge10_Node000008_Node000006" title=" " alt="" coords="455,68,394,58,327,52,260,58,195,74,140,94,138,89,194,69,260,53,327,47,395,53,456,63"/>
+<area shape="poly" id="edge11_Node000008_Node000007" title=" " alt="" coords="479,65,438,49,394,37,301,23,212,19,213,14,302,18,395,31,440,44,481,60"/>
+</map>

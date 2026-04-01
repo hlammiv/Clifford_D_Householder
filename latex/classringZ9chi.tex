@@ -1,0 +1,156 @@
+\doxysection{ring\+Z9chi Class Reference}
+\hypertarget{classringZ9chi}{}\label{classringZ9chi}\index{ringZ9chi@{ringZ9chi}}
+
+
+Instances of the class represent elements of the ring $ \mathbb{Z}[\zeta_9, \frac{1}{3}] $ where $ \zeta_9 $ is the primitive ninth root of unity $ e^{2\pi/9} $.  
+
+
+
+
+{\ttfamily \#include $<$Z9chi.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__ringZ9chiConstructors_gadc8b9228814c7f950c29167ea57a4c42}{ring\+Z9chi}} (int arr\mbox{[}9\mbox{]}, int denom\+\_\+exp)
+\begin{DoxyCompactList}\small\item\em Defines element explicitly by copying \textquotesingle{}arr\textquotesingle{} to \doxylink{classringZ9chi_a5710f33e51529092de99c168c8482d6b}{ring\+Z9chi\+::element} and \textquotesingle{}denom\+\_\+exp\textquotesingle{} to \doxylink{classringZ9chi_a8f87171738b56f720cebb1af800fca49}{exp}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__ringZ9chiConstructors_ga2e90f7e431461ad09a5a9b033420375d}{ring\+Z9chi}} (\mbox{\hyperlink{classringZ9}{ring\+Z9}} numer, int denom\+\_\+exp)
+\begin{DoxyCompactList}\small\item\em Defines element explicitly by using a \doxylink{classringZ9}{ring\+Z9} for the numerator and copies \textquotesingle{}denom\+\_\+exp\textquotesingle{} to \doxylink{classringZ9chi_a8f87171738b56f720cebb1af800fca49}{exp}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__ringZ9chiConstructors_gaaee2f93093cbd0fb34c4aa1fa055edc7}{ring\+Z9chi}} ()
+\begin{DoxyCompactList}\small\item\em Constructor with no arguments returns zero element. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__ringZ9chiInfo_ga993a7fb84d012527197c32ec65bb19e1}{get\+Term}} (int i) const
+\begin{DoxyCompactList}\small\item\em Returns $ i $-\/th entry of \doxylink{classringZ9chi_a5710f33e51529092de99c168c8482d6b}{ring\+Z9chi\+::element} giving the coefficient of the $ \zeta_9^i $ term in the numerator. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__ringZ9chiInfo_ga6acbe56d199eda0e232fc740cd910e2d}{get\+Exp}} () const
+\begin{DoxyCompactList}\small\item\em Returns the exponent on the three in the denominator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classringZ9}{ring\+Z9}} \mbox{\hyperlink{group__ringZ9chiInfo_ga7116974b13efd211824e025a37b1ed2a}{get\+Numerator}} () const
+\begin{DoxyCompactList}\small\item\em Returns the numerator as an element of \doxylink{classringZ9}{ring\+Z9}. \end{DoxyCompactList}\item 
+array$<$ int, 6 $>$ \mbox{\hyperlink{group__ringZ9chiInfo_gabcb4039a7046dcea0274eefd84008f4c}{get\+Std\+Array}} () const
+\begin{DoxyCompactList}\small\item\em Returns \doxylink{classringZ9chi_a5710f33e51529092de99c168c8482d6b}{ring\+Z9chi\+::element} as a std\+::array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__ringZ9chiMutators_ga6d373de7feffc44effae69820fe414df}{normalize}} ()
+\begin{DoxyCompactList}\small\item\em Called by certain constructors and after certain operations to simplify ring element into a canonical form. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__ringZ9chiMutators_ga62bbc57b8c74bc0f2b047ec383bc6e97}{reduce}} ()
+\begin{DoxyCompactList}\small\item\em Writes numerator in terms of the canonical $ \mathbb{Z} $-\/basis for $ \mathbb{Z}[\zeta_9] $. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__ringZ9chiMutators_ga0193cdde236afb8a1006522604d4e8ec}{cancel}} ()
+\begin{DoxyCompactList}\small\item\em Simplifies ring element by cancelling largest power of three shared between numerator and denominator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__ringZ9chiMutators_ga7487ee84bd6abf5f80531c24212de213}{scalar\+\_\+mult}} (int scalar)
+\begin{DoxyCompactList}\small\item\em Multiplies each term of the numerator by \textquotesingle{}scalar\textquotesingle{} and calls \doxylink{group__ringZ9chiMutators_ga62bbc57b8c74bc0f2b047ec383bc6e97}{ring\+Z9chi\+::reduce}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classringZ9chi}{ring\+Z9chi}} \mbox{\hyperlink{group__ringZ9chiBasicOperations_ga90a0fb3a398997b5bd6f9b1641ea25cc}{operator+}} (const \mbox{\hyperlink{classringZ9chi}{ring\+Z9chi}} \&right) const
+\begin{DoxyCompactList}\small\item\em Ring addition. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classringZ9chi}{ring\+Z9chi}} \mbox{\hyperlink{group__ringZ9chiBasicOperations_ga7f6b6d077e82271ebdb45fecb0e48f6c}{operator-\/}} (const \mbox{\hyperlink{classringZ9chi}{ring\+Z9chi}} \&right) const
+\begin{DoxyCompactList}\small\item\em Ring subtraction. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classringZ9chi}{ring\+Z9chi}} \mbox{\hyperlink{group__ringZ9chiBasicOperations_gad3ec9a90e18a352b6319ffbd3d6adf6d}{operator\texorpdfstring{$\ast$}{*}}} (const \mbox{\hyperlink{classringZ9chi}{ring\+Z9chi}} \&right) const
+\begin{DoxyCompactList}\small\item\em Multiplies ring elements and then passes product through \doxylink{group__ringZ9chiMutators_ga62bbc57b8c74bc0f2b047ec383bc6e97}{ring\+Z9chi\+::reduce}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classringZ9chi}{ring\+Z9chi}} \mbox{\hyperlink{group__ringZ9chiBasicOperations_ga8f10c4f9f062c90225e1c2fc06d7d269}{operator=}} (const \mbox{\hyperlink{classringZ9chi}{ring\+Z9chi}} \&right)
+\begin{DoxyCompactList}\small\item\em Ring assignment. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__ringZ9chiEquality_ga962e88dd1b2e0a07e6f859be86db6ced}{operator==}} (const \mbox{\hyperlink{classringZ9chi}{ring\+Z9chi}} \&right) const
+\begin{DoxyCompactList}\small\item\em Ring equality. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__ringZ9chiEquality_gaa67dbcf2b6329ac499f000d835bb8f71}{operator!=}} (const \mbox{\hyperlink{classringZ9chi}{ring\+Z9chi}} \&right) const
+\begin{DoxyCompactList}\small\item\em Ring ineqality. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{group__ringZ9chiTypeConversions_gaa780d3ef4dd1f0c3cf292a305026ed68}{real\+\_\+part}} () const
+\begin{DoxyCompactList}\small\item\em Real part. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{group__ringZ9chiTypeConversions_ga9a4b83bd96e97de7984c2b996ce64f62}{imag\+\_\+part}} () const
+\begin{DoxyCompactList}\small\item\em Imaginary part. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{group__ringZ9chiTypeConversions_gad7523f1394e898d42d36e665a4c2e6b3}{abs\+\_\+val}} () const
+\begin{DoxyCompactList}\small\item\em Absolute value. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{group__ringZ9chiTypeConversions_gaa47fd6e42c877b1216de1f5baccc0568}{abs\+\_\+val\+\_\+sq}} () const
+\begin{DoxyCompactList}\small\item\em Absolute value squared. \end{DoxyCompactList}\item 
+complex$<$ double $>$ \mbox{\hyperlink{group__ringZ9chiTypeConversions_ga586f2d7a78f59634903b8e2fd84e2ce1}{to\+Complex\+Double}} () const
+\begin{DoxyCompactList}\small\item\em Converts ring element to std\+::complex$<$double$>$ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classringZ9chi}{ring\+Z9chi}} \mbox{\hyperlink{group__ringZ9chiNumberTheoretic_ga6eaa06c4123fa03eb6cc5dac7f7ebd10}{Galois\+Aut}} (int k) const
+\begin{DoxyCompactList}\small\item\em Performs one of six distinct Galois automorphisms on ring element. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classringZ9chi}{ring\+Z9chi}} \mbox{\hyperlink{group__ringZ9chiNumberTheoretic_ga78c3f660821b308b05b6857fde71461b}{complex\+Conj}} () const
+\begin{DoxyCompactList}\small\item\em Computes complex conjugate by returning Galois\+Aut(-\/1). \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{group__ringZ9chiNumberTheoretic_ga793ac677c4ef331df2c18f056702bf00}{field\+Norm}} () const
+\begin{DoxyCompactList}\small\item\em Computes field norm. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{group__ringZ9chiNumberTheoretic_gaf8c29acdc4df2f8adca26d10ce1193e2}{field\+Trace}} () const
+\begin{DoxyCompactList}\small\item\em Computes field trace. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__ringZ9chiTests_ga8e7306213cd3f59f753eb2c078d00dd5}{is\+Zero}} () const
+\begin{DoxyCompactList}\small\item\em Tests whether ring element is zero by seeing if numerator is zero. See \doxylink{group__ringZ9Tests_ga149e3e75af677ac2cf2aa6be2ed67bb0}{ring\+Z9\+::is\+Zero} for specific details. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__ringZ9chiTests_gaff2c4f87bfb585610e4529ee72379dec}{is\+Real}} () const
+\begin{DoxyCompactList}\small\item\em Tests whether ring element is real by seeing if ring element equals its complex conjugate. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__ringZ9chiTests_gad38edb4f19be4cfadcf89e6a25e6796e}{is\+Imag}} () const
+\begin{DoxyCompactList}\small\item\em Tests whether ring element is imaginary by seeing if ring element equals the negative of its complex conjugate. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__ringZ9chiTests_gaf286999d7cae80745be0ad430497fb62}{is\+Rational}} () const
+\begin{DoxyCompactList}\small\item\em A ring element will be rational iff the first entry of \doxylink{classringZ9chi_a5710f33e51529092de99c168c8482d6b}{ring\+Z9chi\+::element} is the only nonzero entry. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__ringZ9chiTests_ga1c93d3881388263d072257a0b0148db9}{is\+Int}} () const
+\begin{DoxyCompactList}\small\item\em Tests if ring element is integer by seeing whether \doxylink{group__ringZ9chiTests_gaf286999d7cae80745be0ad430497fb62}{is\+Rational} is true and \doxylink{classringZ9chi_a8f87171738b56f720cebb1af800fca49}{exp} = 0. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__ringZ9chiTests_ga3fa72abcc7aeba4f2fc070845945ba10}{is\+Cyc\+Int}} () const
+\begin{DoxyCompactList}\small\item\em Tests if ring element lies in $ \mathbb{Z}[\zeta_9] $ by seeing if \doxylink{classringZ9chi_a8f87171738b56f720cebb1af800fca49}{exp} = 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classringZ9chi_a854cfefa1c4a87a2c31f65e2976f620d}{print}} () const
+\begin{DoxyCompactList}\small\item\em Prints out element as $ \mathbb{Z} $-\/linear combination of ninth roots of unity along with the appropriate power of 1/3 out front. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classringZ9chi_a5710f33e51529092de99c168c8482d6b}{element}} \mbox{[}9\mbox{]}
+\begin{DoxyCompactList}\small\item\em Array for the coefficients on each of the nine rou terms in the numerator. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classringZ9chi_a8f87171738b56f720cebb1af800fca49}{exp}}
+\begin{DoxyCompactList}\small\item\em This variable stores the power of three in the denominator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Instances of the class represent elements of the ring $ \mathbb{Z}[\zeta_9, \frac{1}{3}] $ where $ \zeta_9 $ is the primitive ninth root of unity $ e^{2\pi/9} $. 
+
+This class allows for basic arithmetic with elements of $ \mathbb{Z}[\zeta_9, \frac{1}{3}] $ and provides member functions that do some basic number-\/theoretic operations. Elements of this ring are comprised of a numerator which is a sum of ninth roots of unity and a denominator which is a nonnegative power of 3\+:  \[
+   3^{-b}\cdot\sum_{i=0}^8 a_i \zeta_9^i
+  \] for $ a_i \in \mathbb{Z} $ and $ b \in \mathbb{Z}^{\geq 0} $. In this class, the varaible $ b $ is stored in \doxylink{classringZ9chi_a8f87171738b56f720cebb1af800fca49}{exp}, and the $ a_i $\textquotesingle{}s are stored in \doxylink{classringZ9chi_a5710f33e51529092de99c168c8482d6b}{ring\+Z9chi\+::element}.
+
+\begin{DoxyNote}{Note}
+The use of \textquotesingle{}chi\textquotesingle{} in the class title is in reference to an alternative definition for this ring, where we replace the generator 1/3 with $\chi := (1 - \zeta_9)^{-1} $. This replacement gives the same ring.
+\end{DoxyNote}
+\begin{DoxyAuthor}{Author}
+Chris H. 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+June 2025 
+\end{DoxyDate}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classringZ9chi_a854cfefa1c4a87a2c31f65e2976f620d}\label{classringZ9chi_a854cfefa1c4a87a2c31f65e2976f620d} 
+\index{ringZ9chi@{ringZ9chi}!print@{print}}
+\index{print@{print}!ringZ9chi@{ringZ9chi}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void ring\+Z9chi\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Prints out element as $ \mathbb{Z} $-\/linear combination of ninth roots of unity along with the appropriate power of 1/3 out front. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{classringZ9chi_a854cfefa1c4a87a2c31f65e2976f620d_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classringZ9chi_a5710f33e51529092de99c168c8482d6b}\label{classringZ9chi_a5710f33e51529092de99c168c8482d6b} 
+\index{ringZ9chi@{ringZ9chi}!element@{element}}
+\index{element@{element}!ringZ9chi@{ringZ9chi}}
+\doxysubsubsection{\texorpdfstring{element}{element}}
+{\footnotesize\ttfamily int ring\+Z9chi\+::element\mbox{[}9\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Array for the coefficients on each of the nine rou terms in the numerator. 
+
+We may represent elements of our ring as a fraction where the numerator is an element of $ \mathbb{Z}[\zeta_9] $ which we encode with this array. As in \doxylink{classringZ9_aa5b506e62cbb99f21074500288726117}{ring\+Z9\+::element}, ~\newline
+ the $ i $-\/th entry of the array stores the integer coefficient on the $ \zeta_9^i $ term. \Hypertarget{classringZ9chi_a8f87171738b56f720cebb1af800fca49}\label{classringZ9chi_a8f87171738b56f720cebb1af800fca49} 
+\index{ringZ9chi@{ringZ9chi}!exp@{exp}}
+\index{exp@{exp}!ringZ9chi@{ringZ9chi}}
+\doxysubsubsection{\texorpdfstring{exp}{exp}}
+{\footnotesize\ttfamily int ring\+Z9chi\+::exp\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+This variable stores the power of three in the denominator. 
+
+We may represent elements of this ring as a fraction where the denominator is a nonnegative integer power of three, which is stored in this variable. I could have made the variable not unsigned but when combined with \doxylink{group__ringZ9chiMutators_ga0193cdde236afb8a1006522604d4e8ec}{ring\+Z9chi\+::cancel()}, testing for membership in $ \mathbb{Z}[\zeta_9] $ now amounts to testing whether this variable is zero. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Z9chi.\+h\item 
+Z9chi.\+cpp\end{DoxyCompactItemize}

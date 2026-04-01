@@ -1,0 +1,19 @@
+Enumerating entry candidates for f = 0.
+Finished enumerating entry possibilities for f = 0.
+Enumerating entry candidates for f = 1.
+Finished enumerating entry possibilities for f = 1.
+Enumerating entry candidates for f = 2.
+Finished enumerating entry possibilities for f = 2.
+Enumerating entry candidates for f = 3.
+Finished enumerating entry possibilities for f = 3.
+Epsilon Diff. Val.: 1.18733e-05 Eps. Cond.: 1.25e-05
+Success!
+x_1: (1/3^3)(-6z^0 + 14z^1 + 8z^2 + -11z^3 + -13z^4 + -3z^5) 0.997676
+x_2: (1/3^3)(-6z^0 + -12z^1 + 15z^2 + -3z^3 + 2z^4 + 15z^5) 1.00232
+x_3: (1/3^3)(7z^0 + -5z^1 + 12z^3 + -12z^4 + 9z^5) 0.000439243
+Target x_1 = e^(i theta/2) : 0.98941 + i0.145148
+Found x_1 (should be close to Target x_1): 0.986996 + i0.145593
+Found x_2 (should be close to -1): -1.00232 + i0.000530626
+Found x_3 (should be close to 0): -0.000412754 + i-0.00015023
+Squared Frobenius norm of vector (should be exactly 2): 2
+Matrix Frobenius distance ||X_(0,1) H - R_(0,1)^Z(theta)||_F = 0.00688171   (target epsilon = 0.01, passes: YES)

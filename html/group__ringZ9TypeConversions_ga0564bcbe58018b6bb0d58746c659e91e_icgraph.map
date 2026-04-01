@@ -1,0 +1,17 @@
+<map id="ringZ9::abs_val_sq" name="ringZ9::abs_val_sq">
+<area shape="rect" id="Node000001" title="Absolute value squared." alt="" coords="451,93,595,119"/>
+<area shape="rect" id="Node000002" href="$group__ExhaustiveSearch.html#ga2039d05dabaf5ba593543ae3f4a824c7" title="Performs a exhaustive search to approximate &#160;with an element of ." alt="" coords="85,5,133,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="480,90,402,63,325,47,249,35,132,22,133,17,250,29,326,41,403,58,482,85"/>
+<area shape="rect" id="Node000003" href="$group__ExhaustiveSearch.html#ga4a0209c1c887c8dd569e9b64c265efff" title="Performs ESA, but sorts diagonal and x_3 candidates by &#160;for faster runtime." alt="" coords="47,80,170,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="459,93,402,83,341,80,279,80,170,88,170,82,278,75,341,74,403,78,460,88"/>
+<area shape="rect" id="Node000004" href="$group__ExhaustiveSearch.html#ga9ae97627a25ba2b38ca3410a336eff7c" title="Computes a table of all possible values for &#160;that will also be used as a lookup table for finding all..." alt="" coords="260,93,403,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="437,109,403,109,403,103,437,103"/>
+<area shape="rect" id="Node000005" href="$group__DebugTools.html#ga933c67c35021e9f45dbcd1393dccf1cc" title="Performs an iteration of the ESA for a specific diagonal. For debugging purposes." alt="" coords="43,137,174,163"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="453,124,403,133,282,145,174,151,174,145,281,139,402,127,452,119"/>
+<area shape="rect" id="Node000006" href="$group__DebugTools.html#ga75b36a7e9ee90c7bd184029ab8dcf281" title="Like testDiagonalESA, but performs ESA with new &#160;sorting technique." alt="" coords="5,187,212,212"/>
+<area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="478,126,403,151,304,173,209,189,208,184,303,168,402,146,477,121"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="284,91,132,30,134,25,286,86"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="246,104,170,99,170,94,247,98"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="254,124,174,140,173,135,253,119"/>
+<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="302,129,261,154,213,178,178,189,176,184,211,173,259,149,300,124"/>
+</map>

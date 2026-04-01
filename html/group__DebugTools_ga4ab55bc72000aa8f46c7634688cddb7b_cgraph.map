@@ -1,0 +1,28 @@
+<map id="foundInDiagTable" name="foundInDiagTable">
+<area shape="rect" id="Node000001" title="For a given choice of theta, epsilon, and f, this tests whether fullDiagEnumeration was able to find ..." alt="" coords="5,139,140,164"/>
+<area shape="rect" id="Node000002" href="$group__ExhaustiveSearch.html#gab40009a72da536ed0d29e6cddfe8efa3" title="Unlike my previous enumeration methods, this enumerates ALL diagonal candidates for a given f,..." alt="" coords="188,139,344,164"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,149,174,149,174,154,140,154"/>
+<area shape="rect" id="Node000003" href="$group__ringZ9TypeConversions.html#ga8fc7b01eb2afb3893951196d1361d3f8" title="Absolute value." alt="" coords="648,87,771,112"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="326,136,392,125,520,111,634,102,634,107,520,116,392,130,327,142"/>
+<area shape="rect" id="Node000006" href="$group__ringZ9Tests.html#ga37d00427f5ca61fbf4981fbc5030452b" title="Tests whether dividing the ring element by &#39;k&#39; still lies in the ring." alt="" coords="392,139,567,164"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="345,149,378,149,378,154,345,154"/>
+<area shape="rect" id="Node000007" href="$group__ExhaustiveSearch.html#gaec654b87168c22120a76c83855866de9" title="For &#160;, computes the real part of ." alt="" coords="436,38,523,63"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="287,137,334,109,391,80,426,65,428,70,393,85,336,114,289,141"/>
+<area shape="rect" id="Node000008" href="$group__ringZ9TypeConversions.html#gae698d0250573a78e2da535e0e94950eb" title="Converts to std::complex&lt;double&gt;" alt="" coords="615,38,804,63"/>
+<area shape="poly" id="edge14_Node000002_Node000008" title=" " alt="" coords="273,137,290,111,317,79,351,47,391,23,426,11,463,5,536,5,605,16,662,31,660,36,604,21,536,11,463,11,427,17,393,28,354,51,321,82,295,114,277,140"/>
+<area shape="rect" id="Node000009" href="$classringZ9.html#a72a7f6537af646f2b2c2359145c9f2f7" title="Prints out element as &#45;linear combination of ninth roots of unity." alt="" coords="428,188,531,214"/>
+<area shape="poly" id="edge10_Node000002_Node000009" title=" " alt="" coords="322,162,415,184,414,189,321,167"/>
+<area shape="rect" id="Node000011" href="$group__ringZ9NumberTheoretic.html#ga9bbb67f69d5bb89f4d173c32b1db8528" title="Computes the positive&#45;definite quadratic form in Eq. (13) of this paper." alt="" coords="427,238,531,263"/>
+<area shape="poly" id="edge12_Node000002_Node000011" title=" " alt="" coords="287,162,334,193,393,224,415,232,413,237,391,229,331,197,284,167"/>
+<area shape="rect" id="Node000012" href="$group__ExhaustiveSearch.html#gab224ce08145317d1cbdbd70f83e93e6e" title="Computes 3^n using int arithmetic. Alternative to using std::pow which returns doubles." alt="" coords="428,287,531,312"/>
+<area shape="poly" id="edge13_Node000002_Node000012" title=" " alt="" coords="279,163,324,217,357,247,393,273,416,284,413,288,391,278,353,251,320,220,275,167"/>
+<area shape="rect" id="Node000004" href="$group__ringZ9TypeConversions.html#ga2c9b9621c3eba261e71e609ef154de4e" title="Imaginary part." alt="" coords="852,38,991,63"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="764,84,852,64,853,69,765,90"/>
+<area shape="rect" id="Node000005" href="$group__ringZ9TypeConversions.html#gabd03193c0d18220365c5fe8e93e82167" title="Real part." alt="" coords="856,87,987,112"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="771,97,842,97,842,102,771,102"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="523,48,601,48,601,53,523,53"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="804,48,838,48,838,53,804,53"/>
+<area shape="poly" id="edge9_Node000008_Node000005" title=" " alt="" coords="765,61,853,81,852,87,764,66"/>
+<area shape="rect" id="Node000010" href="$group__ringZ9Tests.html#ga149e3e75af677ac2cf2aa6be2ed67bb0" title="Determines whether a ring element is zero." alt="" coords="653,188,766,214"/>
+<area shape="poly" id="edge11_Node000009_Node000010" title=" " alt="" coords="531,198,639,198,639,204,531,204"/>
+</map>

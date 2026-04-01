@@ -1,0 +1,298 @@
+\doxysection{ring\+Z9 Number-\/theoretic}
+\hypertarget{group__ringZ9NumberTheoretic}{}\label{group__ringZ9NumberTheoretic}\index{ringZ9 Number-\/theoretic@{ringZ9 Number-\/theoretic}}
+
+
+Some basic number-\/theretic routines.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classringZ9}{ring\+Z9}} \mbox{\hyperlink{group__ringZ9NumberTheoretic_ga7473bb216dd367a71470702034989b64}{ring\+Z9\+::\+Galois\+Aut}} (int k) const
+\begin{DoxyCompactList}\small\item\em Computes Galois conjugate of given instance. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classringZ9}{ring\+Z9}} \mbox{\hyperlink{group__ringZ9NumberTheoretic_ga8d18b374f06057c7e6ed4ff875f52085}{ring\+Z9\+::complex\+Conj}} () const
+\begin{DoxyCompactList}\small\item\em Computes complex conjugate by calling Galois\+Aut(-\/1) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__ringZ9NumberTheoretic_ga32549fb5fa209c7d8f676ce3ed7174dc}{ring\+Z9\+::field\+Norm}} () const
+\begin{DoxyCompactList}\small\item\em Computes the product of all Galois conjugates (which is guaranteed to be an integer). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__ringZ9NumberTheoretic_gae43e60e5a6516dc3c23ccd62ef2f411a}{ring\+Z9\+::field\+Trace}} () const
+\begin{DoxyCompactList}\small\item\em Computes the sum of all Galois conjugates (which is guaranteed to be an integer) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classringZ9}{ring\+Z9}} \mbox{\hyperlink{group__ringZ9NumberTheoretic_gacbd50dbdac57863b87397c4f3255fc55}{ring\+Z9\+::partial\+Field\+Norm}} () const
+\begin{DoxyCompactList}\small\item\em Computes the product of all Galois conjugates except for the trivial Galois conjugate, which is just the ring element itself. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__ringZ9NumberTheoretic_ga135722f62801c913f16234a3e5303163}{ring\+Z9\+::tau\+Field\+Norm}} () const
+\begin{DoxyCompactList}\small\item\em Performs field norm with respect to $ \mathbb{Q}(\zeta_9 + \zeta_9^8) $. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__ringZ9NumberTheoretic_gafdf296d05421730fc63285c5c8f3bc1e}{ring\+Z9\+::weight}} () const
+\begin{DoxyCompactList}\small\item\em Counts the number of roots of unity used to express a ring element. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__ringZ9NumberTheoretic_gadf42b1a70cc5a8d0452631461023c56d}{ring\+Z9\+::signed\+Weight}} () const
+\begin{DoxyCompactList}\small\item\em Sums all coefficients. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__ringZ9NumberTheoretic_ga9bbb67f69d5bb89f4d173c32b1db8528}{ring\+Z9\+::quad}} () const
+\begin{DoxyCompactList}\small\item\em Computes the positive-\/definite quadratic form in Eq. (13) of \href{https://arxiv.org/abs/2311.08696}{\texttt{ this paper}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classringZ9}{ring\+Z9}} \mbox{\hyperlink{group__ringZ9NumberTheoretic_ga90e0f7652b46a17e218094f1c639f91a}{ring\+Z9\+::formal\+Derivative}} () const
+\begin{DoxyCompactList}\small\item\em Viewing the ring element as a polynomial in the variable $ \zeta $, this function takes the derivative. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__ringZ9NumberTheoretic_ga88e64daf584c75210ac167540cc6ab4f}{ring\+Z9\+::sde\+Chi}} () const
+\begin{DoxyCompactList}\small\item\em If $ \mbox{sde}_\chi $ of instance is less than 6, this computes it using Theorem 3.\+6 of the Kalra paper. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Some basic number-\/theretic routines. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{group__ringZ9NumberTheoretic_ga8d18b374f06057c7e6ed4ff875f52085}\label{group__ringZ9NumberTheoretic_ga8d18b374f06057c7e6ed4ff875f52085} 
+\index{ringZ9 Number-\/theoretic@{ringZ9 Number-\/theoretic}!complexConj@{complexConj}}
+\index{complexConj@{complexConj}!ringZ9 Number-\/theoretic@{ringZ9 Number-\/theoretic}}
+\doxysubsubsection{\texorpdfstring{complexConj()}{complexConj()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classringZ9}{ring\+Z9}} ring\+Z9\+::complex\+Conj (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Computes complex conjugate by calling Galois\+Aut(-\/1) 
+
+Complex conjugation is an example of a Galois automorphism where the exponent on each rou is made negative. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{group__ringZ9NumberTheoretic_ga8d18b374f06057c7e6ed4ff875f52085_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{group__ringZ9NumberTheoretic_ga8d18b374f06057c7e6ed4ff875f52085_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group__ringZ9NumberTheoretic_ga32549fb5fa209c7d8f676ce3ed7174dc}\label{group__ringZ9NumberTheoretic_ga32549fb5fa209c7d8f676ce3ed7174dc} 
+\index{ringZ9 Number-\/theoretic@{ringZ9 Number-\/theoretic}!fieldNorm@{fieldNorm}}
+\index{fieldNorm@{fieldNorm}!ringZ9 Number-\/theoretic@{ringZ9 Number-\/theoretic}}
+\doxysubsubsection{\texorpdfstring{fieldNorm()}{fieldNorm()}}
+{\footnotesize\ttfamily int ring\+Z9\+::field\+Norm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Computes the product of all Galois conjugates (which is guaranteed to be an integer). 
+
+See \href{https://en.wikipedia.org/wiki/Field_norm}{\texttt{ here}} for some info and general properties of the field norm.
+
+\begin{DoxyNote}{Note}
+As a consequence of the Fundamental Theorem of Galois Theory, in certain fields (such as $ \mathbb{Q}(\zeta_9) $, a field element is rational iff it is fixed by every Galois automorphism, since Galois automorpihsms distribute over multiplication, any Galois automorphism will simply permute the factors of the field norm, meaning the field norm must be an integer, so converting to int is always valid. 
+\end{DoxyNote}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__ringZ9NumberTheoretic_ga32549fb5fa209c7d8f676ce3ed7174dc_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group__ringZ9NumberTheoretic_gae43e60e5a6516dc3c23ccd62ef2f411a}\label{group__ringZ9NumberTheoretic_gae43e60e5a6516dc3c23ccd62ef2f411a} 
+\index{ringZ9 Number-\/theoretic@{ringZ9 Number-\/theoretic}!fieldTrace@{fieldTrace}}
+\index{fieldTrace@{fieldTrace}!ringZ9 Number-\/theoretic@{ringZ9 Number-\/theoretic}}
+\doxysubsubsection{\texorpdfstring{fieldTrace()}{fieldTrace()}}
+{\footnotesize\ttfamily int ring\+Z9\+::field\+Trace (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Computes the sum of all Galois conjugates (which is guaranteed to be an integer) 
+
+See \href{https://en.wikipedia.org/wiki/Field_trace}{\texttt{ here}} for some info and general properties of the field trace.
+
+\begin{DoxyNote}{Note}
+The field trace is a \textquotesingle{}trace\textquotesingle{} in the linear algebra sense. We can view $ \mathbb{Q}(\zeta_9) $ as a vector space over the rationals, and an element $ a $ of this field gives a linear transformation $ x \longmapsto ax $ for each $ x \in \mathbb{Q}(\zeta_9) $. The trace of this map is exactly the field trace here. The field trace is again guaranteed to be an integer. 
+\end{DoxyNote}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__ringZ9NumberTheoretic_gae43e60e5a6516dc3c23ccd62ef2f411a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group__ringZ9NumberTheoretic_ga90e0f7652b46a17e218094f1c639f91a}\label{group__ringZ9NumberTheoretic_ga90e0f7652b46a17e218094f1c639f91a} 
+\index{ringZ9 Number-\/theoretic@{ringZ9 Number-\/theoretic}!formalDerivative@{formalDerivative}}
+\index{formalDerivative@{formalDerivative}!ringZ9 Number-\/theoretic@{ringZ9 Number-\/theoretic}}
+\doxysubsubsection{\texorpdfstring{formalDerivative()}{formalDerivative()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classringZ9}{ring\+Z9}} ring\+Z9\+::formal\+Derivative (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Viewing the ring element as a polynomial in the variable $ \zeta $, this function takes the derivative. 
+
+This function is used in \doxylink{group__ringZ9NumberTheoretic_ga88e64daf584c75210ac167540cc6ab4f}{sde\+Chi} to compute $ \mbox{sde}_\chi $ of a ring element. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{group__ringZ9NumberTheoretic_ga90e0f7652b46a17e218094f1c639f91a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{group__ringZ9NumberTheoretic_ga90e0f7652b46a17e218094f1c639f91a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group__ringZ9NumberTheoretic_ga7473bb216dd367a71470702034989b64}\label{group__ringZ9NumberTheoretic_ga7473bb216dd367a71470702034989b64} 
+\index{ringZ9 Number-\/theoretic@{ringZ9 Number-\/theoretic}!GaloisAut@{GaloisAut}}
+\index{GaloisAut@{GaloisAut}!ringZ9 Number-\/theoretic@{ringZ9 Number-\/theoretic}}
+\doxysubsubsection{\texorpdfstring{GaloisAut()}{GaloisAut()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classringZ9}{ring\+Z9}} ring\+Z9\+::\+Galois\+Aut (\begin{DoxyParamCaption}\item[{int}]{k }\end{DoxyParamCaption}) const}
+
+
+
+Computes Galois conjugate of given instance. 
+
+The Galois group of $ \mathbb{Q}(\zeta_9) $ is the cyclic group of order six. The Galois group consists of field automorphisms from $ \mathbb{Q}(\zeta_9) $. By \textquotesingle{}automorphism,\textquotesingle{} we mean abort bijective function form the field to itself which a) distributes over addition, multiplication, subtraction, and division, and b) maps 0 and 1 to themselves. Because of these properties, any Galois automorphism is defined uniquely by where it maps $ \zeta_9 $ (which must also get mapped to a root of unity). In particular, the Galois automorphisms in this case exponentiate the root of unity in each term to some power $ k $, where gcd(k,9) = 1. That is, each term $ a_i \zeta_9^i $ becomes $ a_i \zeta_9^{i*k} $.
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & This integer (if relatively prime to 9) defines a Galois automorphism, and is used to exponentiate the rou in each term. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The parameter k defines a true Galois automorphism iff gcd(k,9) = 1. The member function does NOT test this gcd condition. 
+\end{DoxyWarning}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{group__ringZ9NumberTheoretic_ga7473bb216dd367a71470702034989b64_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__ringZ9NumberTheoretic_ga7473bb216dd367a71470702034989b64_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group__ringZ9NumberTheoretic_gacbd50dbdac57863b87397c4f3255fc55}\label{group__ringZ9NumberTheoretic_gacbd50dbdac57863b87397c4f3255fc55} 
+\index{ringZ9 Number-\/theoretic@{ringZ9 Number-\/theoretic}!partialFieldNorm@{partialFieldNorm}}
+\index{partialFieldNorm@{partialFieldNorm}!ringZ9 Number-\/theoretic@{ringZ9 Number-\/theoretic}}
+\doxysubsubsection{\texorpdfstring{partialFieldNorm()}{partialFieldNorm()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classringZ9}{ring\+Z9}} ring\+Z9\+::partial\+Field\+Norm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Computes the product of all Galois conjugates except for the trivial Galois conjugate, which is just the ring element itself. 
+
+This function is used in solve\+System (in exhaustive\+\_\+search.\+cpp) to solve equations of the form ax = b for $ x $ where $ a,b \in \mathbb{Z}[\zeta_9] $ if we let $ y $ denote the partial norm of $ a $, then $ ay $ is an integer, and this fact makes it easier to determine whether  \[
+\frac{by}{ay}
+\] is in $ \mathbb{Z}[\zeta_9,\frac{1}{3}] $. See solve\+System for more details. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__ringZ9NumberTheoretic_gacbd50dbdac57863b87397c4f3255fc55_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group__ringZ9NumberTheoretic_ga9bbb67f69d5bb89f4d173c32b1db8528}\label{group__ringZ9NumberTheoretic_ga9bbb67f69d5bb89f4d173c32b1db8528} 
+\index{ringZ9 Number-\/theoretic@{ringZ9 Number-\/theoretic}!quad@{quad}}
+\index{quad@{quad}!ringZ9 Number-\/theoretic@{ringZ9 Number-\/theoretic}}
+\doxysubsubsection{\texorpdfstring{quad()}{quad()}}
+{\footnotesize\ttfamily int ring\+Z9\+::quad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Computes the positive-\/definite quadratic form in Eq. (13) of \href{https://arxiv.org/abs/2311.08696}{\texttt{ this paper}}. 
+
+If the coefficients of a ring element are given by $ a_i $ for $ i = 0,\ldots , 5 $, then the quadratic form is given by  \[
+frac{1}{4}( 2a_0 - a_3)^2 + 3a_3^2 + (2a_1 - a_4)^2 + 3a_4^2 + (2a_2 - a_5)^2 + 3a_5^2
+\] \[
+= \sum_{i=0}^5 a_i^2 - a_0a_3 - a_1a_4 - a_2a_5.
+\] \Hypertarget{group__ringZ9NumberTheoretic_ga88e64daf584c75210ac167540cc6ab4f}\label{group__ringZ9NumberTheoretic_ga88e64daf584c75210ac167540cc6ab4f} 
+\index{ringZ9 Number-\/theoretic@{ringZ9 Number-\/theoretic}!sdeChi@{sdeChi}}
+\index{sdeChi@{sdeChi}!ringZ9 Number-\/theoretic@{ringZ9 Number-\/theoretic}}
+\doxysubsubsection{\texorpdfstring{sdeChi()}{sdeChi()}}
+{\footnotesize\ttfamily int ring\+Z9\+::sde\+Chi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+If $ \mbox{sde}_\chi $ of instance is less than 6, this computes it using Theorem 3.\+6 of the Kalra paper. 
+
+Theorem 3.\+6 in Kalra et. al. states that an element of this ring is divisible by $ \chi^k $ for $ k < 6 $ iff the augmentation (see \doxylink{group__ringZ9NumberTheoretic_gadf42b1a70cc5a8d0452631461023c56d}{ring\+Z9\+::signed\+Weight}) of the $ (k-1)$-\/th formal derivative divided by $(k-1)!$ is divisible by 3. Our formal derivatives are calculated using \doxylink{group__ringZ9NumberTheoretic_ga90e0f7652b46a17e218094f1c639f91a}{formal\+Derivative}.
+
+The reason I created this is because Theorem 4.\+3 in the Kalra paper says that the sdes in terms of $ \chi $ in any entries in a unit vector (and therefore, also a unitary matrix) will be the same. This means, when looking through candidates for the diagonal and x\+\_\+3 in ESA, we can disregard any combination whose sde\textquotesingle{}s disagree.
+
+\begin{DoxyNote}{Note}
+With our usage, we can assume this member function will only be called on ring elements whose $ \mbox{sde}_\chi $ is less than 6 (since this is equivalent to the ring element being indivisible by 3). Thus, if this function is used on an element divisible by 3, this function returns 6, even if the true sde is higher. ~\newline
+
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+the sde in terms of $ \chi $ if less than 6, and 6 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__ringZ9NumberTheoretic_ga88e64daf584c75210ac167540cc6ab4f_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group__ringZ9NumberTheoretic_gadf42b1a70cc5a8d0452631461023c56d}\label{group__ringZ9NumberTheoretic_gadf42b1a70cc5a8d0452631461023c56d} 
+\index{ringZ9 Number-\/theoretic@{ringZ9 Number-\/theoretic}!signedWeight@{signedWeight}}
+\index{signedWeight@{signedWeight}!ringZ9 Number-\/theoretic@{ringZ9 Number-\/theoretic}}
+\doxysubsubsection{\texorpdfstring{signedWeight()}{signedWeight()}}
+{\footnotesize\ttfamily int ring\+Z9\+::signed\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Sums all coefficients. 
+
+Differs from \doxylink{group__ringZ9NumberTheoretic_gafdf296d05421730fc63285c5c8f3bc1e}{weight} by summing over \doxylink{classringZ9_aa5b506e62cbb99f21074500288726117}{ring\+Z9\+::element} without using absolute values.
+
+\begin{DoxyNote}{Note}
+Much like the notion of weight, this function is not well-\/defined for arbitrary cyclotomic integers, but since we are representing the ring elements with a basis, this notion makes sense. 
+\end{DoxyNote}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{group__ringZ9NumberTheoretic_gadf42b1a70cc5a8d0452631461023c56d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group__ringZ9NumberTheoretic_ga135722f62801c913f16234a3e5303163}\label{group__ringZ9NumberTheoretic_ga135722f62801c913f16234a3e5303163} 
+\index{ringZ9 Number-\/theoretic@{ringZ9 Number-\/theoretic}!tauFieldNorm@{tauFieldNorm}}
+\index{tauFieldNorm@{tauFieldNorm}!ringZ9 Number-\/theoretic@{ringZ9 Number-\/theoretic}}
+\doxysubsubsection{\texorpdfstring{tauFieldNorm()}{tauFieldNorm()}}
+{\footnotesize\ttfamily int ring\+Z9\+::tau\+Field\+Norm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Performs field norm with respect to $ \mathbb{Q}(\zeta_9 + \zeta_9^8) $. 
+
+The field $ \mathbb{Q}(\zeta_9 + \zeta_9^8) $ is the unique real subfield of $ \mathbb{Q}(\zeta_9) $ and it has three Galois automorphisms (each of which are restrictions of those from $ \mathbb{Q}(\zeta_9) $). Specifically, we multiply Galois\+Aut(1)\texorpdfstring{$\ast$}{*}\+Galois\+Aut(2)\texorpdfstring{$\ast$}{*}\+Galois\+Aut(5).
+
+\begin{DoxyWarning}{Warning}
+This member function assumes that the ring element used is a REAL element. The function will return garbage if any nonreal element is passed. 
+\end{DoxyWarning}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__ringZ9NumberTheoretic_ga135722f62801c913f16234a3e5303163_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group__ringZ9NumberTheoretic_gafdf296d05421730fc63285c5c8f3bc1e}\label{group__ringZ9NumberTheoretic_gafdf296d05421730fc63285c5c8f3bc1e} 
+\index{ringZ9 Number-\/theoretic@{ringZ9 Number-\/theoretic}!weight@{weight}}
+\index{weight@{weight}!ringZ9 Number-\/theoretic@{ringZ9 Number-\/theoretic}}
+\doxysubsubsection{\texorpdfstring{weight()}{weight()}}
+{\footnotesize\ttfamily int ring\+Z9\+::weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Counts the number of roots of unity used to express a ring element. 
+
+The weight is calculated by taking the sum of absolute values of each entry in \doxylink{classringZ9_aa5b506e62cbb99f21074500288726117}{ring\+Z9\+::element}.
+
+\begin{DoxyNote}{Note}
+The weight of an arbitrary cyclotomic integer is not well-\/defined, but since we are representing the ring elements with a basis, this notion makes sense. 
+\end{DoxyNote}

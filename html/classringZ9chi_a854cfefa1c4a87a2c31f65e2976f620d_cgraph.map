@@ -1,0 +1,5 @@
+<map id="ringZ9chi::print" name="ringZ9chi::print">
+<area shape="rect" id="Node000001" title="Prints out element as &#45;linear combination of ninth roots of unity along with the appropriate power of..." alt="" coords="5,5,127,31"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9chiTests.html#ga8e7306213cd3f59f753eb2c078d00dd5" title="Tests whether ring element is zero by seeing if numerator is zero. See ringZ9::isZero for specific de..." alt="" coords="175,5,307,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,15,161,15,161,21,127,21"/>
+</map>

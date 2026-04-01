@@ -1,0 +1,11 @@
+<map id="ringZ9chi::operator*" name="ringZ9chi::operator*">
+<area shape="rect" id="Node000001" title="Multiplies ring elements and then passes product through ringZ9chi::reduce." alt="" coords="5,55,159,80"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9chiMutators.html#ga6d373de7feffc44effae69820fe414df" title="Called by certain constructors and after certain operations to simplify ring element into a canonical..." alt="" coords="207,55,363,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="159,65,193,65,193,70,159,70"/>
+<area shape="rect" id="Node000003" href="$group__ringZ9chiMutators.html#ga0193cdde236afb8a1006522604d4e8ec" title="Simplifies ring element by cancelling largest power of three shared between numerator and denominator..." alt="" coords="411,5,545,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="334,52,413,32,415,37,336,57"/>
+<area shape="rect" id="Node000004" href="$group__ringZ9chiTests.html#ga8e7306213cd3f59f753eb2c078d00dd5" title="Tests whether ring element is zero by seeing if numerator is zero. See ringZ9::isZero for specific de..." alt="" coords="412,55,544,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="363,65,398,65,398,70,363,70"/>
+<area shape="rect" id="Node000005" href="$group__ringZ9chiMutators.html#ga62bbc57b8c74bc0f2b047ec383bc6e97" title="Writes numerator in terms of the canonical &#45;basis for ." alt="" coords="411,104,545,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="336,77,415,98,413,103,334,83"/>
+</map>

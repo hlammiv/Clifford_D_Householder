@@ -1,0 +1,75 @@
+<map id="ESA" name="ESA">
+<area shape="rect" id="Node000001" title="Performs a exhaustive search to approximate &#160;with an element of ." alt="" coords="5,411,53,436"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9TypeConversions.html#ga0564bcbe58018b6bb0d58746c659e91e" title="Absolute value squared." alt="" coords="532,257,676,283"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,424,125,433,228,436,286,434,345,427,404,415,460,396,498,374,532,347,583,292,587,296,536,351,501,379,462,400,406,420,346,432,286,439,228,442,124,438,53,430"/>
+<area shape="rect" id="Node000005" href="$group__ringZ9NumberTheoretic.html#ga8d18b374f06057c7e6ed4ff875f52085" title="Computes complex conjugate by calling GaloisAut(&#45;1)" alt="" coords="525,813,683,839"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="35,436,42,497,56,584,77,669,89,702,103,724,146,761,195,789,248,809,304,823,360,832,414,835,511,834,511,839,414,841,359,837,303,828,247,814,193,794,143,765,99,728,84,704,71,671,51,585,37,498,29,437"/>
+<area shape="rect" id="Node000007" href="$group__ExhaustiveSearch.html#ga77bc4cfa11d92a7daadc81426d62849b" title="Given a choice of diagonal candidates, this routine attempts to complete the remaining entries of the..." alt="" coords="101,688,307,713"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="41,435,190,674,185,677,36,438"/>
+<area shape="rect" id="Node000019" href="$group__ExhaustiveSearch.html#ga219cbf56d142805f28bef75315362ab3" title="Loops over forward_list to find the minimum value taken by form ." alt="" coords="164,864,244,889"/>
+<area shape="poly" id="edge21_Node000001_Node000019" title=" " alt="" coords="34,436,38,518,49,640,58,704,70,762,85,810,103,843,125,859,151,869,149,874,122,864,99,846,80,813,65,764,53,705,44,641,33,518,28,436"/>
+<area shape="rect" id="Node000020" href="$group__ExhaustiveSearch.html#gab40009a72da536ed0d29e6cddfe8efa3" title="Unlike my previous enumeration methods, this enumerates ALL diagonal candidates for a given f,..." alt="" coords="126,284,282,309"/>
+<area shape="poly" id="edge22_Node000001_Node000020" title=" " alt="" coords="47,408,173,316,176,320,50,412"/>
+<area shape="rect" id="Node000023" href="$group__ringZ9TypeConversions.html#gae698d0250573a78e2da535e0e94950eb" title="Converts to std::complex&lt;double&gt;" alt="" coords="509,208,699,233"/>
+<area shape="poly" id="edge43_Node000001_Node000023" title=" " alt="" coords="30,410,37,381,50,343,70,304,100,271,150,239,204,216,262,201,321,194,379,191,434,193,529,203,528,208,434,198,379,196,322,199,263,207,206,221,152,243,103,275,74,307,54,345,42,382,35,411"/>
+<area shape="rect" id="Node000024" href="$classringZ9.html#a72a7f6537af646f2b2c2359145c9f2f7" title="Prints out element as &#45;linear combination of ninth roots of unity." alt="" coords="357,5,459,31"/>
+<area shape="poly" id="edge42_Node000001_Node000024" title=" " alt="" coords="29,410,34,340,46,236,67,135,82,95,99,68,126,47,155,31,187,20,220,12,285,5,343,7,343,12,285,11,220,17,188,25,157,36,129,52,103,72,86,97,72,136,51,237,39,340,34,411"/>
+<area shape="rect" id="Node000027" href="$group__ExhaustiveSearch.html#ga9ae97627a25ba2b38ca3410a336eff7c" title="Computes a table of all possible values for &#160;that will also be used as a lookup table for finding all..." alt="" coords="133,487,275,512"/>
+<area shape="poly" id="edge36_Node000001_Node000027" title=" " alt="" coords="55,431,163,479,161,484,52,436"/>
+<area shape="rect" id="Node000028" href="$group__ExhaustiveSearch.html#gaeccb3998a52660297e216bb1728a3383" title="Tests whether a given triple of diagonal candidates is possible for a &#160;unitary matrix." alt="" coords="135,81,273,107"/>
+<area shape="poly" id="edge44_Node000001_Node000028" title=" " alt="" coords="28,410,30,364,40,296,61,220,78,183,99,150,123,127,151,110,154,115,126,131,103,153,82,186,66,222,45,297,36,364,33,411"/>
+<area shape="rect" id="Node000003" href="$group__ringZ9TypeConversions.html#ga2c9b9621c3eba261e71e609ef154de4e" title="Imaginary part." alt="" coords="768,233,907,259"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="676,260,754,252,755,257,677,265"/>
+<area shape="rect" id="Node000004" href="$group__ringZ9TypeConversions.html#gabd03193c0d18220365c5fe8e93e82167" title="Real part." alt="" coords="772,184,903,209"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="662,255,698,244,746,220,771,211,773,216,748,224,700,248,663,260"/>
+<area shape="rect" id="Node000006" href="$group__ringZ9Constructors.html#gac69be3083c20eaac02d85d5da90b6abd" title="Sets ring element equal to the zero element." alt="" coords="1159,788,1273,813"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="683,820,1145,801,1145,806,683,825"/>
+<area shape="rect" id="Node000008" href="$group__ExhaustiveSearch.html#ga7c1c0ceccf8bb6088fed6cafa3b26eb5" title="Verifies that the found unitary matrix sufficiently approximates ." alt="" coords="355,713,461,739"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="307,711,342,715,341,720,306,716"/>
+<area shape="rect" id="Node000009" href="$group__ExhaustiveSearch.html#ga011d2498c24ec6a9d40cfe674a2998f3" title="Fills entries above diagonal (if possible) once all other entries are determined." alt="" coords="369,664,447,689"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="307,686,355,680,356,685,307,691"/>
+<area shape="rect" id="Node000018" href="$group__ExhaustiveSearch.html#ga0b863dbdba14df3690ee93ae90e71119" title="Checks whether a given &#160;matrix is unitary/." alt="" coords="367,763,449,788"/>
+<area shape="poly" id="edge20_Node000007_Node000018" title=" " alt="" coords="241,711,361,755,359,760,239,716"/>
+<area shape="poly" id="edge9_Node000009_Node000005" title=" " alt="" coords="441,687,463,700,530,752,583,802,579,806,527,756,460,704,438,692"/>
+<area shape="rect" id="Node000010" href="$group__ExhaustiveSearch.html#ga97d3ed2fb102a68150282a4dccd33529" title="If possible, this solves equations of the form &#160;for &#160;in the ring ." alt="" coords="551,664,657,689"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="447,674,537,674,537,679,447,679"/>
+<area shape="rect" id="Node000011" href="$group__ringZ9NumberTheoretic.html#ga32549fb5fa209c7d8f676ce3ed7174dc" title="Computes the product of all Galois conjugates (which is guaranteed to be an integer)." alt="" coords="769,664,905,689"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="658,674,755,674,755,679,658,679"/>
+<area shape="rect" id="Node000016" href="$group__ringZ9Tests.html#ga37d00427f5ca61fbf4981fbc5030452b" title="Tests whether dividing the ring element by &#39;k&#39; still lies in the ring." alt="" coords="750,563,925,588"/>
+<area shape="poly" id="edge17_Node000010_Node000016" title=" " alt="" coords="633,661,794,591,796,596,636,666"/>
+<area shape="rect" id="Node000017" href="$group__ringZ9NumberTheoretic.html#gacbd50dbdac57863b87397c4f3255fc55" title="Computes the product of all Galois conjugates except for the trivial Galois conjugate,..." alt="" coords="747,739,928,764"/>
+<area shape="poly" id="edge18_Node000010_Node000017" title=" " alt="" coords="646,687,785,732,783,737,644,692"/>
+<area shape="rect" id="Node000012" href="$group__ringZ9NumberTheoretic.html#ga7473bb216dd367a71470702034989b64" title="Computes Galois conjugate of given instance." alt="" coords="976,763,1111,788"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="863,687,977,749,992,755,990,760,975,754,860,692"/>
+<area shape="rect" id="Node000013" href="$group__ringZ9Info.html#ga5f3939ba80960bab2900beeac76ac1ca" title="Gets integer coefficient on the &#160;term." alt="" coords="981,713,1106,739"/>
+<area shape="poly" id="edge14_Node000011_Node000013" title=" " alt="" coords="892,687,977,707,976,713,890,692"/>
+<area shape="rect" id="Node000014" href="$group__ringZ9Mutators.html#gae934b2a35b47e2b47df7deb00f937d85" title="Rewrites terms of element into a canonical basis." alt="" coords="985,664,1101,689"/>
+<area shape="poly" id="edge15_Node000011_Node000014" title=" " alt="" coords="906,674,971,674,971,679,906,679"/>
+<area shape="poly" id="edge13_Node000012_Node000006" title=" " alt="" coords="1111,783,1145,788,1144,793,1110,788"/>
+<area shape="rect" id="Node000015" href="$group__ringZ9Tests.html#ga149e3e75af677ac2cf2aa6be2ed67bb0" title="Determines whether a ring element is zero." alt="" coords="1159,613,1273,639"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="1087,661,1158,640,1159,645,1088,666"/>
+<area shape="poly" id="edge19_Node000017_Node000012" title=" " alt="" coords="929,759,963,763,962,769,928,765"/>
+<area shape="poly" id="edge26_Node000020_Node000016" title=" " alt="" coords="283,303,370,319,462,346,568,395,667,453,751,509,810,552,807,556,748,513,664,457,565,400,460,351,369,324,282,308"/>
+<area shape="rect" id="Node000021" href="$group__ringZ9TypeConversions.html#ga8fc7b01eb2afb3893951196d1361d3f8" title="Absolute value." alt="" coords="543,133,665,159"/>
+<area shape="poly" id="edge23_Node000020_Node000021" title=" " alt="" coords="226,281,283,250,354,217,448,184,535,159,537,165,450,189,356,222,285,255,228,286"/>
+<area shape="rect" id="Node000022" href="$group__ExhaustiveSearch.html#gaec654b87168c22120a76c83855866de9" title="For &#160;, computes the real part of ." alt="" coords="365,259,451,284"/>
+<area shape="poly" id="edge27_Node000020_Node000022" title=" " alt="" coords="282,284,351,276,351,281,282,290"/>
+<area shape="poly" id="edge35_Node000020_Node000023" title=" " alt="" coords="237,281,291,262,354,245,425,232,495,225,496,230,426,238,355,250,293,267,238,286"/>
+<area shape="poly" id="edge31_Node000020_Node000024" title=" " alt="" coords="212,282,387,40,392,43,217,286"/>
+<area shape="rect" id="Node000025" href="$group__ringZ9NumberTheoretic.html#ga9bbb67f69d5bb89f4d173c32b1db8528" title="Computes the positive&#45;definite quadratic form in Eq. (13) of this paper." alt="" coords="356,360,460,385"/>
+<area shape="poly" id="edge33_Node000020_Node000025" title=" " alt="" coords="240,307,361,353,359,358,238,312"/>
+<area shape="rect" id="Node000026" href="$group__ExhaustiveSearch.html#gab224ce08145317d1cbdbd70f83e93e6e" title="Computes 3^n using int arithmetic. Alternative to using std::pow which returns doubles." alt="" coords="357,461,459,487"/>
+<area shape="poly" id="edge34_Node000020_Node000026" title=" " alt="" coords="222,307,383,450,380,454,218,311"/>
+<area shape="poly" id="edge24_Node000021_Node000003" title=" " alt="" coords="631,157,748,220,769,227,767,232,746,224,628,161"/>
+<area shape="poly" id="edge25_Node000021_Node000004" title=" " alt="" coords="664,156,766,178,765,184,663,161"/>
+<area shape="poly" id="edge28_Node000022_Node000023" title=" " alt="" coords="451,258,541,234,542,239,452,263"/>
+<area shape="poly" id="edge29_Node000023_Node000003" title=" " alt="" coords="699,228,755,234,754,240,699,234"/>
+<area shape="poly" id="edge30_Node000023_Node000004" title=" " alt="" coords="699,208,758,202,759,207,699,214"/>
+<area shape="poly" id="edge32_Node000024_Node000015" title=" " alt="" coords="460,19,554,31,677,56,743,76,808,101,871,133,930,171,986,220,1036,277,1080,338,1118,401,1175,517,1208,599,1203,601,1170,519,1113,403,1075,341,1032,280,982,224,926,175,869,137,806,106,741,81,676,62,554,36,459,24"/>
+<area shape="poly" id="edge37_Node000027_Node000002" title=" " alt="" coords="252,509,298,518,352,521,408,516,435,508,460,497,488,478,512,454,550,399,577,342,593,295,598,297,582,344,555,401,516,458,491,482,463,502,437,513,409,521,352,527,297,523,251,515"/>
+<area shape="poly" id="edge39_Node000027_Node000015" title=" " alt="" coords="229,510,292,541,383,579,435,596,490,610,547,620,603,623,839,623,1146,623,1146,629,839,629,603,629,546,625,489,615,434,601,381,584,290,546,227,515"/>
+<area shape="poly" id="edge38_Node000027_Node000016" title=" " alt="" coords="263,509,355,526,558,550,736,566,736,571,558,556,354,531,262,515"/>
+<area shape="poly" id="edge40_Node000027_Node000025" title=" " alt="" coords="224,484,373,390,376,395,227,489"/>
+<area shape="poly" id="edge41_Node000027_Node000026" title=" " alt="" coords="275,488,342,479,343,485,276,493"/>
+<area shape="poly" id="edge45_Node000028_Node000021" title=" " alt="" coords="274,88,364,88,462,98,513,110,560,126,558,131,512,115,461,103,363,94,274,93"/>
+</map>

@@ -1,0 +1,116 @@
+\doxysection{ring\+Z9 Tests}
+\hypertarget{group__ringZ9Tests}{}\label{group__ringZ9Tests}\index{ringZ9 Tests@{ringZ9 Tests}}
+
+
+Member functions determining whether ring element satisfies nice properties.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{group__ringZ9Tests_ga149e3e75af677ac2cf2aa6be2ed67bb0}{ring\+Z9\+::is\+Zero}} () const
+\begin{DoxyCompactList}\small\item\em Determines whether a ring element is zero. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__ringZ9Tests_ga9f67deaacfb989c613d32f8af15024f6}{ring\+Z9\+::is\+Real}} () const
+\begin{DoxyCompactList}\small\item\em Checks whether ring element is real by seeing if ring is equal to \doxylink{group__ringZ9NumberTheoretic_ga8d18b374f06057c7e6ed4ff875f52085}{ring\+Z9\+::complex\+Conj}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__ringZ9Tests_ga346a7329cebfc3005cec0351961da481}{ring\+Z9\+::is\+Imag}} () const
+\begin{DoxyCompactList}\small\item\em Tests whether ring element is imaginary by seeing if it is equal to the negative of \doxylink{group__ringZ9NumberTheoretic_ga8d18b374f06057c7e6ed4ff875f52085}{complex\+Conj}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__ringZ9Tests_gaf5700fe279767c61cde1c36c7269376b}{ring\+Z9\+::is\+Int}} () const
+\begin{DoxyCompactList}\small\item\em Determines whether ring element is integer by seeing if the only nonzero entry of \doxylink{classringZ9_aa5b506e62cbb99f21074500288726117}{element} is the irst entry. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{group__ringZ9Tests_ga37d00427f5ca61fbf4981fbc5030452b}{ring\+Z9\+::is\+Divisible\+By\+Int}} (int k) const
+\begin{DoxyCompactList}\small\item\em Tests whether dividing the ring element by \textquotesingle{}k\textquotesingle{} still lies in the ring. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Member functions determining whether ring element satisfies nice properties. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{group__ringZ9Tests_ga37d00427f5ca61fbf4981fbc5030452b}\label{group__ringZ9Tests_ga37d00427f5ca61fbf4981fbc5030452b} 
+\index{ringZ9 Tests@{ringZ9 Tests}!isDivisibleByInt@{isDivisibleByInt}}
+\index{isDivisibleByInt@{isDivisibleByInt}!ringZ9 Tests@{ringZ9 Tests}}
+\doxysubsubsection{\texorpdfstring{isDivisibleByInt()}{isDivisibleByInt()}}
+{\footnotesize\ttfamily bool ring\+Z9\+::is\+Divisible\+By\+Int (\begin{DoxyParamCaption}\item[{int}]{k }\end{DoxyParamCaption}) const}
+
+
+
+Tests whether dividing the ring element by \textquotesingle{}k\textquotesingle{} still lies in the ring. 
+
+Testing this condition requires us to test whether each entry of \doxylink{classringZ9_aa5b506e62cbb99f21074500288726117}{ring\+Z9\+::element} is divisble by k. \Hypertarget{group__ringZ9Tests_ga346a7329cebfc3005cec0351961da481}\label{group__ringZ9Tests_ga346a7329cebfc3005cec0351961da481} 
+\index{ringZ9 Tests@{ringZ9 Tests}!isImag@{isImag}}
+\index{isImag@{isImag}!ringZ9 Tests@{ringZ9 Tests}}
+\doxysubsubsection{\texorpdfstring{isImag()}{isImag()}}
+{\footnotesize\ttfamily bool ring\+Z9\+::is\+Imag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Tests whether ring element is imaginary by seeing if it is equal to the negative of \doxylink{group__ringZ9NumberTheoretic_ga8d18b374f06057c7e6ed4ff875f52085}{complex\+Conj}. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__ringZ9Tests_ga346a7329cebfc3005cec0351961da481_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group__ringZ9Tests_gaf5700fe279767c61cde1c36c7269376b}\label{group__ringZ9Tests_gaf5700fe279767c61cde1c36c7269376b} 
+\index{ringZ9 Tests@{ringZ9 Tests}!isInt@{isInt}}
+\index{isInt@{isInt}!ringZ9 Tests@{ringZ9 Tests}}
+\doxysubsubsection{\texorpdfstring{isInt()}{isInt()}}
+{\footnotesize\ttfamily bool ring\+Z9\+::is\+Int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Determines whether ring element is integer by seeing if the only nonzero entry of \doxylink{classringZ9_aa5b506e62cbb99f21074500288726117}{element} is the irst entry. 
+
+\begin{DoxyNote}{Note}
+Since we may assume the ring element has passed through \doxylink{group__ringZ9Mutators_gae934b2a35b47e2b47df7deb00f937d85}{reduce} 
+\end{DoxyNote}
+\Hypertarget{group__ringZ9Tests_ga9f67deaacfb989c613d32f8af15024f6}\label{group__ringZ9Tests_ga9f67deaacfb989c613d32f8af15024f6} 
+\index{ringZ9 Tests@{ringZ9 Tests}!isReal@{isReal}}
+\index{isReal@{isReal}!ringZ9 Tests@{ringZ9 Tests}}
+\doxysubsubsection{\texorpdfstring{isReal()}{isReal()}}
+{\footnotesize\ttfamily bool ring\+Z9\+::is\+Real (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Checks whether ring element is real by seeing if ring is equal to \doxylink{group__ringZ9NumberTheoretic_ga8d18b374f06057c7e6ed4ff875f52085}{ring\+Z9\+::complex\+Conj}. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__ringZ9Tests_ga9f67deaacfb989c613d32f8af15024f6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{group__ringZ9Tests_ga149e3e75af677ac2cf2aa6be2ed67bb0}\label{group__ringZ9Tests_ga149e3e75af677ac2cf2aa6be2ed67bb0} 
+\index{ringZ9 Tests@{ringZ9 Tests}!isZero@{isZero}}
+\index{isZero@{isZero}!ringZ9 Tests@{ringZ9 Tests}}
+\doxysubsubsection{\texorpdfstring{isZero()}{isZero()}}
+{\footnotesize\ttfamily bool ring\+Z9\+::is\+Zero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Determines whether a ring element is zero. 
+
+We check by determing whether the ring element can be expressed as a sum of "{}minimal vanishing sums of roots of unity."{} For ninth roots of unity, these minimal vanishing sums are precisely  \[
+    1 + \zeta_9^3 + \zeta_9^6 = 0
+\] \[
+    \zeta_9 + \zeta_9^4 + \zeta_9^7 = 0
+\] \[
+    \zeta_9^2 + \zeta_9^5 + \zeta_9^8 = 0
+\]
+
+\begin{DoxyNote}{Note}
+When in reduced form, checking whether a ring element is zero simply amounts to checking that all entries of \doxylink{classringZ9_aa5b506e62cbb99f21074500288726117}{ring\+Z9\+::element} are zero, but in some cases, is\+Zero is called before a ring element passes through \doxylink{group__ringZ9Mutators_gae934b2a35b47e2b47df7deb00f937d85}{ring\+Z9\+::reduce}, so our algorithm is slightly more complicated. 
+\end{DoxyNote}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__ringZ9Tests_ga149e3e75af677ac2cf2aa6be2ed67bb0_icgraph}
+\end{center}
+\end{figure}

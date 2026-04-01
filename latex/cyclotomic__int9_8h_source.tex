@@ -1,0 +1,95 @@
+\doxysection{cyclotomic\+\_\+int9.\+h}
+\hypertarget{cyclotomic__int9_8h_source}{}\label{cyclotomic__int9_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ RINGZ9\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ RINGZ9\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include<iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include<cmath>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include<array>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include<numeric>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include<complex>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#\ define\ M\_PI\ \ \ \ \ \ \ \ \ \ \ 3.14159265358979323846}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classringZ9}{ringZ9}}\{}
+\DoxyCodeLine{00031\ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classringZ9_aa5b506e62cbb99f21074500288726117}{element}}[9];}
+\DoxyCodeLine{00040\ \ \ \ \ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00042\ \ \ \ \ }
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{comment}{/*\ CONSTRUCTORS\ */}}
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{group__ringZ9Constructors_gac69be3083c20eaac02d85d5da90b6abd}{ringZ9}}(\textcolor{keywordtype}{int}\ arr[9]);\ }
+\DoxyCodeLine{00052\ \ \ \ \ }
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{group__ringZ9Constructors_gac69be3083c20eaac02d85d5da90b6abd}{ringZ9}}(\textcolor{keywordtype}{int}\ n);\ }
+\DoxyCodeLine{00054\ \ \ \ \ }
+\DoxyCodeLine{00060\ \ \ \ \ \mbox{\hyperlink{group__ringZ9Constructors_gac69be3083c20eaac02d85d5da90b6abd}{ringZ9}}(\textcolor{keywordtype}{int}\ coeff,\ \textcolor{keywordtype}{int}\ term);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{group__ringZ9Constructors_gac69be3083c20eaac02d85d5da90b6abd}{ringZ9}}();\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{comment}{/*\ INFO\ */}}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{group__ringZ9Info_ga5f3939ba80960bab2900beeac76ac1ca}{getTerm}}(\textcolor{keywordtype}{int}\ i)\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00072\ \ \ \ \ }
+\DoxyCodeLine{00079\ \ \ \ \ array<int,\ 6>\ \mbox{\hyperlink{group__ringZ9Info_gac1be279105afcddb6797400abf2719a5}{getStdArray}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{comment}{/*\ MUTATORS\ */}}
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group__ringZ9Mutators_gae934b2a35b47e2b47df7deb00f937d85}{reduce}}();}
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group__ringZ9Mutators_gaa8029040bd35e77f2a0f60d891fada48}{scalar\_mult}}(\textcolor{keywordtype}{int}\ scalar);\ }
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{group__ringZ9Mutators_gab187470f9ad9567a6b73bf0f83ba8985}{scalar\_div}}(\textcolor{keywordtype}{int}\ scalar);\ }
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{comment}{/*\ OPERATIONS\ */}}
+\DoxyCodeLine{00121\ \ \ \ \ \mbox{\hyperlink{classringZ9}{ringZ9}}\ \mbox{\hyperlink{group__ringZ9BasicOperations_gadb8473e513dc65ec9156ec83cff1f258}{operator+}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classringZ9}{ringZ9}}\&\ right)\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00122\ \ \ \ \ \mbox{\hyperlink{classringZ9}{ringZ9}}\ \mbox{\hyperlink{group__ringZ9BasicOperations_ga4c553006a219774da0ff69b9d99b448d}{operator-\/}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classringZ9}{ringZ9}}\&\ right)\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00123\ \ \ \ \ \mbox{\hyperlink{classringZ9}{ringZ9}}\ \mbox{\hyperlink{group__ringZ9BasicOperations_gad6d266f0a94d29ce20b9b6501d346d14}{operator*}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classringZ9}{ringZ9}}\&\ right)\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00124\ \ \ \ \ \mbox{\hyperlink{classringZ9}{ringZ9}}\ \mbox{\hyperlink{group__ringZ9BasicOperations_gabe1c133de0ba0ab22ca7103ebf6ee189}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classringZ9}{ringZ9}}\&\ right);\ }
+\DoxyCodeLine{00133\ \ \ \ \ \mbox{\hyperlink{classringZ9}{ringZ9}}\ \mbox{\hyperlink{group__ringZ9BasicOperations_gad6d266f0a94d29ce20b9b6501d346d14}{operator*}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ right\_scalar)\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00134\ \ \ \ \ \mbox{\hyperlink{classringZ9}{ringZ9}}\ \mbox{\hyperlink{group__ringZ9ScalarOps_gaed9870f695a3ef3efb372427af1c3efd}{operator/}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\&\ right\_scalar)\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00143\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{group__ringZ9Equality_gab64b82e953d2eefb6b5ec41da5909153}{operator==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classringZ9}{ringZ9}}\&\ right)\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00144\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{group__ringZ9Equality_ga613363e8deb344f13c05ab07661b3dfb}{operator!=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classringZ9}{ringZ9}}\&\ right)\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00147\ \ \ \ \ \textcolor{comment}{/*\ TYPE\ CONVERSIONS\ */}}
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{group__ringZ9TypeConversions_gabd03193c0d18220365c5fe8e93e82167}{real\_part}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{group__ringZ9TypeConversions_ga2c9b9621c3eba261e71e609ef154de4e}{imag\_part}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00154\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{group__ringZ9TypeConversions_gae7872f86f1d6830b67b4a3027f3bc25d}{complexArg}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00155\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{group__ringZ9TypeConversions_ga8fc7b01eb2afb3893951196d1361d3f8}{abs\_val}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{group__ringZ9TypeConversions_ga0564bcbe58018b6bb0d58746c659e91e}{abs\_val\_sq}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00157\ \ \ \ \ complex<double>\ \mbox{\hyperlink{group__ringZ9TypeConversions_gae698d0250573a78e2da535e0e94950eb}{toComplexDouble}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00160\ \ \ \ \ \textcolor{comment}{/*\ NUMBER-\/THEORETIC\ */}}
+\DoxyCodeLine{00183\ \ \ \ \ \mbox{\hyperlink{classringZ9}{ringZ9}}\ \mbox{\hyperlink{group__ringZ9NumberTheoretic_ga7473bb216dd367a71470702034989b64}{GaloisAut}}(\textcolor{keywordtype}{int}\ k)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00184\ \ \ \ \ }
+\DoxyCodeLine{00191\ \ \ \ \ \mbox{\hyperlink{classringZ9}{ringZ9}}\ \mbox{\hyperlink{group__ringZ9NumberTheoretic_ga8d18b374f06057c7e6ed4ff875f52085}{complexConj}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00192\ \ \ \ \ }
+\DoxyCodeLine{00205\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{group__ringZ9NumberTheoretic_ga32549fb5fa209c7d8f676ce3ed7174dc}{fieldNorm}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00206\ \ \ \ \ }
+\DoxyCodeLine{00218\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{group__ringZ9NumberTheoretic_gae43e60e5a6516dc3c23ccd62ef2f411a}{fieldTrace}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00219\ \ \ \ \ }
+\DoxyCodeLine{00232\ \ \ \ \ \mbox{\hyperlink{classringZ9}{ringZ9}}\ \mbox{\hyperlink{group__ringZ9NumberTheoretic_gacbd50dbdac57863b87397c4f3255fc55}{partialFieldNorm}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00233\ \ \ \ \ }
+\DoxyCodeLine{00244\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{group__ringZ9NumberTheoretic_ga135722f62801c913f16234a3e5303163}{tauFieldNorm}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00245\ \ \ \ \ }
+\DoxyCodeLine{00254\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{group__ringZ9NumberTheoretic_gafdf296d05421730fc63285c5c8f3bc1e}{weight}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00255\ \ \ \ \ }
+\DoxyCodeLine{00265\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{group__ringZ9NumberTheoretic_gadf42b1a70cc5a8d0452631461023c56d}{signedWeight}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00266\ \ \ \ \ }
+\DoxyCodeLine{00278\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{group__ringZ9NumberTheoretic_ga9bbb67f69d5bb89f4d173c32b1db8528}{quad}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00279\ \ \ \ \ }
+\DoxyCodeLine{00286\ \ \ \ \ \mbox{\hyperlink{classringZ9}{ringZ9}}\ \mbox{\hyperlink{group__ringZ9NumberTheoretic_ga90e0f7652b46a17e218094f1c639f91a}{formalDerivative}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00287\ \ \ \ \ }
+\DoxyCodeLine{00288\ \ \ \ \ }
+\DoxyCodeLine{00306\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{group__ringZ9NumberTheoretic_ga88e64daf584c75210ac167540cc6ab4f}{sdeChi}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00309\ \ \ \ \ \textcolor{comment}{/*\ TESTS\ */}}
+\DoxyCodeLine{00333\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{group__ringZ9Tests_ga149e3e75af677ac2cf2aa6be2ed67bb0}{isZero}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00334\ \ \ \ \ }
+\DoxyCodeLine{00338\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{group__ringZ9Tests_ga9f67deaacfb989c613d32f8af15024f6}{isReal}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00343\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{group__ringZ9Tests_ga346a7329cebfc3005cec0351961da481}{isImag}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00350\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{group__ringZ9Tests_gaf5700fe279767c61cde1c36c7269376b}{isInt}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00351\ \ \ \ \ }
+\DoxyCodeLine{00358\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{group__ringZ9Tests_ga37d00427f5ca61fbf4981fbc5030452b}{isDivisibleByInt}}(\textcolor{keywordtype}{int}\ k)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00361\ \ \ \ \ \textcolor{comment}{/*\ PRINT\ */}}
+\DoxyCodeLine{00365\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classringZ9_a72a7f6537af646f2b2c2359145c9f2f7}{print}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00366\ \};}
+\DoxyCodeLine{00367\ }
+\DoxyCodeLine{00368\ }
+\DoxyCodeLine{00369\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

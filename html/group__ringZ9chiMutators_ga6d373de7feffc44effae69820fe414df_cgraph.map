@@ -1,0 +1,9 @@
+<map id="ringZ9chi::normalize" name="ringZ9chi::normalize">
+<area shape="rect" id="Node000001" title="Called by certain constructors and after certain operations to simplify ring element into a canonical..." alt="" coords="5,55,161,80"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9chiMutators.html#ga0193cdde236afb8a1006522604d4e8ec" title="Simplifies ring element by cancelling largest power of three shared between numerator and denominator..." alt="" coords="210,5,343,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,52,212,32,213,37,134,57"/>
+<area shape="rect" id="Node000003" href="$group__ringZ9chiTests.html#ga8e7306213cd3f59f753eb2c078d00dd5" title="Tests whether ring element is zero by seeing if numerator is zero. See ringZ9::isZero for specific de..." alt="" coords="211,55,343,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,65,197,65,197,70,162,70"/>
+<area shape="rect" id="Node000004" href="$group__ringZ9chiMutators.html#ga62bbc57b8c74bc0f2b047ec383bc6e97" title="Writes numerator in terms of the canonical &#45;basis for ." alt="" coords="209,104,344,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="134,77,213,98,212,103,133,83"/>
+</map>

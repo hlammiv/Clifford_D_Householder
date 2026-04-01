@@ -1,0 +1,23 @@
+<map id="ringZ9::print" name="ringZ9::print">
+<area shape="rect" id="Node000001" title="Prints out element as &#45;linear combination of ninth roots of unity." alt="" coords="647,131,749,156"/>
+<area shape="rect" id="Node000002" href="$group__ExhaustiveSearch.html#ga2039d05dabaf5ba593543ae3f4a824c7" title="Performs a exhaustive search to approximate &#160;with an element of ." alt="" coords="303,5,351,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="679,121,645,80,623,60,597,44,565,32,531,23,461,14,399,14,352,18,351,12,398,9,462,9,532,17,567,27,600,40,626,56,649,76,683,117"/>
+<area shape="rect" id="Node000003" href="$group__ExhaustiveSearch.html#ga4a0209c1c887c8dd569e9b64c265efff" title="Performs ESA, but sorts diagonal and x_3 candidates by &#160;for faster runtime." alt="" coords="266,105,389,131"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="633,142,389,125,389,119,633,136"/>
+<area shape="rect" id="Node000004" href="$group__ExhaustiveSearch.html#gab40009a72da536ed0d29e6cddfe8efa3" title="Unlike my previous enumeration methods, this enumerates ALL diagonal candidates for a given f,..." alt="" coords="443,55,599,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="656,128,598,102,552,83,554,78,600,97,658,123"/>
+<area shape="rect" id="Node000006" href="$group__DebugTools.html#ga933c67c35021e9f45dbcd1393dccf1cc" title="Performs an iteration of the ESA for a specific diagonal. For debugging purposes." alt="" coords="43,231,174,256"/>
+<area shape="poly" id="edge12_Node000001_Node000006" title=" " alt="" coords="676,168,642,195,600,218,544,235,485,247,368,259,261,259,174,254,175,248,261,254,368,253,484,241,542,230,598,213,639,191,673,164"/>
+<area shape="rect" id="Node000007" href="$group__DebugTools.html#ga75b36a7e9ee90c7bd184029ab8dcf281" title="Like testDiagonalESA, but performs ESA with new &#160;sorting technique." alt="" coords="5,156,212,181"/>
+<area shape="poly" id="edge13_Node000001_Node000007" title=" " alt="" coords="667,166,635,183,599,195,540,206,479,212,359,210,250,199,165,184,166,179,251,194,359,205,479,206,539,201,598,190,633,178,665,161"/>
+<area shape="rect" id="Node000008" href="$group__ExhaustiveSearch.html#gab1d04319fbfd5744ae3e4c4fa7a0897b" title="Takes a vector of candidates and sorts them into an array by ." alt="" coords="466,156,575,181"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="634,155,576,164,575,158,633,150"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="457,54,351,27,352,21,458,49"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="459,86,377,108,376,103,458,81"/>
+<area shape="rect" id="Node000005" href="$group__DebugTools.html#ga4ab55bc72000aa8f46c7634688cddb7b" title="For a given choice of theta, epsilon, and f, this tests whether fullDiagEnumeration was able to find ..." alt="" coords="260,56,395,81"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="429,71,395,71,395,66,429,65"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="267,90,262,95,244,118,238,143,231,168,214,194,184,217,151,233,149,228,181,213,210,191,227,166,233,141,240,116,258,91,264,86"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="277,89,261,95,191,128,134,158,132,154,189,123,259,90,275,84"/>
+<area shape="poly" id="edge10_Node000008_Node000003" title=" " alt="" coords="458,155,376,133,377,128,459,150"/>
+<area shape="poly" id="edge11_Node000008_Node000007" title=" " alt="" coords="452,171,212,171,212,166,452,166"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="ringZ9chi::isRational" name="ringZ9chi::isRational">
+<area shape="rect" id="Node000001" title="A ring element will be rational iff the first entry of ringZ9chi::element is the only nonzero entry." alt="" coords="172,5,328,31"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9chiTests.html#ga1c93d3881388263d072257a0b0148db9" title="Tests if ring element is integer by seeing whether isRational is true and exp = 0." alt="" coords="5,5,124,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,21,125,21,125,15,158,15"/>
+</map>

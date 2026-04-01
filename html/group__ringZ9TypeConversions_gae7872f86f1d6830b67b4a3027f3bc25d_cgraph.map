@@ -1,0 +1,7 @@
+<map id="ringZ9::complexArg" name="ringZ9::complexArg">
+<area shape="rect" id="Node000001" title="Returns argument of ring element viewed as complex number." alt="" coords="5,31,156,56"/>
+<area shape="rect" id="Node000002" href="$group__ringZ9TypeConversions.html#ga2c9b9621c3eba261e71e609ef154de4e" title="Imaginary part." alt="" coords="204,5,343,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,31,190,26,190,32,156,36"/>
+<area shape="rect" id="Node000003" href="$group__ringZ9TypeConversions.html#gabd03193c0d18220365c5fe8e93e82167" title="Real part." alt="" coords="208,55,339,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="156,50,195,55,194,60,156,55"/>
+</map>

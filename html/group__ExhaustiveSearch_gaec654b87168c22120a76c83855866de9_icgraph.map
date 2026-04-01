@@ -1,0 +1,15 @@
+<map id="planeSide" name="planeSide">
+<area shape="rect" id="Node000001" title="For &#160;, computes the real part of ." alt="" coords="647,55,733,80"/>
+<area shape="rect" id="Node000002" href="$group__ExhaustiveSearch.html#gab40009a72da536ed0d29e6cddfe8efa3" title="Unlike my previous enumeration methods, this enumerates ALL diagonal candidates for a given f,..." alt="" coords="443,55,599,80"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="633,70,599,70,599,65,633,65"/>
+<area shape="rect" id="Node000003" href="$group__ExhaustiveSearch.html#ga2039d05dabaf5ba593543ae3f4a824c7" title="Performs a exhaustive search to approximate &#160;with an element of ." alt="" coords="303,5,351,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="457,54,351,27,352,21,458,49"/>
+<area shape="rect" id="Node000004" href="$group__ExhaustiveSearch.html#ga4a0209c1c887c8dd569e9b64c265efff" title="Performs ESA, but sorts diagonal and x_3 candidates by &#160;for faster runtime." alt="" coords="266,55,389,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="429,70,389,70,389,65,429,65"/>
+<area shape="rect" id="Node000005" href="$group__DebugTools.html#ga4ab55bc72000aa8f46c7634688cddb7b" title="For a given choice of theta, epsilon, and f, this tests whether fullDiagEnumeration was able to find ..." alt="" coords="260,104,395,129"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="458,86,379,106,378,101,457,81"/>
+<area shape="rect" id="Node000006" href="$group__DebugTools.html#ga933c67c35021e9f45dbcd1393dccf1cc" title="Performs an iteration of the ESA for a specific diagonal. For debugging purposes." alt="" coords="43,79,174,104"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="245,110,174,102,174,96,246,105"/>
+<area shape="rect" id="Node000007" href="$group__DebugTools.html#ga75b36a7e9ee90c7bd184029ab8dcf281" title="Like testDiagonalESA, but performs ESA with new &#160;sorting technique." alt="" coords="5,128,212,153"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="246,128,212,132,212,127,246,123"/>
+</map>
