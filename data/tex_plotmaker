@@ -1,0 +1,45 @@
+set terminal epslatex color colortext size 6,4
+set out 'tve_gnu.tex'
+set xlabel "$\\log_{10}(\\epsilon^{-1})$"
+set ylabel "$N_{\\mathcal{G}}$"
+
+set style fill transparent solid 0.25
+
+set xrange [0:11.5]
+set yrange [0:125]
+set key spacing 1.5
+#set ytics 0.1
+#set key at graph 0.45,0.15
+set key at 7.5,120 reverse Left
+
+#f(x,ab,p)=(log(ab)+(p**2-1)*log(1/x))/log(p*(p-1))
+f(x,ab,p)=(log(ab)+(p**2-1)*x*log(10))/log(p*(p-1))
+#set label 2 at graph 0.93,0.325 front "{\\normalsize $\\log_{3}(\\epsilon^{-1})$}" font ",12" rotate by 15 tc ls 2
+#set label 3 at graph 0.94,0.61 front "{\\normalsize $\\log_{2}(\\epsilon^{-1})$}" font ",12" rotate by 25 tc ls 4
+set label 4 at 10.45,95.7 front "{\\scriptsize $3\\log_{2}(1/\\epsilon)-5.65$}" font ",12" rotate by 37 tc ls 4
+set label 5 at 9.75,95 front "{\\scriptsize $4.9\\log_{3}(1/\\epsilon)-2.16$}" rotate by 37 tc ls 2
+
+
+pi=3.14159265359
+#set datafile separator ","
+g(x)=a+b*x
+h(x)=d+e*x
+i(x)=f+l*x
+fit g(x) 'clifford_r_householder' u (log(1/$4)/log(10)):($2) via a,b
+fit h(x) 'clifford_r_exhaustive' u (log(1/$4)/log(10)):($2) via d,e
+fit i(x) '../results.csv' u (log(1/$4)/log(10)):($3) via f,l
+plot f(x,1.0/16/pi,2) w lines lw 5 dt 3 lc rgb "#E69F00" notitle,\
+        f(x,10.0/9/sqrt(3.0)/pi**3,3) w lines lw 5 dt 3 lc rgb "#009E73" ti "Upper Bound",\
+        1.15*x*log(10)/log(2)+9.2 w lines lw 5 lt 5 lc rgb "#E69F00" ti '$(\mathbf{C}+\mathbf{T})_2$ - Bocharov et al.',\
+        g(x) w lines lw 5 lt 5 lc rgb "black" notitle,\
+        h(x) w lines lw 5 lt 5 lc rgb "#009E73" notitle,\
+        i(x) w lines lw 5 lt 5 lc rgb "red" notitle,\
+        1/0 w points pt 5 ps 2 lc rgb "black" ti '$(\mathbf{C}+\mathbf{R})_3^H$ - Gustafson et al.',\
+        1/0 w points pt 5 ps 2 lc rgb "#009E73" ti '$(\mathbf{C}+\mathbf{R})_3^E$ - Gustafson et al.',\
+        1/0 w points pt 5 ps 2 lc rgb "red" ti '$(\mathbf{C}+\mathbf{D})_3^H$ - This work',\
+        'clifford_r_householder' u (log(1/$4)/log(10)):($2) w points pt 5 ps 0.7 lc rgb "black" notitle,\
+        'clifford_r_exhaustive' u (log(1/$4)/log(10)):($2) w points pt 5 ps 0.7 lc rgb "#009E73" notitle,\
+        '../results.csv' u (log(1/$4)/log(10)):($3) w points pt 5 ps 0.7 lc rgb "red" notitle
+#       x*log(10)/log(2) w lines dt 4 lw 5 lc rgb "#E69F00" notitle,\
+#       x*log(10)/log(3) w lines dt 4 lw 5 lc rgb "#009E73" ti 'Optimal',\
+

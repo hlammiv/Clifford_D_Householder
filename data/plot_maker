@@ -1,0 +1,5 @@
+gnuplot tex_plotmaker
+pdflatex tve.tex
+#pdflatex histo.tex > /dev/null 2>&1 
+#pdflatex ktau.tex > /dev/null 2>&1 
+evince tve.pdf &
