@@ -100,4 +100,53 @@ Mat3 buildUnitary(const std::array<ringZ9chi,3>& u);
  */
 int countDgates(const std::array<ringZ9chi,3>& u);
 
+/**
+ * @brief Direct gate-sequence search for low D-count unitaries.
+ *
+ * Enumerates all products  C₀·D^{e₁}·C₁·D^{e₂}·...·D^{eₖ}·Cₖ
+ * where each Cᵢ is a monomial Clifford (permutation × ω-diagonal)
+ * and eᵢ ∈ {1,2}, searching for one within epsilon of R_Z(θ) in
+ * Frobenius distance.
+ *
+ * Searches k=0,1,...,max_d in order, returning the first hit (minimum D-count).
+ * k=0: 162 candidates (instant)
+ * k=1: ~52K candidates (instant)
+ * k=2: ~17M candidates (~2 seconds)
+ * k=3: meet-in-the-middle (~4 seconds)
+ *
+ * @param theta     Target rotation angle for R_{(0,1)}^Z(θ).
+ * @param epsilon   Desired Frobenius distance tolerance.
+ * @param max_d     Maximum D-count to search (recommend 2 or 3).
+ * @param best_frob [out] The Frobenius distance of the best match found.
+ * @return The best unitary found, or zero matrix if none within epsilon.
+ */
+struct DirectSearchResult {
+    Mat3 V;
+    int D_count;
+    double frob_dist;
+    bool success;
+};
+
+DirectSearchResult directSearch(double theta, double epsilon, int max_d);
+
+/**
+ * @brief Diagonal synthesis: find Diag(a/3^f, b/3^f, 1) ≈ R_Z(θ) directly.
+ *
+ * Instead of the Householder construction (which builds a full-rank projector
+ * at sde_chi = 12f), this searches for diagonal unitaries at sde_chi = 6f.
+ * This halves the D-gate cost: ~6 D-gates at ε≈0.003 vs ~20+ for Householder.
+ *
+ * For each f = 0,1,2,...,max_f:
+ *   Enumerates Z[ζ₉] elements a,b with a/3^f ≈ e^{-iθ/2}, b/3^f ≈ e^{iθ/2}
+ *   and checks if the resulting diagonal is within epsilon.
+ */
+struct DiagSearchResult {
+    ringZ9chi diag_entries[3];
+    int f_level;
+    double frob_dist;
+    bool success;
+};
+
+DiagSearchResult diagSearch(double theta, double epsilon, int max_f);
+
 #endif

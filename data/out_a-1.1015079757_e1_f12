@@ -1,0 +1,24 @@
+
+=== Phase 1: Direct search (D-count 0-2) ===
+Direct search: 648 Cliffords, eps=1
+  k=0: best=0.769077
+  Found at k=0!
+
+Direct search found solution with 0 D gate(s), Frobenius distance = 0.769077
+Skipping HRSA (direct search is optimal at this D-count).
+
+=== Gate Decomposition ===
+  Total D gates:    0
+  Method:           Direct gate-sequence search
+
+=== Phase 1: Direct search (D-count 0-2) ===
+Direct search: 648 Cliffords, eps=1
+  k=0: best=0.769077
+  Found at k=0!
+
+=== Summary ===
+Epsilon Diff. Val.: 0.769077 Eps. Cond.: 0.195312
+Matrix Frobenius distance ||X_(0,1) H - R_(0,1)^Z(theta)||_F = 0.769077   (target epsilon = 1, passes: YES)
+Total D gates:    0
+Method: Direct
+Success!
