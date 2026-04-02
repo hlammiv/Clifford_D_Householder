@@ -10,6 +10,7 @@
 #include<unordered_map>
 #include "cyclotomic_int9.h"
 #include "Z9chi.h"
+#include "decompose.h"
 
 /**
 * @file householder_search.h
@@ -63,6 +64,20 @@
 * \f$ R_{(0,1)}^Z(\theta) \f$ within \f$ \epsilon \f$. 
 *******************************************************************************************************************/
 array<ringZ9chi,3> HRSA(double theta, double epsilon, int max_f, double c);
+
+/**
+* @brief Like HRSA, but collects up to max_solns valid vectors at the first
+* successful f level, decomposes each into Clifford+D gates, and returns the
+* one with the fewest D gates.
+*
+* @param theta    Target rotation angle.
+* @param epsilon  Desired precision.
+* @param max_f    Maximum f level to try.
+* @param c        Contraction factor.
+* @param max_solns Maximum number of candidate solutions to collect at the winning f.
+* @returns The solution with the smallest D-gate count.
+*************************************************************************************************************************/
+array<ringZ9chi,3> HRSA_bestD(double theta, double epsilon, int max_f, double c, int max_solns = 50);
 
 /**
 * @brief For a given f value, this function fills the std::vectors x1_cands, x2_cands, and lookup with all 

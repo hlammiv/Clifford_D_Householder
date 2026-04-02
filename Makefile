@@ -9,7 +9,7 @@ CXXFLAGS := -O2 -fopenmp -Wall -Werror -pedantic #-I$(Z3_INCLUDE) -I.
 #LDFLAGS := -L$(Z3_BIN) -lz3
 
 # Source and target
-SRC := HRSA_test.cpp cyclotomic_int9.cpp Z9chi.cpp householder_search.cpp
+SRC := HRSA_test.cpp cyclotomic_int9.cpp Z9chi.cpp householder_search.cpp decompose.cpp
 TARGET := HRSA_tester
 
 # Build rule

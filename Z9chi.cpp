@@ -1,5 +1,12 @@
 #include "Z9chi.h"
 
+	// Integer power-of-3 helper — avoids double truncation from std::pow
+	static int int_pow3(int n) {
+		int result = 1;
+		for (int i = 0; i < n; ++i) result *= 3;
+		return result;
+	}
+
 	/* *********************** */
 	/* CONSTRUCTORS  */
 	/* *********************** */
@@ -21,6 +28,9 @@
 		
 		for(int i = 0; i < 6; i++){
 			element[i] = numer.getTerm(i);
+		}
+		for(int i = 6; i < 9; i++){
+			element[i] = 0;
 		}
 		cancel();
 	}
@@ -193,20 +203,22 @@
 		
 		if(exp < right.exp){
 			sum.exp = right.exp;
+			int scale = int_pow3(right.exp - exp);
 		
 			for(int i = 0; i < 6; i++){
-				sum.element[i] = pow(3,right.exp - exp)*element[i] + right.element[i];
+				sum.element[i] = scale*element[i] + right.element[i];
 			}
 		
 		} else if(exp > right.exp){
 			sum.exp = exp;
+			int scale = int_pow3(exp - right.exp);
 		
 			for(int i = 0; i < 6; i++){
-				sum.element[i] = element[i] + pow(3,exp - right.exp)*right.element[i];
+				sum.element[i] = element[i] + scale*right.element[i];
 			}
 		} else {
+			sum.exp = exp;
 			for(int i = 0; i < 6; i++){
-				sum.exp = exp;
 				sum.element[i] = element[i] + right.element[i];
 			}
 		}
@@ -223,18 +235,21 @@
 		
 		if(exp < right.exp){
 			diff.exp = right.exp;
+			int scale = int_pow3(right.exp - exp);
 		
 			for(int i = 0; i < 6; i++){
-				diff.element[i] = pow(3,right.exp - exp)*element[i] - right.element[i];
+				diff.element[i] = scale*element[i] - right.element[i];
 			}
 		
 		} else if(exp > right.exp){
 			diff.exp = exp;
+			int scale = int_pow3(exp - right.exp);
 		
 			for(int i = 0; i < 6; i++){
-				diff.element[i] = element[i] - pow(3,exp - right.exp)*right.element[i];
+				diff.element[i] = element[i] - scale*right.element[i];
 			}
 		} else {
+			diff.exp = exp;
 			for(int i = 0; i < 6; i++){
 				diff.element[i] = element[i] - right.element[i];
 			}
@@ -384,7 +399,7 @@
 		}
 		
 		prod.reduce();
- 		return prod.getTerm(1);
+ 		return prod.getTerm(0);
 	}
 	
 	// The field trace is the sum among all Galois conjugates
@@ -396,7 +411,7 @@
 				sum = sum+GaloisAut(i);
 			}
 		}
- 		return sum.getTerm(1);
+ 		return sum.getTerm(0);
 	}
 	
 	/* ********* */
@@ -434,7 +449,7 @@
 	
 	bool ringZ9chi::isRational() const{
 		for(int i = 1; i < 6; i++){
-			if(element[i] == 0){
+			if(element[i] != 0){
 				return false;
 			}
 		}
@@ -443,7 +458,7 @@
 	
 	bool ringZ9chi::isInt() const{
 		
-		if(isRational() && element[0]% static_cast<int>(pow(3,exp)) == 0){
+		if(isRational() && element[0] % int_pow3(exp) == 0){
 			return true;
 		}
 		return false;

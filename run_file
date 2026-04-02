@@ -1,97 +1,300 @@
-./HRSA_tester 0.7454575374 0.001 12 1 >> data/out_a0.7454575374_e0.001_f12
-./HRSA_tester -1.5492543857 0.001 12 1 >> data/out_a-1.5492543857_e0.001_f12
-./HRSA_tester -0.2806491862 0.001 12 1 >> data/out_a-0.2806491862_e0.001_f12
-./HRSA_tester 0.3991887171 0.001 12 1 >> data/out_a0.3991887171_e0.001_f12
-./HRSA_tester -0.5904776937 0.001 12 1 >> data/out_a-0.5904776937_e0.001_f12
-./HRSA_tester -0.0817578716 0.001 12 1 >> data/out_a-0.0817578716_e0.001_f12
-./HRSA_tester 1.3478930230 0.001 12 1 >> data/out_a1.3478930230_e0.001_f12
-./HRSA_tester -0.6034475417 0.001 12 1 >> data/out_a-0.6034475417_e0.001_f12
-./HRSA_tester 1.5484378836 0.001 12 1 >> data/out_a1.5484378836_e0.001_f12
-./HRSA_tester 0.8989761427 0.001 12 1 >> data/out_a0.8989761427_e0.001_f12
-./HRSA_tester -0.9112529161 0.001 12 1 >> data/out_a-0.9112529161_e0.001_f12
-./HRSA_tester -1.0397966475 0.001 12 1 >> data/out_a-1.0397966475_e0.001_f12
-./HRSA_tester -1.1224264155 0.001 12 1 >> data/out_a-1.1224264155_e0.001_f12
-./HRSA_tester 0.9989871010 0.001 12 1 >> data/out_a0.9989871010_e0.001_f12
-./HRSA_tester 1.4581326098 0.001 12 1 >> data/out_a1.4581326098_e0.001_f12
-./HRSA_tester -0.6610344651 0.001 12 1 >> data/out_a-0.6610344651_e0.001_f12
-./HRSA_tester 0.0794480797 0.001 12 1 >> data/out_a0.0794480797_e0.001_f12
-./HRSA_tester -1.3617674264 0.001 12 1 >> data/out_a-1.3617674264_e0.001_f12
-./HRSA_tester -1.0199228290 0.001 12 1 >> data/out_a-1.0199228290_e0.001_f12
-./HRSA_tester 1.4336256080 0.001 12 1 >> data/out_a1.4336256080_e0.001_f12
-./HRSA_tester -1.0463021842 0.001 12 1 >> data/out_a-1.0463021842_e0.001_f12
-./HRSA_tester -0.3064773851 0.001 12 1 >> data/out_a-0.3064773851_e0.001_f12
-./HRSA_tester -0.6784729886 0.001 12 1 >> data/out_a-0.6784729886_e0.001_f12
-./HRSA_tester 1.0591303541 0.001 12 1 >> data/out_a1.0591303541_e0.001_f12
-./HRSA_tester -0.5398819667 0.001 12 1 >> data/out_a-0.5398819667_e0.001_f12
-./HRSA_tester 0.8545682033 0.001 12 1 >> data/out_a0.8545682033_e0.001_f12
-./HRSA_tester 0.9778833856 0.001 12 1 >> data/out_a0.9778833856_e0.001_f12
-./HRSA_tester -1.4109441332 0.001 12 1 >> data/out_a-1.4109441332_e0.001_f12
-./HRSA_tester -0.8389723045 0.001 12 1 >> data/out_a-0.8389723045_e0.001_f12
-./HRSA_tester -0.3948817401 0.001 12 1 >> data/out_a-0.3948817401_e0.001_f12
-./HRSA_tester -1.0345614282 0.001 12 1 >> data/out_a-1.0345614282_e0.001_f12
-./HRSA_tester 0.3990585745 0.001 12 1 >> data/out_a0.3990585745_e0.001_f12
-./HRSA_tester -0.9035198876 0.001 12 1 >> data/out_a-0.9035198876_e0.001_f12
-./HRSA_tester 0.2108435256 0.001 12 1 >> data/out_a0.2108435256_e0.001_f12
-./HRSA_tester 1.0803386794 0.001 12 1 >> data/out_a1.0803386794_e0.001_f12
-./HRSA_tester -0.5058325911 0.001 12 1 >> data/out_a-0.5058325911_e0.001_f12
-./HRSA_tester -0.2995673358 0.001 12 1 >> data/out_a-0.2995673358_e0.001_f12
-./HRSA_tester 1.1062638841 0.001 12 1 >> data/out_a1.1062638841_e0.001_f12
-./HRSA_tester 0.5322937516 0.001 12 1 >> data/out_a0.5322937516_e0.001_f12
-./HRSA_tester -1.4492356305 0.001 12 1 >> data/out_a-1.4492356305_e0.001_f12
-./HRSA_tester -0.1625948286 0.001 12 1 >> data/out_a-0.1625948286_e0.001_f12
-./HRSA_tester 0.7923856194 0.001 12 1 >> data/out_a0.7923856194_e0.001_f12
-./HRSA_tester 0.1719606604 0.001 12 1 >> data/out_a0.1719606604_e0.001_f12
-./HRSA_tester -0.5010803716 0.001 12 1 >> data/out_a-0.5010803716_e0.001_f12
-./HRSA_tester -1.1712632844 0.001 12 1 >> data/out_a-1.1712632844_e0.001_f12
-./HRSA_tester 0.6031162650 0.001 12 1 >> data/out_a0.6031162650_e0.001_f12
-./HRSA_tester -1.0115132119 0.001 12 1 >> data/out_a-1.0115132119_e0.001_f12
-./HRSA_tester 1.2725514731 0.001 12 1 >> data/out_a1.2725514731_e0.001_f12
-./HRSA_tester 1.1128466483 0.001 12 1 >> data/out_a1.1128466483_e0.001_f12
-./HRSA_tester -1.0734112591 0.001 12 1 >> data/out_a-1.0734112591_e0.001_f12
-./HRSA_tester -0.2185984684 0.001 12 1 >> data/out_a-0.2185984684_e0.001_f12
-./HRSA_tester 0.3381917782 0.001 12 1 >> data/out_a0.3381917782_e0.001_f12
-./HRSA_tester -1.5413149485 0.001 12 1 >> data/out_a-1.5413149485_e0.001_f12
-./HRSA_tester -1.0716568488 0.001 12 1 >> data/out_a-1.0716568488_e0.001_f12
-./HRSA_tester 0.3102523256 0.001 12 1 >> data/out_a0.3102523256_e0.001_f12
-./HRSA_tester 0.5189001305 0.001 12 1 >> data/out_a0.5189001305_e0.001_f12
-./HRSA_tester 1.5357234324 0.001 12 1 >> data/out_a1.5357234324_e0.001_f12
-./HRSA_tester -0.4631724915 0.001 12 1 >> data/out_a-0.4631724915_e0.001_f12
-./HRSA_tester 0.8122331533 0.001 12 1 >> data/out_a0.8122331533_e0.001_f12
-./HRSA_tester -0.5951107620 0.001 12 1 >> data/out_a-0.5951107620_e0.001_f12
-./HRSA_tester -1.1316540349 0.001 12 1 >> data/out_a-1.1316540349_e0.001_f12
-./HRSA_tester -0.4090333949 0.001 12 1 >> data/out_a-0.4090333949_e0.001_f12
-./HRSA_tester -0.4914013292 0.001 12 1 >> data/out_a-0.4914013292_e0.001_f12
-./HRSA_tester -0.5214541908 0.001 12 1 >> data/out_a-0.5214541908_e0.001_f12
-./HRSA_tester -0.8740141194 0.001 12 1 >> data/out_a-0.8740141194_e0.001_f12
-./HRSA_tester 0.7306954709 0.001 12 1 >> data/out_a0.7306954709_e0.001_f12
-./HRSA_tester -0.0069873890 0.001 12 1 >> data/out_a-0.0069873890_e0.001_f12
-./HRSA_tester 0.7480068739 0.001 12 1 >> data/out_a0.7480068739_e0.001_f12
-./HRSA_tester -1.1335809349 0.001 12 1 >> data/out_a-1.1335809349_e0.001_f12
-./HRSA_tester -0.0553301902 0.001 12 1 >> data/out_a-0.0553301902_e0.001_f12
-./HRSA_tester 0.9744578149 0.001 12 1 >> data/out_a0.9744578149_e0.001_f12
-./HRSA_tester 0.9963854867 0.001 12 1 >> data/out_a0.9963854867_e0.001_f12
-./HRSA_tester 1.2369753993 0.001 12 1 >> data/out_a1.2369753993_e0.001_f12
-./HRSA_tester -0.4085498165 0.001 12 1 >> data/out_a-0.4085498165_e0.001_f12
-./HRSA_tester 1.1463234546 0.001 12 1 >> data/out_a1.1463234546_e0.001_f12
-./HRSA_tester 0.0596706331 0.001 12 1 >> data/out_a0.0596706331_e0.001_f12
-./HRSA_tester -0.1304571776 0.001 12 1 >> data/out_a-0.1304571776_e0.001_f12
-./HRSA_tester -1.3945688829 0.001 12 1 >> data/out_a-1.3945688829_e0.001_f12
-./HRSA_tester -1.4629656692 0.001 12 1 >> data/out_a-1.4629656692_e0.001_f12
-./HRSA_tester -0.3681502685 0.001 12 1 >> data/out_a-0.3681502685_e0.001_f12
-./HRSA_tester -0.5018006289 0.001 12 1 >> data/out_a-0.5018006289_e0.001_f12
-./HRSA_tester 0.8430103671 0.001 12 1 >> data/out_a0.8430103671_e0.001_f12
-./HRSA_tester 0.9929599179 0.001 12 1 >> data/out_a0.9929599179_e0.001_f12
-./HRSA_tester 0.2059456584 0.001 12 1 >> data/out_a0.2059456584_e0.001_f12
-./HRSA_tester 1.4552222131 0.001 12 1 >> data/out_a1.4552222131_e0.001_f12
-./HRSA_tester -0.9928901273 0.001 12 1 >> data/out_a-0.9928901273_e0.001_f12
-./HRSA_tester 0.3149313913 0.001 12 1 >> data/out_a0.3149313913_e0.001_f12
-./HRSA_tester -0.0871079525 0.001 12 1 >> data/out_a-0.0871079525_e0.001_f12
-./HRSA_tester -0.0324074046 0.001 12 1 >> data/out_a-0.0324074046_e0.001_f12
-./HRSA_tester 1.4670303289 0.001 12 1 >> data/out_a1.4670303289_e0.001_f12
-./HRSA_tester -0.7482981322 0.001 12 1 >> data/out_a-0.7482981322_e0.001_f12
-./HRSA_tester 0.7411315359 0.001 12 1 >> data/out_a0.7411315359_e0.001_f12
-./HRSA_tester 0.1755959371 0.001 12 1 >> data/out_a0.1755959371_e0.001_f12
-./HRSA_tester -1.3062830291 0.001 12 1 >> data/out_a-1.3062830291_e0.001_f12
-./HRSA_tester 0.3385106416 0.001 12 1 >> data/out_a0.3385106416_e0.001_f12
-./HRSA_tester -0.9087252957 0.001 12 1 >> data/out_a-0.9087252957_e0.001_f12
-./HRSA_tester -0.8048671998 0.001 12 1 >> data/out_a-0.8048671998_e0.001_f12
+./HRSA_tester 1.2124478906 1 12 1 --max-solns 10 >> data/out_a1.2124478906_e1_f12
+./HRSA_tester 0.6305596272 1 12 1 --max-solns 10 >> data/out_a0.6305596272_e1_f12
+./HRSA_tester 1.0299055739 1 12 1 --max-solns 10 >> data/out_a1.0299055739_e1_f12
+./HRSA_tester 0.0839501980 1 12 1 --max-solns 10 >> data/out_a0.0839501980_e1_f12
+./HRSA_tester 0.3405543364 1 12 1 --max-solns 10 >> data/out_a0.3405543364_e1_f12
+./HRSA_tester 0.5654797364 1 12 1 --max-solns 10 >> data/out_a0.5654797364_e1_f12
+./HRSA_tester -0.7756601473 1 12 1 --max-solns 10 >> data/out_a-0.7756601473_e1_f12
+./HRSA_tester 1.2826515605 1 12 1 --max-solns 10 >> data/out_a1.2826515605_e1_f12
+./HRSA_tester 0.6789201631 1 12 1 --max-solns 10 >> data/out_a0.6789201631_e1_f12
+./HRSA_tester -0.0206105902 1 12 1 --max-solns 10 >> data/out_a-0.0206105902_e1_f12
+./HRSA_tester -1.0087583886 1 12 1 --max-solns 10 >> data/out_a-1.0087583886_e1_f12
+./HRSA_tester -1.1562868510 1 12 1 --max-solns 10 >> data/out_a-1.1562868510_e1_f12
+./HRSA_tester -1.5327392664 1 12 1 --max-solns 10 >> data/out_a-1.5327392664_e1_f12
+./HRSA_tester -0.7984432254 1 12 1 --max-solns 10 >> data/out_a-0.7984432254_e1_f12
+./HRSA_tester -0.2529902227 1 12 1 --max-solns 10 >> data/out_a-0.2529902227_e1_f12
+./HRSA_tester -1.4299392814 1 12 1 --max-solns 10 >> data/out_a-1.4299392814_e1_f12
+./HRSA_tester -0.2173863654 1 12 1 --max-solns 10 >> data/out_a-0.2173863654_e1_f12
+./HRSA_tester 0.4660202679 1 12 1 --max-solns 10 >> data/out_a0.4660202679_e1_f12
+./HRSA_tester -0.2435992168 1 12 1 --max-solns 10 >> data/out_a-0.2435992168_e1_f12
+./HRSA_tester 0.9566507542 1 12 1 --max-solns 10 >> data/out_a0.9566507542_e1_f12
+./HRSA_tester 0.5165157512 1 12 1 --max-solns 10 >> data/out_a0.5165157512_e1_f12
+./HRSA_tester -1.3547931771 1 12 1 --max-solns 10 >> data/out_a-1.3547931771_e1_f12
+./HRSA_tester -1.1741585085 1 12 1 --max-solns 10 >> data/out_a-1.1741585085_e1_f12
+./HRSA_tester -1.4865870478 1 12 1 --max-solns 10 >> data/out_a-1.4865870478_e1_f12
+./HRSA_tester 1.5266948882 1 12 1 --max-solns 10 >> data/out_a1.5266948882_e1_f12
+./HRSA_tester -0.7222281032 1 12 1 --max-solns 10 >> data/out_a-0.7222281032_e1_f12
+./HRSA_tester 0.0902562878 1 12 1 --max-solns 10 >> data/out_a0.0902562878_e1_f12
+./HRSA_tester -0.9221916574 1 12 1 --max-solns 10 >> data/out_a-0.9221916574_e1_f12
+./HRSA_tester -0.5425613860 1 12 1 --max-solns 10 >> data/out_a-0.5425613860_e1_f12
+./HRSA_tester 1.1396090546 1 12 1 --max-solns 10 >> data/out_a1.1396090546_e1_f12
+./HRSA_tester 0.1521737799 1 12 1 --max-solns 10 >> data/out_a0.1521737799_e1_f12
+./HRSA_tester 0.9219078359 1 12 1 --max-solns 10 >> data/out_a0.9219078359_e1_f12
+./HRSA_tester -0.3077396934 1 12 1 --max-solns 10 >> data/out_a-0.3077396934_e1_f12
+./HRSA_tester -1.0049653873 1 12 1 --max-solns 10 >> data/out_a-1.0049653873_e1_f12
+./HRSA_tester -0.2347338901 1 12 1 --max-solns 10 >> data/out_a-0.2347338901_e1_f12
+./HRSA_tester 1.4985360910 1 12 1 --max-solns 10 >> data/out_a1.4985360910_e1_f12
+./HRSA_tester -1.3179297576 1 12 1 --max-solns 10 >> data/out_a-1.3179297576_e1_f12
+./HRSA_tester 0.4993475583 1 12 1 --max-solns 10 >> data/out_a0.4993475583_e1_f12
+./HRSA_tester -0.6013415069 1 12 1 --max-solns 10 >> data/out_a-0.6013415069_e1_f12
+./HRSA_tester -1.1605992372 1 12 1 --max-solns 10 >> data/out_a-1.1605992372_e1_f12
+./HRSA_tester 0.7327523183 1 12 1 --max-solns 10 >> data/out_a0.7327523183_e1_f12
+./HRSA_tester -0.2512965461 1 12 1 --max-solns 10 >> data/out_a-0.2512965461_e1_f12
+./HRSA_tester 0.1609069685 1 12 1 --max-solns 10 >> data/out_a0.1609069685_e1_f12
+./HRSA_tester -0.9975094878 1 12 1 --max-solns 10 >> data/out_a-0.9975094878_e1_f12
+./HRSA_tester 1.2956384366 1 12 1 --max-solns 10 >> data/out_a1.2956384366_e1_f12
+./HRSA_tester 0.9764927341 1 12 1 --max-solns 10 >> data/out_a0.9764927341_e1_f12
+./HRSA_tester 0.5120764437 1 12 1 --max-solns 10 >> data/out_a0.5120764437_e1_f12
+./HRSA_tester -0.2469627647 1 12 1 --max-solns 10 >> data/out_a-0.2469627647_e1_f12
+./HRSA_tester -0.9948072777 1 12 1 --max-solns 10 >> data/out_a-0.9948072777_e1_f12
+./HRSA_tester -0.8143408805 1 12 1 --max-solns 10 >> data/out_a-0.8143408805_e1_f12
+./HRSA_tester -0.9383836574 1 12 1 --max-solns 10 >> data/out_a-0.9383836574_e1_f12
+./HRSA_tester 1.3792560706 1 12 1 --max-solns 10 >> data/out_a1.3792560706_e1_f12
+./HRSA_tester -0.3573260068 1 12 1 --max-solns 10 >> data/out_a-0.3573260068_e1_f12
+./HRSA_tester -0.1124692996 1 12 1 --max-solns 10 >> data/out_a-0.1124692996_e1_f12
+./HRSA_tester -1.2087021503 1 12 1 --max-solns 10 >> data/out_a-1.2087021503_e1_f12
+./HRSA_tester -0.4060356190 1 12 1 --max-solns 10 >> data/out_a-0.4060356190_e1_f12
+./HRSA_tester -0.4676534733 1 12 1 --max-solns 10 >> data/out_a-0.4676534733_e1_f12
+./HRSA_tester -0.3791033082 1 12 1 --max-solns 10 >> data/out_a-0.3791033082_e1_f12
+./HRSA_tester -0.8154819295 1 12 1 --max-solns 10 >> data/out_a-0.8154819295_e1_f12
+./HRSA_tester -1.0036240545 1 12 1 --max-solns 10 >> data/out_a-1.0036240545_e1_f12
+./HRSA_tester -0.6477175526 1 12 1 --max-solns 10 >> data/out_a-0.6477175526_e1_f12
+./HRSA_tester -0.3636765883 1 12 1 --max-solns 10 >> data/out_a-0.3636765883_e1_f12
+./HRSA_tester -1.3207565352 1 12 1 --max-solns 10 >> data/out_a-1.3207565352_e1_f12
+./HRSA_tester 0.8879527582 1 12 1 --max-solns 10 >> data/out_a0.8879527582_e1_f12
+./HRSA_tester 1.2788365599 1 12 1 --max-solns 10 >> data/out_a1.2788365599_e1_f12
+./HRSA_tester 0.2081483603 1 12 1 --max-solns 10 >> data/out_a0.2081483603_e1_f12
+./HRSA_tester 1.4188610351 1 12 1 --max-solns 10 >> data/out_a1.4188610351_e1_f12
+./HRSA_tester -0.1040729478 1 12 1 --max-solns 10 >> data/out_a-0.1040729478_e1_f12
+./HRSA_tester 1.0904116279 1 12 1 --max-solns 10 >> data/out_a1.0904116279_e1_f12
+./HRSA_tester -0.9168165350 1 12 1 --max-solns 10 >> data/out_a-0.9168165350_e1_f12
+./HRSA_tester -0.0567169093 1 12 1 --max-solns 10 >> data/out_a-0.0567169093_e1_f12
+./HRSA_tester -0.6584956886 1 12 1 --max-solns 10 >> data/out_a-0.6584956886_e1_f12
+./HRSA_tester 0.6895146867 1 12 1 --max-solns 10 >> data/out_a0.6895146867_e1_f12
+./HRSA_tester -1.0808696189 1 12 1 --max-solns 10 >> data/out_a-1.0808696189_e1_f12
+./HRSA_tester 0.4714301045 1 12 1 --max-solns 10 >> data/out_a0.4714301045_e1_f12
+./HRSA_tester 1.3172167189 1 12 1 --max-solns 10 >> data/out_a1.3172167189_e1_f12
+./HRSA_tester -0.0646308551 1 12 1 --max-solns 10 >> data/out_a-0.0646308551_e1_f12
+./HRSA_tester -0.8995212533 1 12 1 --max-solns 10 >> data/out_a-0.8995212533_e1_f12
+./HRSA_tester 1.3616467040 1 12 1 --max-solns 10 >> data/out_a1.3616467040_e1_f12
+./HRSA_tester -1.1657927961 1 12 1 --max-solns 10 >> data/out_a-1.1657927961_e1_f12
+./HRSA_tester 1.1669029432 1 12 1 --max-solns 10 >> data/out_a1.1669029432_e1_f12
+./HRSA_tester -0.3527995649 1 12 1 --max-solns 10 >> data/out_a-0.3527995649_e1_f12
+./HRSA_tester 0.9472896584 1 12 1 --max-solns 10 >> data/out_a0.9472896584_e1_f12
+./HRSA_tester 1.3888938883 1 12 1 --max-solns 10 >> data/out_a1.3888938883_e1_f12
+./HRSA_tester 1.0492337214 1 12 1 --max-solns 10 >> data/out_a1.0492337214_e1_f12
+./HRSA_tester -0.1740244378 1 12 1 --max-solns 10 >> data/out_a-0.1740244378_e1_f12
+./HRSA_tester -0.5254581650 1 12 1 --max-solns 10 >> data/out_a-0.5254581650_e1_f12
+./HRSA_tester 1.5428172388 1 12 1 --max-solns 10 >> data/out_a1.5428172388_e1_f12
+./HRSA_tester 1.5446642328 1 12 1 --max-solns 10 >> data/out_a1.5446642328_e1_f12
+./HRSA_tester -0.9971163476 1 12 1 --max-solns 10 >> data/out_a-0.9971163476_e1_f12
+./HRSA_tester 0.3292778354 1 12 1 --max-solns 10 >> data/out_a0.3292778354_e1_f12
+./HRSA_tester -0.2272168187 1 12 1 --max-solns 10 >> data/out_a-0.2272168187_e1_f12
+./HRSA_tester 0.4548310716 1 12 1 --max-solns 10 >> data/out_a0.4548310716_e1_f12
+./HRSA_tester 0.6419723076 1 12 1 --max-solns 10 >> data/out_a0.6419723076_e1_f12
+./HRSA_tester -1.4855695071 1 12 1 --max-solns 10 >> data/out_a-1.4855695071_e1_f12
+./HRSA_tester 0.3135844161 1 12 1 --max-solns 10 >> data/out_a0.3135844161_e1_f12
+./HRSA_tester -0.0461092508 1 12 1 --max-solns 10 >> data/out_a-0.0461092508_e1_f12
+./HRSA_tester 0.8196259105 1 12 1 --max-solns 10 >> data/out_a0.8196259105_e1_f12
+./HRSA_tester -0.1698103604 1 12 1 --max-solns 10 >> data/out_a-0.1698103604_e1_f12
+./HRSA_tester 0.2626157797 1 12 1 --max-solns 10 >> data/out_a0.2626157797_e1_f12
+./HRSA_tester -0.6619149970 0.1 12 1 --max-solns 10 >> data/out_a-0.6619149970_e0.1_f12
+./HRSA_tester 1.2669381768 0.1 12 1 --max-solns 10 >> data/out_a1.2669381768_e0.1_f12
+./HRSA_tester 1.3600943738 0.1 12 1 --max-solns 10 >> data/out_a1.3600943738_e0.1_f12
+./HRSA_tester 0.9649336332 0.1 12 1 --max-solns 10 >> data/out_a0.9649336332_e0.1_f12
+./HRSA_tester 1.2454076668 0.1 12 1 --max-solns 10 >> data/out_a1.2454076668_e0.1_f12
+./HRSA_tester 0.8097409964 0.1 12 1 --max-solns 10 >> data/out_a0.8097409964_e0.1_f12
+./HRSA_tester -0.1052517219 0.1 12 1 --max-solns 10 >> data/out_a-0.1052517219_e0.1_f12
+./HRSA_tester 0.1436407462 0.1 12 1 --max-solns 10 >> data/out_a0.1436407462_e0.1_f12
+./HRSA_tester 1.3514228399 0.1 12 1 --max-solns 10 >> data/out_a1.3514228399_e0.1_f12
+./HRSA_tester 0.4094933971 0.1 12 1 --max-solns 10 >> data/out_a0.4094933971_e0.1_f12
+./HRSA_tester 0.2089720527 0.1 12 1 --max-solns 10 >> data/out_a0.2089720527_e0.1_f12
+./HRSA_tester 1.1818476915 0.1 12 1 --max-solns 10 >> data/out_a1.1818476915_e0.1_f12
+./HRSA_tester 0.8007665485 0.1 12 1 --max-solns 10 >> data/out_a0.8007665485_e0.1_f12
+./HRSA_tester -0.7393803576 0.1 12 1 --max-solns 10 >> data/out_a-0.7393803576_e0.1_f12
+./HRSA_tester 0.0654042684 0.1 12 1 --max-solns 10 >> data/out_a0.0654042684_e0.1_f12
+./HRSA_tester 0.9642113481 0.1 12 1 --max-solns 10 >> data/out_a0.9642113481_e0.1_f12
+./HRSA_tester 0.8635423887 0.1 12 1 --max-solns 10 >> data/out_a0.8635423887_e0.1_f12
+./HRSA_tester -1.3512063222 0.1 12 1 --max-solns 10 >> data/out_a-1.3512063222_e0.1_f12
+./HRSA_tester 0.3922982053 0.1 12 1 --max-solns 10 >> data/out_a0.3922982053_e0.1_f12
+./HRSA_tester 0.9977339440 0.1 12 1 --max-solns 10 >> data/out_a0.9977339440_e0.1_f12
+./HRSA_tester -0.7567515479 0.1 12 1 --max-solns 10 >> data/out_a-0.7567515479_e0.1_f12
+./HRSA_tester -1.4052470580 0.1 12 1 --max-solns 10 >> data/out_a-1.4052470580_e0.1_f12
+./HRSA_tester -0.0021479401 0.1 12 1 --max-solns 10 >> data/out_a-0.0021479401_e0.1_f12
+./HRSA_tester -0.9915939101 0.1 12 1 --max-solns 10 >> data/out_a-0.9915939101_e0.1_f12
+./HRSA_tester -0.0133876384 0.1 12 1 --max-solns 10 >> data/out_a-0.0133876384_e0.1_f12
+./HRSA_tester 1.3920346176 0.1 12 1 --max-solns 10 >> data/out_a1.3920346176_e0.1_f12
+./HRSA_tester -0.4664465805 0.1 12 1 --max-solns 10 >> data/out_a-0.4664465805_e0.1_f12
+./HRSA_tester 1.2284641489 0.1 12 1 --max-solns 10 >> data/out_a1.2284641489_e0.1_f12
+./HRSA_tester 0.6558970582 0.1 12 1 --max-solns 10 >> data/out_a0.6558970582_e0.1_f12
+./HRSA_tester 0.0913187570 0.1 12 1 --max-solns 10 >> data/out_a0.0913187570_e0.1_f12
+./HRSA_tester 1.3926337432 0.1 12 1 --max-solns 10 >> data/out_a1.3926337432_e0.1_f12
+./HRSA_tester 1.3810691776 0.1 12 1 --max-solns 10 >> data/out_a1.3810691776_e0.1_f12
+./HRSA_tester 0.2228651202 0.1 12 1 --max-solns 10 >> data/out_a0.2228651202_e0.1_f12
+./HRSA_tester 0.9989433413 0.1 12 1 --max-solns 10 >> data/out_a0.9989433413_e0.1_f12
+./HRSA_tester 1.4825746563 0.1 12 1 --max-solns 10 >> data/out_a1.4825746563_e0.1_f12
+./HRSA_tester -0.7931938547 0.1 12 1 --max-solns 10 >> data/out_a-0.7931938547_e0.1_f12
+./HRSA_tester -0.5029500087 0.1 12 1 --max-solns 10 >> data/out_a-0.5029500087_e0.1_f12
+./HRSA_tester -1.3969966419 0.1 12 1 --max-solns 10 >> data/out_a-1.3969966419_e0.1_f12
+./HRSA_tester 1.4712850849 0.1 12 1 --max-solns 10 >> data/out_a1.4712850849_e0.1_f12
+./HRSA_tester 0.3994648822 0.1 12 1 --max-solns 10 >> data/out_a0.3994648822_e0.1_f12
+./HRSA_tester 1.5469486738 0.1 12 1 --max-solns 10 >> data/out_a1.5469486738_e0.1_f12
+./HRSA_tester -0.1312886047 0.1 12 1 --max-solns 10 >> data/out_a-0.1312886047_e0.1_f12
+./HRSA_tester -1.1318364055 0.1 12 1 --max-solns 10 >> data/out_a-1.1318364055_e0.1_f12
+./HRSA_tester -0.3395276034 0.1 12 1 --max-solns 10 >> data/out_a-0.3395276034_e0.1_f12
+./HRSA_tester 1.1452504675 0.1 12 1 --max-solns 10 >> data/out_a1.1452504675_e0.1_f12
+./HRSA_tester 1.2066074732 0.1 12 1 --max-solns 10 >> data/out_a1.2066074732_e0.1_f12
+./HRSA_tester -0.0185833617 0.1 12 1 --max-solns 10 >> data/out_a-0.0185833617_e0.1_f12
+./HRSA_tester -1.5559812698 0.1 12 1 --max-solns 10 >> data/out_a-1.5559812698_e0.1_f12
+./HRSA_tester -1.3295396393 0.1 12 1 --max-solns 10 >> data/out_a-1.3295396393_e0.1_f12
+./HRSA_tester 0.6059484502 0.1 12 1 --max-solns 10 >> data/out_a0.6059484502_e0.1_f12
+./HRSA_tester 0.7327520981 0.1 12 1 --max-solns 10 >> data/out_a0.7327520981_e0.1_f12
+./HRSA_tester 1.2633312491 0.1 12 1 --max-solns 10 >> data/out_a1.2633312491_e0.1_f12
+./HRSA_tester -1.0260926688 0.1 12 1 --max-solns 10 >> data/out_a-1.0260926688_e0.1_f12
+./HRSA_tester 1.4946254132 0.1 12 1 --max-solns 10 >> data/out_a1.4946254132_e0.1_f12
+./HRSA_tester 1.2474271967 0.1 12 1 --max-solns 10 >> data/out_a1.2474271967_e0.1_f12
+./HRSA_tester 0.0038202778 0.1 12 1 --max-solns 10 >> data/out_a0.0038202778_e0.1_f12
+./HRSA_tester 1.2840611223 0.1 12 1 --max-solns 10 >> data/out_a1.2840611223_e0.1_f12
+./HRSA_tester 1.1495742667 0.1 12 1 --max-solns 10 >> data/out_a1.1495742667_e0.1_f12
+./HRSA_tester 0.9663441298 0.1 12 1 --max-solns 10 >> data/out_a0.9663441298_e0.1_f12
+./HRSA_tester 0.9960229919 0.1 12 1 --max-solns 10 >> data/out_a0.9960229919_e0.1_f12
+./HRSA_tester 1.5479360550 0.1 12 1 --max-solns 10 >> data/out_a1.5479360550_e0.1_f12
+./HRSA_tester 1.5482538776 0.1 12 1 --max-solns 10 >> data/out_a1.5482538776_e0.1_f12
+./HRSA_tester -0.8981237518 0.1 12 1 --max-solns 10 >> data/out_a-0.8981237518_e0.1_f12
+./HRSA_tester -0.8004496373 0.1 12 1 --max-solns 10 >> data/out_a-0.8004496373_e0.1_f12
+./HRSA_tester 1.0552773154 0.1 12 1 --max-solns 10 >> data/out_a1.0552773154_e0.1_f12
+./HRSA_tester 0.0650921248 0.1 12 1 --max-solns 10 >> data/out_a0.0650921248_e0.1_f12
+./HRSA_tester 0.0540657185 0.1 12 1 --max-solns 10 >> data/out_a0.0540657185_e0.1_f12
+./HRSA_tester 0.2985400036 0.1 12 1 --max-solns 10 >> data/out_a0.2985400036_e0.1_f12
+./HRSA_tester -0.5897236690 0.1 12 1 --max-solns 10 >> data/out_a-0.5897236690_e0.1_f12
+./HRSA_tester -0.8742415059 0.1 12 1 --max-solns 10 >> data/out_a-0.8742415059_e0.1_f12
+./HRSA_tester 1.0792516820 0.1 12 1 --max-solns 10 >> data/out_a1.0792516820_e0.1_f12
+./HRSA_tester 0.6792108039 0.1 12 1 --max-solns 10 >> data/out_a0.6792108039_e0.1_f12
+./HRSA_tester -1.0251853692 0.1 12 1 --max-solns 10 >> data/out_a-1.0251853692_e0.1_f12
+./HRSA_tester -0.6446159988 0.1 12 1 --max-solns 10 >> data/out_a-0.6446159988_e0.1_f12
+./HRSA_tester 1.2158088695 0.1 12 1 --max-solns 10 >> data/out_a1.2158088695_e0.1_f12
+./HRSA_tester 1.2968542700 0.1 12 1 --max-solns 10 >> data/out_a1.2968542700_e0.1_f12
+./HRSA_tester -0.4059203894 0.1 12 1 --max-solns 10 >> data/out_a-0.4059203894_e0.1_f12
+./HRSA_tester -1.2811490464 0.1 12 1 --max-solns 10 >> data/out_a-1.2811490464_e0.1_f12
+./HRSA_tester 0.6000701981 0.1 12 1 --max-solns 10 >> data/out_a0.6000701981_e0.1_f12
+./HRSA_tester -0.6889065905 0.1 12 1 --max-solns 10 >> data/out_a-0.6889065905_e0.1_f12
+./HRSA_tester 1.2920462595 0.1 12 1 --max-solns 10 >> data/out_a1.2920462595_e0.1_f12
+./HRSA_tester -0.6601438889 0.1 12 1 --max-solns 10 >> data/out_a-0.6601438889_e0.1_f12
+./HRSA_tester -0.7752069185 0.1 12 1 --max-solns 10 >> data/out_a-0.7752069185_e0.1_f12
+./HRSA_tester 0.0512208505 0.1 12 1 --max-solns 10 >> data/out_a0.0512208505_e0.1_f12
+./HRSA_tester 1.2034956519 0.1 12 1 --max-solns 10 >> data/out_a1.2034956519_e0.1_f12
+./HRSA_tester 0.6201615837 0.1 12 1 --max-solns 10 >> data/out_a0.6201615837_e0.1_f12
+./HRSA_tester 0.4488124474 0.1 12 1 --max-solns 10 >> data/out_a0.4488124474_e0.1_f12
+./HRSA_tester -0.0626836958 0.1 12 1 --max-solns 10 >> data/out_a-0.0626836958_e0.1_f12
+./HRSA_tester 0.7425133919 0.1 12 1 --max-solns 10 >> data/out_a0.7425133919_e0.1_f12
+./HRSA_tester -1.2855048601 0.1 12 1 --max-solns 10 >> data/out_a-1.2855048601_e0.1_f12
+./HRSA_tester 0.5625028868 0.1 12 1 --max-solns 10 >> data/out_a0.5625028868_e0.1_f12
+./HRSA_tester -0.5022796148 0.1 12 1 --max-solns 10 >> data/out_a-0.5022796148_e0.1_f12
+./HRSA_tester 1.4247236954 0.1 12 1 --max-solns 10 >> data/out_a1.4247236954_e0.1_f12
+./HRSA_tester 1.1084189243 0.1 12 1 --max-solns 10 >> data/out_a1.1084189243_e0.1_f12
+./HRSA_tester -0.4527160439 0.1 12 1 --max-solns 10 >> data/out_a-0.4527160439_e0.1_f12
+./HRSA_tester -0.5684127613 0.1 12 1 --max-solns 10 >> data/out_a-0.5684127613_e0.1_f12
+./HRSA_tester -0.0641298839 0.1 12 1 --max-solns 10 >> data/out_a-0.0641298839_e0.1_f12
+./HRSA_tester -1.3287524541 0.1 12 1 --max-solns 10 >> data/out_a-1.3287524541_e0.1_f12
+./HRSA_tester -0.0441018895 0.1 12 1 --max-solns 10 >> data/out_a-0.0441018895_e0.1_f12
+./HRSA_tester -0.6361710079 0.1 12 1 --max-solns 10 >> data/out_a-0.6361710079_e0.1_f12
+./HRSA_tester 1.4994276452 0.01 12 1 --max-solns 10 >> data/out_a1.4994276452_e0.01_f12
+./HRSA_tester -0.1113165450 0.01 12 1 --max-solns 10 >> data/out_a-0.1113165450_e0.01_f12
+./HRSA_tester -0.9109141616 0.01 12 1 --max-solns 10 >> data/out_a-0.9109141616_e0.01_f12
+./HRSA_tester 0.8915041755 0.01 12 1 --max-solns 10 >> data/out_a0.8915041755_e0.01_f12
+./HRSA_tester 1.4359401034 0.01 12 1 --max-solns 10 >> data/out_a1.4359401034_e0.01_f12
+./HRSA_tester 0.2439106867 0.01 12 1 --max-solns 10 >> data/out_a0.2439106867_e0.01_f12
+./HRSA_tester 0.7769379829 0.01 12 1 --max-solns 10 >> data/out_a0.7769379829_e0.01_f12
+./HRSA_tester 0.0506678382 0.01 12 1 --max-solns 10 >> data/out_a0.0506678382_e0.01_f12
+./HRSA_tester 0.4446452543 0.01 12 1 --max-solns 10 >> data/out_a0.4446452543_e0.01_f12
+./HRSA_tester -0.6166259718 0.01 12 1 --max-solns 10 >> data/out_a-0.6166259718_e0.01_f12
+./HRSA_tester 0.9041091824 0.01 12 1 --max-solns 10 >> data/out_a0.9041091824_e0.01_f12
+./HRSA_tester 1.0887718328 0.01 12 1 --max-solns 10 >> data/out_a1.0887718328_e0.01_f12
+./HRSA_tester -0.5649737518 0.01 12 1 --max-solns 10 >> data/out_a-0.5649737518_e0.01_f12
+./HRSA_tester 1.3902429130 0.01 12 1 --max-solns 10 >> data/out_a1.3902429130_e0.01_f12
+./HRSA_tester 0.6588641765 0.01 12 1 --max-solns 10 >> data/out_a0.6588641765_e0.01_f12
+./HRSA_tester -0.0806189697 0.01 12 1 --max-solns 10 >> data/out_a-0.0806189697_e0.01_f12
+./HRSA_tester -0.5573066091 0.01 12 1 --max-solns 10 >> data/out_a-0.5573066091_e0.01_f12
+./HRSA_tester 0.9985098838 0.01 12 1 --max-solns 10 >> data/out_a0.9985098838_e0.01_f12
+./HRSA_tester 0.7505682313 0.01 12 1 --max-solns 10 >> data/out_a0.7505682313_e0.01_f12
+./HRSA_tester 0.3744832219 0.01 12 1 --max-solns 10 >> data/out_a0.3744832219_e0.01_f12
+./HRSA_tester -1.2099739315 0.01 12 1 --max-solns 10 >> data/out_a-1.2099739315_e0.01_f12
+./HRSA_tester -0.3914249683 0.01 12 1 --max-solns 10 >> data/out_a-0.3914249683_e0.01_f12
+./HRSA_tester -0.0600959875 0.01 12 1 --max-solns 10 >> data/out_a-0.0600959875_e0.01_f12
+./HRSA_tester -1.5011212494 0.01 12 1 --max-solns 10 >> data/out_a-1.5011212494_e0.01_f12
+./HRSA_tester -0.6586501793 0.01 12 1 --max-solns 10 >> data/out_a-0.6586501793_e0.01_f12
+./HRSA_tester -1.0148078263 0.01 12 1 --max-solns 10 >> data/out_a-1.0148078263_e0.01_f12
+./HRSA_tester 1.0532574315 0.01 12 1 --max-solns 10 >> data/out_a1.0532574315_e0.01_f12
+./HRSA_tester -1.4756983086 0.01 12 1 --max-solns 10 >> data/out_a-1.4756983086_e0.01_f12
+./HRSA_tester -1.4260372262 0.01 12 1 --max-solns 10 >> data/out_a-1.4260372262_e0.01_f12
+./HRSA_tester -0.3914647838 0.01 12 1 --max-solns 10 >> data/out_a-0.3914647838_e0.01_f12
+./HRSA_tester 0.2947005114 0.01 12 1 --max-solns 10 >> data/out_a0.2947005114_e0.01_f12
+./HRSA_tester 0.4284997758 0.01 12 1 --max-solns 10 >> data/out_a0.4284997758_e0.01_f12
+./HRSA_tester -0.5398100204 0.01 12 1 --max-solns 10 >> data/out_a-0.5398100204_e0.01_f12
+./HRSA_tester -0.9994840556 0.01 12 1 --max-solns 10 >> data/out_a-0.9994840556_e0.01_f12
+./HRSA_tester -1.0886318323 0.01 12 1 --max-solns 10 >> data/out_a-1.0886318323_e0.01_f12
+./HRSA_tester 0.9670468762 0.01 12 1 --max-solns 10 >> data/out_a0.9670468762_e0.01_f12
+./HRSA_tester 0.6706170540 0.01 12 1 --max-solns 10 >> data/out_a0.6706170540_e0.01_f12
+./HRSA_tester 1.0878700674 0.01 12 1 --max-solns 10 >> data/out_a1.0878700674_e0.01_f12
+./HRSA_tester 1.3635601818 0.01 12 1 --max-solns 10 >> data/out_a1.3635601818_e0.01_f12
+./HRSA_tester 1.1345133912 0.01 12 1 --max-solns 10 >> data/out_a1.1345133912_e0.01_f12
+./HRSA_tester 1.4375928651 0.01 12 1 --max-solns 10 >> data/out_a1.4375928651_e0.01_f12
+./HRSA_tester 0.4889359038 0.01 12 1 --max-solns 10 >> data/out_a0.4889359038_e0.01_f12
+./HRSA_tester -0.1214821316 0.01 12 1 --max-solns 10 >> data/out_a-0.1214821316_e0.01_f12
+./HRSA_tester 0.8764184436 0.01 12 1 --max-solns 10 >> data/out_a0.8764184436_e0.01_f12
+./HRSA_tester 0.4796187146 0.01 12 1 --max-solns 10 >> data/out_a0.4796187146_e0.01_f12
+./HRSA_tester 1.3803948952 0.01 12 1 --max-solns 10 >> data/out_a1.3803948952_e0.01_f12
+./HRSA_tester 0.0848535631 0.01 12 1 --max-solns 10 >> data/out_a0.0848535631_e0.01_f12
+./HRSA_tester 0.6894487552 0.01 12 1 --max-solns 10 >> data/out_a0.6894487552_e0.01_f12
+./HRSA_tester 0.8594971049 0.01 12 1 --max-solns 10 >> data/out_a0.8594971049_e0.01_f12
+./HRSA_tester 1.3960882085 0.01 12 1 --max-solns 10 >> data/out_a1.3960882085_e0.01_f12
+./HRSA_tester 1.1409052629 0.01 12 1 --max-solns 10 >> data/out_a1.1409052629_e0.01_f12
+./HRSA_tester 0.3016608496 0.01 12 1 --max-solns 10 >> data/out_a0.3016608496_e0.01_f12
+./HRSA_tester -1.2951166693 0.01 12 1 --max-solns 10 >> data/out_a-1.2951166693_e0.01_f12
+./HRSA_tester 1.3329630929 0.01 12 1 --max-solns 10 >> data/out_a1.3329630929_e0.01_f12
+./HRSA_tester 0.8284559568 0.01 12 1 --max-solns 10 >> data/out_a0.8284559568_e0.01_f12
+./HRSA_tester 0.0505496768 0.01 12 1 --max-solns 10 >> data/out_a0.0505496768_e0.01_f12
+./HRSA_tester -1.1052442999 0.01 12 1 --max-solns 10 >> data/out_a-1.1052442999_e0.01_f12
+./HRSA_tester -0.9518919416 0.01 12 1 --max-solns 10 >> data/out_a-0.9518919416_e0.01_f12
+./HRSA_tester -0.7982291478 0.01 12 1 --max-solns 10 >> data/out_a-0.7982291478_e0.01_f12
+./HRSA_tester 0.9848480913 0.01 12 1 --max-solns 10 >> data/out_a0.9848480913_e0.01_f12
+./HRSA_tester -0.6403282517 0.01 12 1 --max-solns 10 >> data/out_a-0.6403282517_e0.01_f12
+./HRSA_tester 0.5861442596 0.01 12 1 --max-solns 10 >> data/out_a0.5861442596_e0.01_f12
+./HRSA_tester 0.5753493834 0.01 12 1 --max-solns 10 >> data/out_a0.5753493834_e0.01_f12
+./HRSA_tester -1.0472683780 0.01 12 1 --max-solns 10 >> data/out_a-1.0472683780_e0.01_f12
+./HRSA_tester 1.5503663876 0.01 12 1 --max-solns 10 >> data/out_a1.5503663876_e0.01_f12
+./HRSA_tester 0.0231671653 0.01 12 1 --max-solns 10 >> data/out_a0.0231671653_e0.01_f12
+./HRSA_tester -1.2300981384 0.01 12 1 --max-solns 10 >> data/out_a-1.2300981384_e0.01_f12
+./HRSA_tester -0.5640216620 0.01 12 1 --max-solns 10 >> data/out_a-0.5640216620_e0.01_f12
+./HRSA_tester 0.7194704346 0.01 12 1 --max-solns 10 >> data/out_a0.7194704346_e0.01_f12
+./HRSA_tester 0.4067962172 0.01 12 1 --max-solns 10 >> data/out_a0.4067962172_e0.01_f12
+./HRSA_tester -1.3318498496 0.01 12 1 --max-solns 10 >> data/out_a-1.3318498496_e0.01_f12
+./HRSA_tester 0.2981372841 0.01 12 1 --max-solns 10 >> data/out_a0.2981372841_e0.01_f12
+./HRSA_tester 0.3387392566 0.01 12 1 --max-solns 10 >> data/out_a0.3387392566_e0.01_f12
+./HRSA_tester 0.9193566574 0.01 12 1 --max-solns 10 >> data/out_a0.9193566574_e0.01_f12
+./HRSA_tester -0.9102630767 0.01 12 1 --max-solns 10 >> data/out_a-0.9102630767_e0.01_f12
+./HRSA_tester 1.0749025348 0.01 12 1 --max-solns 10 >> data/out_a1.0749025348_e0.01_f12
+./HRSA_tester 1.5202696694 0.01 12 1 --max-solns 10 >> data/out_a1.5202696694_e0.01_f12
+./HRSA_tester -0.1608325265 0.01 12 1 --max-solns 10 >> data/out_a-0.1608325265_e0.01_f12
+./HRSA_tester 0.6863946899 0.01 12 1 --max-solns 10 >> data/out_a0.6863946899_e0.01_f12
+./HRSA_tester 0.4309123552 0.01 12 1 --max-solns 10 >> data/out_a0.4309123552_e0.01_f12
+./HRSA_tester 0.9311856492 0.01 12 1 --max-solns 10 >> data/out_a0.9311856492_e0.01_f12
+./HRSA_tester -0.0958320106 0.01 12 1 --max-solns 10 >> data/out_a-0.0958320106_e0.01_f12
+./HRSA_tester -1.4357866316 0.01 12 1 --max-solns 10 >> data/out_a-1.4357866316_e0.01_f12
+./HRSA_tester -0.3531868593 0.01 12 1 --max-solns 10 >> data/out_a-0.3531868593_e0.01_f12
+./HRSA_tester 0.0824652462 0.01 12 1 --max-solns 10 >> data/out_a0.0824652462_e0.01_f12
+./HRSA_tester 0.1867436620 0.01 12 1 --max-solns 10 >> data/out_a0.1867436620_e0.01_f12
+./HRSA_tester -1.3220369718 0.01 12 1 --max-solns 10 >> data/out_a-1.3220369718_e0.01_f12
+./HRSA_tester -0.9954834838 0.01 12 1 --max-solns 10 >> data/out_a-0.9954834838_e0.01_f12
+./HRSA_tester 1.2729384889 0.01 12 1 --max-solns 10 >> data/out_a1.2729384889_e0.01_f12
+./HRSA_tester 0.1205051035 0.01 12 1 --max-solns 10 >> data/out_a0.1205051035_e0.01_f12
+./HRSA_tester -0.7642688058 0.01 12 1 --max-solns 10 >> data/out_a-0.7642688058_e0.01_f12
+./HRSA_tester -1.2726999455 0.01 12 1 --max-solns 10 >> data/out_a-1.2726999455_e0.01_f12
+./HRSA_tester -1.0874681051 0.01 12 1 --max-solns 10 >> data/out_a-1.0874681051_e0.01_f12
+./HRSA_tester -0.0330750238 0.01 12 1 --max-solns 10 >> data/out_a-0.0330750238_e0.01_f12
+./HRSA_tester -1.1950164441 0.01 12 1 --max-solns 10 >> data/out_a-1.1950164441_e0.01_f12
+./HRSA_tester -1.0968314545 0.01 12 1 --max-solns 10 >> data/out_a-1.0968314545_e0.01_f12
+./HRSA_tester 0.7248155561 0.01 12 1 --max-solns 10 >> data/out_a0.7248155561_e0.01_f12
+./HRSA_tester -1.1452745376 0.01 12 1 --max-solns 10 >> data/out_a-1.1452745376_e0.01_f12
+./HRSA_tester -1.0063668379 0.01 12 1 --max-solns 10 >> data/out_a-1.0063668379_e0.01_f12
+./HRSA_tester 1.2120084819 0.01 12 1 --max-solns 10 >> data/out_a1.2120084819_e0.01_f12

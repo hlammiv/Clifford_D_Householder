@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """
 Parse output files of the form:
-    out_a<angle>_<run_id>_e<epsilon>_f<something>
+    out_a<angle>_e<epsilon>_f<something>
 
 Extracts from each file:
   - angle        : number after 'a' in filename
   - target_eps   : number after 'e' in filename
-  - final_f      : last 'f = N' value enumerated in the file
-  - eps_diff_val : the "Epsilon Diff. Val." value
+  - D_gates      : the "Total D gates" value from the decomposition
+  - eps_diff_val : the Matrix Frobenius distance (preferred) or
+                   the "Epsilon Diff. Val." (fallback)
   - result       : "Success" or "Failure"
 
 Usage:
@@ -39,27 +40,37 @@ def parse_filename(name):
 
 # ── file-content parsing ──────────────────────────────────────────────────────
 
-F_LINE_RE    = re.compile(r"f\s*=\s*(\d+)")
+D_GATES_RE   = re.compile(r"Total D gates\s*:\s*(\d+)")
+FROB_RE      = re.compile(
+    r"Matrix Frobenius distance.*?=\s*([0-9eE+\-.]+)"
+)
 EPS_DIFF_RE  = re.compile(r"Epsilon Diff\. Val\.\s*:\s*([0-9eE+\-.]+)")
 SUCCESS_RE   = re.compile(r"\bSuccess\b", re.IGNORECASE)
 FAILURE_RE   = re.compile(r"\bFailure\b", re.IGNORECASE)
 
 def parse_file(path):
     """
-    Returns a dict with keys: final_f, eps_diff_val, result
+    Returns a dict with keys: D_gates, eps_diff_val, result
     Any field that cannot be found is set to None.
     """
-    final_f     = None
+    d_gates     = None
+    frob_dist   = None
     eps_diff    = None
     result      = None
 
     with open(path, "r", errors="replace") as fh:
         for line in fh:
-            # track every 'f = N' line; last one wins
-            for m in F_LINE_RE.finditer(line):
-                final_f = int(m.group(1))
+            # D-gate count from decomposition
+            m = D_GATES_RE.search(line)
+            if m:
+                d_gates = int(m.group(1))
 
-            # epsilon diff value
+            # Matrix Frobenius distance (preferred measure)
+            m = FROB_RE.search(line)
+            if m:
+                frob_dist = float(m.group(1))
+
+            # Epsilon diff value (fallback)
             m = EPS_DIFF_RE.search(line)
             if m:
                 eps_diff = float(m.group(1))
@@ -70,10 +81,13 @@ def parse_file(path):
             elif FAILURE_RE.search(line):
                 result = "Failure"
 
+    # prefer matrix Frobenius distance over vector-level eps_diff
+    best_eps = frob_dist if frob_dist is not None else eps_diff
+
     return {
-        "final_f":     final_f,
-        "eps_diff_val": eps_diff,
-        "result":      result,
+        "D_gates":      d_gates,
+        "eps_diff_val": best_eps,
+        "result":       result,
     }
 
 
@@ -110,13 +124,13 @@ def main():
             "filename":     fname,
             "angle":        angle,
             "target_eps":   target_eps,
-            "final_f":      info["final_f"],
+            "D_gates":      info["D_gates"],
             "eps_diff_val": info["eps_diff_val"],
             "result":       info["result"],
         })
 
     # write space-delimited file
-    fieldnames = ["angle", "target_eps", "final_f", "eps_diff_val", "result"]
+    fieldnames = ["angle", "target_eps", "D_gates", "eps_diff_val", "result"]
     with open(args.output, "w", newline="") as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, delimiter=" ", extrasaction="ignore")
         csvfile.write("# ")
@@ -126,7 +140,7 @@ def main():
                 missing = [f for f in fieldnames if row[f] is None]
                 csvfile.write(f"# error - missing: {', '.join(missing)} | "
                               f"angle={row['angle']} target_eps={row['target_eps']} "
-                              f"final_f={row['final_f']} eps_diff_val={row['eps_diff_val']} "
+                              f"D_gates={row['D_gates']} eps_diff_val={row['eps_diff_val']} "
                               f"result={row['result']}\n")
             else:
                 writer.writerow(row)

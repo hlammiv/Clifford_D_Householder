@@ -414,7 +414,7 @@
 
 	bool ringZ9::isInt() const{
 		for(int i = 1; i < 6; i++){
-			if(element[i] == 0){
+			if(element[i] != 0){
 				return false;
 			}
 		}

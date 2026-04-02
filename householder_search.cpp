@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <mutex>
 #include <omp.h>
+#include <climits>
 
 using namespace std;
 
@@ -370,4 +371,118 @@ void matrixFrobeniusCheck(const std::array<ringZ9chi,3>& u, double theta, double
 	cout << "Matrix Frobenius distance ||X_(0,1) H - R_(0,1)^Z(theta)||_F = "
 	     << frob << "   (target epsilon = " << epsilon << ", passes: "
 	     << (frob < epsilon ? "YES" : "NO") << ")" << endl;
+}
+
+array<ringZ9chi,3> HRSA_bestD(double theta, double epsilon, int max_f, double c, int max_solns){
+	int f = 0;
+	ringZ9chi zero;
+	array<ringZ9chi,3> answer;
+	vector<ringZ9> x1_cands, x2_cands;
+	unordered_multimap<int,ringZ9> lookup;
+
+	complex<double> angle_dir(cos(theta/2.0), sin(-theta/2.0));
+
+	answer[0] = zero; answer[1] = zero; answer[2] = zero;
+
+	while( f <= max_f){
+		int f_pow_sq = three_power(f) * three_power(f);
+		ringZ9 f_pow_sq_doub(2*f_pow_sq);
+
+		cout << "Enumerating entry candidates for f = " << f << "." << endl;
+		entryEnumeration(x1_cands, x2_cands, lookup, theta, epsilon, f, c);
+
+		// Collect up to max_solns valid candidates at this f level.
+		vector<array<ringZ9chi,3>> solutions;
+		atomic<int> soln_count(0);
+		mutex soln_mutex;
+
+		#pragma omp parallel for schedule(dynamic) if(f >= 2) \
+		    shared(soln_count, soln_mutex, solutions)
+		for(int i = 0; i < (int)x1_cands.size(); ++i){
+
+			if(soln_count >= max_solns || interrupted) continue;
+
+			const ringZ9& x_1 = x1_cands[i];
+			int q1 = x_1.quad();
+
+			for(const ringZ9& x_2 : x2_cands){
+
+				if(soln_count >= max_solns || interrupted) break;
+
+				int q2 = x_2.quad();
+				if(q1 + q2 > 2 * f_pow_sq) continue;
+
+				int target_norm = 2*f_pow_sq - q1 - q2;
+				ringZ9 x3sq = f_pow_sq_doub - x_1.complexConj()*x_1 - x_2.complexConj()*x_2;
+
+				auto range = lookup.equal_range(target_norm);
+				for(auto it = range.first; it != range.second; ++it){
+
+					if(soln_count >= max_solns) break;
+
+					const ringZ9& x_3 = it->second;
+
+					if(!(x_3.complexConj()*x_3 == x3sq)) continue;
+
+					array<ringZ9chi,3> candidate = {
+						ringZ9chi(x_1,f),
+						ringZ9chi(x_2,f),
+						ringZ9chi(x_3,f)
+					};
+
+					if(epsTest(candidate[0], candidate[1], candidate[2], f, angle_dir, epsilon, c)){
+						lock_guard<mutex> lk(soln_mutex);
+						if(soln_count < max_solns){
+							solutions.push_back(candidate);
+							soln_count++;
+						}
+					}
+				}
+			}
+		}
+
+		if(!solutions.empty()){
+			cout << "Found " << solutions.size() << " candidate(s) at f=" << f
+			     << ". Decomposing each to find minimum D-count..." << endl;
+
+			int best_idx = 0;
+			int best_D = INT_MAX;
+
+			for(int s = 0; s < (int)solutions.size(); ++s){
+				Mat3 V = buildUnitary(solutions[s]);
+				DecompResult dr = decompose(V);
+				int d = dr.success ? dr.D_count : INT_MAX;
+
+				cout << "  Candidate " << (s+1) << "/" << solutions.size()
+				     << ": D_gates=" << (dr.success ? to_string(d) : "FAIL") << endl;
+
+				if(d < best_D){
+					best_D = d;
+					best_idx = s;
+				}
+				// Early exit if we find a 0 D-gate solution
+				if(best_D == 0) break;
+			}
+
+			answer = solutions[best_idx];
+
+			double eps_diff = pow(abs(answer[0].toComplexDouble() - angle_dir),2)
+			                + (answer[1] + ringZ9chi(ringZ9(1),0)).abs_val_sq()
+			                + answer[2].abs_val_sq();
+			cout << "Epsilon Diff. Val.: " << eps_diff
+			     << " Eps. Cond.: " << epsilon*epsilon/(8.0*c*c) << endl;
+			cout << "Selected candidate " << (best_idx+1) << " with "
+			     << best_D << " D-gate(s)." << endl;
+			cout << "Success!" << endl;
+			return answer;
+		}
+		if(interrupted) return answer;
+
+		f++;
+		x1_cands.clear();
+		x2_cands.clear();
+		lookup.clear();
+	}
+	cout << "Failure." << endl;
+	return answer;
 }
