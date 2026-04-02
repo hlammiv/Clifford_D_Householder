@@ -10,7 +10,6 @@
 #include<unordered_map>
 #include "cyclotomic_int9.h"
 #include "Z9chi.h"
-#include "decompose.h"
 
 /**
 * @file householder_search.h

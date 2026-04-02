@@ -240,8 +240,9 @@ static bool trySinglePrefix(Mat3& V, int s, DecompResult& result,
 // We try all P1 that keep sde the same or raise it by at most 1,
 // then for each such P1*V, try all P2 that bring sde below the original.
 static bool tryDoublePrefix(Mat3& V, int s, DecompResult& result,
-                             const Mat3& Hmat, const Mat3& Rmat, const Mat3& Xmat) {
-    cout << "  Trying double-prefix at sde_chi=" << s << "..." << endl;
+                             const Mat3& Hmat, const Mat3& Rmat, const Mat3& Xmat,
+                             bool quiet = false) {
+    if (!quiet) cout << "  Trying double-prefix at sde_chi=" << s << "..." << endl;
 
     // First pass: collect all P1 that give sde in {s-1, s, s+1}
     // (s-1 would have been caught by single, so really {s, s+1})
@@ -286,7 +287,7 @@ static bool tryDoublePrefix(Mat3& V, int s, DecompResult& result,
                 result.D_count += count_d_from_cyclo(b1, b2, b3);
 
                 V = P2.mul(midV);
-                cout << "  Double-prefix succeeded: sde " << s
+                if (!quiet) cout << "  Double-prefix succeeded: sde " << s
                      << " -> " << mid_s << " -> " << new_s << endl;
                 return true;
             }
@@ -295,7 +296,7 @@ static bool tryDoublePrefix(Mat3& V, int s, DecompResult& result,
     return false;
 }
 
-DecompResult decompose(Mat3 V) {
+DecompResult decompose(Mat3 V, bool quiet) {
     DecompResult result;
     result.D_count = 0;
     result.success = false;
@@ -308,7 +309,7 @@ DecompResult decompose(Mat3 V) {
     result.sde_chi = s;
 
     if (s == 999) {
-        cout << "Warning: (0,0) entry is zero in decompose" << endl;
+        if (!quiet) cout << "Warning: (0,0) entry is zero in decompose" << endl;
         return result;
     }
 
@@ -326,13 +327,13 @@ DecompResult decompose(Mat3 V) {
 
         // Single prefix failed (Kalra obstruction).
         // Try double-prefix: P2 * P1 * V with net sde reduction.
-        if (tryDoublePrefix(V, s, result, Hmat, Rmat, Xmat)) {
+        if (tryDoublePrefix(V, s, result, Hmat, Rmat, Xmat, quiet)) {
             s = sdeChiFull(V.m[0][0]);
             continue;
         }
 
         // Both failed
-        cout << "Decompose: cannot reduce sde_chi at s=" << s
+        if (!quiet) cout << "Decompose: cannot reduce sde_chi at s=" << s
              << " even with double-prefix" << endl;
         return result;
     }

@@ -1,4 +1,5 @@
 #include "householder_search.h"
+#include "decompose.h"
 #include <algorithm>
 #include <mutex>
 #include <omp.h>
@@ -384,6 +385,9 @@ array<ringZ9chi,3> HRSA_bestD(double theta, double epsilon, int max_f, double c,
 
 	answer[0] = zero; answer[1] = zero; answer[2] = zero;
 
+	cout << "HRSA_bestD: max_solns=" << max_solns
+	     << ", OMP threads=" << omp_get_max_threads() << endl;
+
 	while( f <= max_f){
 		int f_pow_sq = three_power(f) * three_power(f);
 		ringZ9 f_pow_sq_doub(2*f_pow_sq);
@@ -445,23 +449,28 @@ array<ringZ9chi,3> HRSA_bestD(double theta, double epsilon, int max_f, double c,
 			cout << "Found " << solutions.size() << " candidate(s) at f=" << f
 			     << ". Decomposing each to find minimum D-count..." << endl;
 
+			int n_solns = (int)solutions.size();
+			vector<int> d_counts(n_solns, INT_MAX);
+
+			// Each decompose() call is independent — parallelize across candidates.
+			// cout inside decompose() may interleave, but correctness is unaffected.
+			#pragma omp parallel for schedule(dynamic)
+			for(int s = 0; s < n_solns; ++s){
+				Mat3 V = buildUnitary(solutions[s]);
+				DecompResult dr = decompose(V, true);  // quiet: suppress cout in parallel
+				d_counts[s] = dr.success ? dr.D_count : INT_MAX;
+			}
+
+			// Find best and report (serial, so output is clean)
 			int best_idx = 0;
 			int best_D = INT_MAX;
-
-			for(int s = 0; s < (int)solutions.size(); ++s){
-				Mat3 V = buildUnitary(solutions[s]);
-				DecompResult dr = decompose(V);
-				int d = dr.success ? dr.D_count : INT_MAX;
-
-				cout << "  Candidate " << (s+1) << "/" << solutions.size()
-				     << ": D_gates=" << (dr.success ? to_string(d) : "FAIL") << endl;
-
-				if(d < best_D){
-					best_D = d;
+			for(int s = 0; s < n_solns; ++s){
+				cout << "  Candidate " << (s+1) << "/" << n_solns
+				     << ": D_gates=" << (d_counts[s] < INT_MAX ? to_string(d_counts[s]) : "FAIL") << endl;
+				if(d_counts[s] < best_D){
+					best_D = d_counts[s];
 					best_idx = s;
 				}
-				// Early exit if we find a 0 D-gate solution
-				if(best_D == 0) break;
 			}
 
 			answer = solutions[best_idx];

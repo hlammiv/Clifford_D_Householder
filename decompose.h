@@ -88,7 +88,7 @@ int sdeChiZ9(ringZ9 a);
  * @param V  The unitary to decompose (constructed from the Householder vector).
  * @return DecompResult containing the gate sequence and D-count.
  */
-DecompResult decompose(Mat3 V);
+DecompResult decompose(Mat3 V, bool quiet = false);
 
 /**
  * @brief Build the unitary V = X_{(0,1)} (I - u u^dagger) from a Householder vector u.

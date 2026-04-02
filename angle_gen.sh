@@ -1,6 +1,6 @@
 rm run_file
 maxf=12
-for power in 1 0.1 0.01; do
+for power in 1 0.1 0.01 0.001; do
 for j in $(seq 1 1 100);
 do
 angle=`awk -v seed="$RANDOM" 'BEGIN { srand(seed); printf("%.10f\n", (rand()-0.5) * 3.1415926535897) }'`
