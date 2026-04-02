@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.21)  2 APR 2026 13:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.8.21)  2 APR 2026 16:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -165,11 +165,11 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 119
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Package epstopdf Info: Source file: <tve_gnu.eps>
-(epstopdf)                    date: 2026-04-02 13:38:55
-(epstopdf)                    size: 193999 bytes
+(epstopdf)                    date: 2026-04-02 16:03:02
+(epstopdf)                    size: 195238 bytes
 (epstopdf)             Output file: <tve_gnu-eps-converted-to.pdf>
-(epstopdf)                    date: 2026-04-02 12:59:59
-(epstopdf)                    size: 108503 bytes
+(epstopdf)                    date: 2026-04-02 15:00:30
+(epstopdf)                    size: 109129 bytes
 (epstopdf)             Command: <repstopdf --outfile=tve_gnu-eps-converted-to.p
 df tve_gnu.eps>
 (epstopdf)             \includegraphics on input line 120.
@@ -177,8 +177,8 @@ runsystem(repstopdf --outfile=tve_gnu-eps-converted-to.pdf tve_gnu.eps)...execu
 ted safely (allowed).
 
 Package epstopdf Info: Result file: <tve_gnu-eps-converted-to.pdf>
-(epstopdf)                    date: 2026-04-02 13:38:56
-(epstopdf)                    size: 112944 bytes.
+(epstopdf)                    date: 2026-04-02 16:03:03
+(epstopdf)                    size: 114051 bytes.
 <tve_gnu-eps-converted-to.pdf, id=1, 433.62pt x 289.08pt>
 File: tve_gnu-eps-converted-to.pdf Graphic file (type pdf)
 <use tve_gnu-eps-converted-to.pdf>
@@ -211,7 +211,7 @@ type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy7.pfb>
-Output written on tve.pdf (1 page, 203788 bytes).
+Output written on tve.pdf (1 page, 204895 bytes).
 PDF statistics:
  61 PDF objects out of 1000 (max. 8388607)
  36 compressed objects within 1 object stream

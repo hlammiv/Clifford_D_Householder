@@ -1,0 +1,30 @@
+
+=== Phase 1: Direct search (D-count 0-2) ===
+Direct search: 648 Cliffords, eps=0.0001
+  k=0: best=1.06688
+  k=1: best=0.106616
+  k=2: 839808 × 1296 = 1088391168
+  k=2: best=0.106616
+  No solution found up to D-count=2 (best=0.106616)
+
+No low-D solution found via direct search.
+
+=== Phase 2: Diagonal synthesis ===
+Diagonal synthesis: target phases = (0.773538, -0.773538, 0)
+  f=0: 1 × 1 candidates
+    best Frobenius so far = 0.106616
+  f=1: 148 × 137 candidates
+    best Frobenius so far = 0.0224745
+  f=2: 83514 × 82711 candidates
+    best Frobenius so far = 0.000446739
+  f=3: 56401199 × 56180099 candidates
+    best Frobenius so far = 1.91022e-05
+  Found at f=3! Frobenius = 1.91022e-05
+  Decomposition: OK, D-gates = 12
+
+=== Summary ===
+Epsilon Diff. Val.: 1.91022e-05 Eps. Cond.: 1.95312e-09
+Matrix Frobenius distance ||X_(0,1) H - R_(0,1)^Z(theta)||_F = 1.91022e-05   (target epsilon = 0.0001, passes: YES)
+Total D gates:    12
+Method: Diagonal(f=3)
+Success!

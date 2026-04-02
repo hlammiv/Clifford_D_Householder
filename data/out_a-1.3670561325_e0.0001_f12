@@ -1,0 +1,20 @@
+
+=== Phase 1: Direct search (D-count 0-2) ===
+Direct search: 648 Cliffords, eps=0.0001
+  k=0: best=0.947946
+  k=1: best=0.0206525
+  k=2: 839808 × 1296 = 1088391168
+  k=2: best=0.0206525
+  No solution found up to D-count=2 (best=0.0206525)
+
+No low-D solution found via direct search.
+
+=== Phase 2: Diagonal synthesis ===
+Diagonal synthesis: target phases = (0.683528, -0.683528, 0)
+  f=0: 1 × 1 candidates
+    best Frobenius so far = 0.0206525
+  f=1: 149 × 141 candidates
+    best Frobenius so far = 0.014796
+  f=2: 83306 × 82421 candidates
+    best Frobenius so far = 0.000803635
+  f=3: 56344350 × 56129540 candidates
